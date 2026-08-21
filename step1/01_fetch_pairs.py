@@ -14,27 +14,27 @@ Logic:
 from pathlib import Path
 import pandas as pd
 
-# --- paths -----------------------------------------------------------------
+# paths
 INPUT  = Path("../genetic_support/data/merge2.tsv.gz")
 OUTDIR = Path("output")
 OUTPUT = OUTDIR / "01_pairs.parquet"
 
-SIMILARITY_THRESHOLD = 0.8  # Minikel's rule; logged in decisions.md
+SIMILARITY_THRESHOLD = 0.8 
 
-# --- load ------------------------------------------------------------------
+# load input
 print(f"Loading {INPUT} ...")
 merge = pd.read_csv(INPUT, sep="\t", low_memory=False)
 print(f"  {len(merge):,} association-level rows")
 print(f"  {merge['ti_uid'].nunique():,} unique target-indication pairs")
 
-# --- support flag (pair level) --------------------------------------------
+# support flag (pair level)
 supported_uids = (
     merge.loc[merge["comb_norm"] >= SIMILARITY_THRESHOLD, "ti_uid"]
     .unique()
 )
 print(f"  {len(supported_uids):,} pairs are supported (comb_norm >= {SIMILARITY_THRESHOLD})")
 
-# --- collapse to one row per pair -----------------------------------------
+# collapse to one row per pair
 pairs = (
     merge[["ti_uid", "gene", "indication_mesh_id",
            "indication_mesh_term", "ccat", "year_launch"]]
@@ -43,7 +43,7 @@ pairs = (
 )
 pairs["supported"] = pairs["ti_uid"].isin(supported_uids)
 
-# --- pool assignment ------------------------------------------------------
+# pool assignment
 def assign_pool(ccat: str, supported: bool):
     if not supported:
         return None
@@ -57,13 +57,13 @@ pairs["pool"] = pairs.apply(
     lambda r: assign_pool(r["ccat"], r["supported"]), axis=1
 )
 
-# --- finalize -------------------------------------------------------------
+# finalize
 result = pairs[pairs["pool"].notna()].copy()
 
 OUTDIR.mkdir(parents=True, exist_ok=True)
 result.to_parquet(OUTPUT, index=False)
 
-# --- report ---------------------------------------------------------------
+# report
 print()
 print("=" * 50)
 print(f"Output: {OUTPUT}")
