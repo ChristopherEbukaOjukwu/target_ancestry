@@ -19,10 +19,10 @@ Logic:
 from pathlib import Path
 import pandas as pd
 
-# --- paths ----------------------------------------------------------------
+# paths
 TRAILS_IN = Path("../step4/output/04_trails.parquet")
 
-# --- load ------------------------------------------------------------------
+# load
 print(f"Loading: {TRAILS_IN}")
 df = pd.read_parquet(TRAILS_IN)
 print(f"  {len(df):,} pairs")
@@ -32,12 +32,12 @@ df["all_set"] = df["all_set"].apply(set)
 df["initial_set"] = df["initial_set"].apply(set)
 df["replication_set"] = df["replication_set"].apply(set)
 
-# --- identify dual-pool genes --------------------------------------------
+# identify dual-pool genes
 pools_per_gene = df.groupby("gene")["pool"].agg(set)
 dual_pool_genes = pools_per_gene[pools_per_gene == {"A", "B"}].index.tolist()
 print(f"\nGenes appearing in BOTH pools: {len(dual_pool_genes)}")
 
-# --- build per-gene A and B trails ---------------------------------------
+# build per-gene A and B trails
 def union_sets(series):
     out = set()
     for s in series:
@@ -79,7 +79,7 @@ for gene in dual_pool_genes:
 
 per_gene = pd.DataFrame(rows)
 
-# --- DIAGNOSTIC: degeneracy check ----------------------------------------
+# DIAGNOSTIC: degeneracy check
 print()
 print("=" * 60)
 print("DEGENERACY CHECK")
@@ -101,7 +101,7 @@ if n_informative == 0:
 else:
     informative = per_gene[~per_gene["identical"]].copy()
 
-    # --- comparison among informative genes ------------------------------
+    # comparison among informative genes
     print()
     print("=" * 60)
     print(f"COMPARISON AMONG {n_informative} INFORMATIVE GENES")
@@ -143,7 +143,7 @@ else:
     print(f"  B has more ancestries: {n_b_more_r}")
     print(f"  Tied set size:         {n_tie_r}")
 
-    # --- which ancestries asymmetric ------------------------------------
+    # which ancestries asymmetric
     print()
     print("Ancestries unique to A side (across all informative genes):")
     from collections import Counter
@@ -161,7 +161,7 @@ else:
     for anc in all_ancs:
         print(f"  {anc:<28s} {a_unique.get(anc, 0):>8d} {b_unique.get(anc, 0):>8d}")
 
-    # --- save informative gene table -----------------------------------
+    # save informative gene table
     OUTPUT = Path("output/07_within_gene.parquet")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     informative.to_parquet(OUTPUT, index=False)
