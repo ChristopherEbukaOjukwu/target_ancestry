@@ -75,9 +75,9 @@ REQUIRED_TRAIL_COLUMNS = {
 REQUIRED_STUDY_COLUMNS = {"ti_uid", "assoc_year"}
 
 
-# ---------------------------------------------------------------------------
+
 # Arguments and utilities
-# ---------------------------------------------------------------------------
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run Step 8B gene-clustered approval regressions."
@@ -184,9 +184,9 @@ def json_safe(value: Any) -> Any:
     return value
 
 
-# ---------------------------------------------------------------------------
+
 # Dataset construction
-# ---------------------------------------------------------------------------
+
 def build_model_dataset(args: argparse.Namespace) -> tuple[pd.DataFrame, list[str], dict]:
     for path in [args.trails, args.pair_studies, args.mesh_pairs, args.mesh_counts]:
         if not path.exists():
@@ -326,9 +326,9 @@ def build_model_dataset(args: argparse.Namespace) -> tuple[pd.DataFrame, list[st
     return data, eligible_cols, qa
 
 
-# ---------------------------------------------------------------------------
+
 # Model fitting
-# ---------------------------------------------------------------------------
+
 def model_predictors(model_id: str, exposure: str, mesh_cols: list[str]) -> list[str]:
     if model_id == "M1":
         return [exposure]
