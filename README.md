@@ -70,7 +70,7 @@ The analysis uses:
 
 ## 3. Required input data
 
-Most small/frozen inputs needed for reproduction are included directly in this repository. Large GWAS and LD resources are accessed remotely by the scripts rather than stored in GitHub.
+Most small/frozen inputs needed for reproduction are included directly in this repository. Large GWAS and LD resources are accessed remotely by the scripts.
 
 | Resource | Local location | Included? | Used by |
 |---|---|---:|---|
