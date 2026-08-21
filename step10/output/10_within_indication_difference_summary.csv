@@ -1,0 +1,8 @@
+exposure,n_indications,mean_indication_difference,median_indication_difference,n_positive,n_zero,n_negative
+has_african,55,0.05768858691318583,0.0,17,25,13
+has_east_asian,55,0.09556666743832518,0.0,19,22,14
+has_replication,55,0.14133656915475096,0.08333333333333334,29,16,10
+has_south_asian,55,0.05660745473579697,0.0,11,34,10
+n_ancestries_all,55,0.28599406851813264,0.0,24,19,12
+n_ancestries_initial,55,0.27986032723465876,0.0,24,17,14
+n_ancestries_replication,55,0.2411257057460266,0.24242424242424265,28,14,13

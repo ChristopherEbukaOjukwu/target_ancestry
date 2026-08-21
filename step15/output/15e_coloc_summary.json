@@ -1,0 +1,282 @@
+{
+  "completed_at_utc": "2026-07-26T10:51:08.894633+00:00",
+  "counts": {
+    "headline_powered_units_primary_prior": 14,
+    "invalid_or_missing_caches": 0,
+    "manifest_comparisons": 538,
+    "powered_comparisons_primary_prior": 17,
+    "primary_variant_rows": 402705,
+    "valid_comparison_caches": 538
+  },
+  "headline_policy": "Only comparisons powered in both ancestries contribute. Within each gene-trait-source unit, PP.H4 is the median across powered comparison ancestries; the maximum is not used.",
+  "hypotheses": {
+    "H0": "Neither ancestry has an association in the region.",
+    "H1": "EUR association only.",
+    "H2": "Comparison-ancestry association only.",
+    "H3": "Both associated with distinct causal variants.",
+    "H4": "Both associated with one shared causal variant."
+  },
+  "invalid_or_missing_comparison_caches": [],
+  "limitations": [
+    "ABF enumeration assumes at most one causal variant per trait in the analyzed region.",
+    "Unpowered comparisons are retained for transparency and sensitivity but excluded from the headline.",
+    "PP.H4 depends on the shared-causal prior p12; prior sensitivity is reported on an unchanged locus universe."
+  ],
+  "locus_policy": "The same primary exact/QC-qualified variant set is reused for every p12 sensitivity within a comparison.",
+  "method": "coloc-style approximate Bayes-factor enumeration with one causal variant per trait.",
+  "outputs": {
+    "comparison_results": "output/15e_coloc_comparison_results.parquet",
+    "headline_powered_units": "output/15e_coloc_headline_powered_units.parquet",
+    "unit_results": "output/15e_coloc_unit_results.parquet",
+    "variant_posteriors_primary": "output/15e_coloc_variant_posteriors_primary.parquet"
+  },
+  "prior_results": {
+    "0.0001": {
+      "all_eligible": {
+        "aggregation_scope": "ALL_ELIGIBLE",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.07510723484820511,
+            "n_units": 59
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.1846379402588532,
+            "n_units": 154
+          }
+        },
+        "evidence_categories": {
+          "INCONCLUSIVE": 187,
+          "MODERATE_SHARED_H4_GE_0P5": 16,
+          "SHARED_H4_GE_0P8": 10
+        },
+        "n_comparisons": 538,
+        "n_units": 213,
+        "n_units_h3_ge_0p8": 0,
+        "n_units_h4_ge_0p8": 10,
+        "p12": 0.0001,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.9151317693103976,
+          "ci_upper": 0.9380408635586042,
+          "median": 0.9278530628227045,
+          "n_units": 213
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.13915884364248401,
+          "ci_upper": 0.1997276576464982,
+          "median": 0.16765569028514046,
+          "n_units": 213
+        }
+      },
+      "powered_both_only": {
+        "aggregation_scope": "POWERED_BOTH_ONLY",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.9803099150911608,
+            "n_units": 7
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.9853578905560207,
+            "n_units": 7
+          }
+        },
+        "evidence_categories": {
+          "DISTINCT_H3_GE_0P8": 3,
+          "INCONCLUSIVE": 1,
+          "MODERATE_SHARED_H4_GE_0P5": 1,
+          "SHARED_H4_GE_0P8": 9
+        },
+        "n_comparisons": 17,
+        "n_units": 14,
+        "n_units_h3_ge_0p8": 3,
+        "n_units_h4_ge_0p8": 9,
+        "p12": 0.0001,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.4661768011617995,
+          "ci_upper": 0.9986367126494222,
+          "median": 0.9828339032032798,
+          "n_units": 14
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.46572183299364606,
+          "ci_upper": 0.9982196174134623,
+          "median": 0.9828339028235908,
+          "n_units": 14
+        }
+      }
+    },
+    "1e-05": {
+      "all_eligible": {
+        "aggregation_scope": "ALL_ELIGIBLE",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.008072869779993533,
+            "n_units": 59
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.022169951826728283,
+            "n_units": 154
+          }
+        },
+        "evidence_categories": {
+          "INCONCLUSIVE": 206,
+          "MODERATE_SHARED_H4_GE_0P5": 1,
+          "SHARED_H4_GE_0P8": 6
+        },
+        "n_comparisons": 538,
+        "n_units": 213,
+        "n_units_h3_ge_0p8": 0,
+        "n_units_h4_ge_0p8": 6,
+        "p12": 1e-05,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.5301514913864815,
+          "ci_upper": 0.6076141606820004,
+          "median": 0.5726582769451234,
+          "n_units": 213
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.015908285062520018,
+          "ci_upper": 0.023304398770971888,
+          "median": 0.01974487572011989,
+          "n_units": 213
+        }
+      },
+      "powered_both_only": {
+        "aggregation_scope": "POWERED_BOTH_ONLY",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.8327395101372147,
+            "n_units": 7
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.8706274843573647,
+            "n_units": 7
+          }
+        },
+        "evidence_categories": {
+          "DISTINCT_H3_GE_0P8": 4,
+          "INCONCLUSIVE": 1,
+          "MODERATE_SHARED_H4_GE_0P5": 1,
+          "SHARED_H4_GE_0P8": 8
+        },
+        "n_comparisons": 17,
+        "n_units": 14,
+        "n_units_h3_ge_0p8": 4,
+        "n_units_h4_ge_0p8": 8,
+        "p12": 1e-05,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.15565981314422506,
+          "ci_upper": 0.9865323687560759,
+          "median": 0.8516835002117286,
+          "n_units": 14
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.15504655948630203,
+          "ci_upper": 0.9865322275598706,
+          "median": 0.8516834972472898,
+          "n_units": 14
+        }
+      }
+    },
+    "1e-06": {
+      "all_eligible": {
+        "aggregation_scope": "ALL_ELIGIBLE",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.0008133887278496554,
+            "n_units": 59
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.0022621363076472728,
+            "n_units": 154
+          }
+        },
+        "evidence_categories": {
+          "DISTINCT_H3_GE_0P8": 2,
+          "INCONCLUSIVE": 207,
+          "MODERATE_SHARED_H4_GE_0P5": 2,
+          "SHARED_H4_GE_0P8": 2
+        },
+        "n_comparisons": 538,
+        "n_units": 213,
+        "n_units_h3_ge_0p8": 2,
+        "n_units_h4_ge_0p8": 2,
+        "p12": 1e-06,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.10604928276850094,
+          "ci_upper": 0.14008383072918962,
+          "median": 0.12107402388890894,
+          "n_units": 213
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.0016139359643055817,
+          "ci_upper": 0.0023774024180101606,
+          "median": 0.002010209780062829,
+          "n_units": 213
+        }
+      },
+      "powered_both_only": {
+        "aggregation_scope": "POWERED_BOTH_ONLY",
+        "by_source": {
+          "GBMI": {
+            "median_pp_h4": 0.3323852430124328,
+            "n_units": 7
+          },
+          "Pan-UKB": {
+            "median_pp_h4": 0.4596201026573243,
+            "n_units": 7
+          }
+        },
+        "evidence_categories": {
+          "DISTINCT_H3_GE_0P8": 5,
+          "INCONCLUSIVE": 4,
+          "SHARED_H4_GE_0P8": 5
+        },
+        "n_comparisons": 17,
+        "n_units": 14,
+        "n_units_h3_ge_0p8": 5,
+        "n_units_h4_ge_0p8": 5,
+        "p12": 1e-06,
+        "pp_h4_given_h3_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.021011026157358927,
+          "ci_upper": 0.879882920371556,
+          "median": 0.4309530407448192,
+          "n_units": 14
+        },
+        "pp_h4_unit_median": {
+          "bootstrap_replicates": 5000,
+          "ci_lower": 0.020896844311923696,
+          "ci_upper": 0.8798817971909977,
+          "median": 0.43093889418717624,
+          "n_units": 14
+        }
+      }
+    }
+  },
+  "priors": {
+    "case_control_effect_prior_sd": 0.2,
+    "p1": 0.0001,
+    "p12_values": [
+      1e-06,
+      1e-05,
+      0.0001
+    ],
+    "p2": 0.0001,
+    "primary_p12": 1e-05,
+    "quant_effect_prior_sd_multiplier": 0.15
+  },
+  "processing_errors": [],
+  "script_version": "15E.3",
+  "status": "PASS",
+  "step": "15E"
+}

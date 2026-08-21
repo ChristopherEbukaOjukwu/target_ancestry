@@ -1,0 +1,26 @@
+==============================================================================
+STEP 15D — CROSS-ANCESTRY EFFECT PORTABILITY
+==============================================================================
+Eligible comparisons at any threshold: 127
+Pending comparison caches: 127
+Primary comparison bootstrap: 1000
+Headline unit bootstrap: 5000
+Thresholds: 0.01, 0.10, 0.20
+==============================================================================
+[1/3] cmp_00943344950234cb | THPO | CSA
+[2/3] cmp_0348a847d71d7add | FAP | CSA
+[3/3] cmp_06c4746c5e993d05 | GDF15 | MID
+
+==============================================================================
+STEP 15D — CROSS-ANCESTRY EFFECT PORTABILITY
+==============================================================================
+Status: INCOMPLETE
+Valid comparison caches: 3 / 127
+Invalid or missing caches: 124
+Primary comparisons: 2
+Primary units: 2
+naive: median 0.4083 (95% CI 0.2637, 0.5530)
+fiqt: median 0.4102 (95% CI 0.2647, 0.5558)
+deming: median 0.6208 (95% CI 0.6126, 0.6290)
+Summary: output/15d_portability_summary.json
+==============================================================================

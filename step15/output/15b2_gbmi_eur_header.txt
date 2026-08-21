@@ -1,0 +1,1 @@
+#CHR	POS	REF	ALT	rsid	all_meta_AF	inv_var_meta_beta	inv_var_meta_sebeta	inv_var_meta_p	inv_var_het_p	direction	N_case	N_ctrl	n_dataset	n_bbk	is_strand_flip	is_diff_AF_gnomAD

@@ -1,0 +1,206 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9979272991843192,
+    "diagonal_minimum": 0.9951767894954502,
+    "maximum": 0.9979272991843192,
+    "minimum": 0.23183325290553006,
+    "shape": [
+      13,
+      13
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_ba79e47f387626ac",
+  "completed_at_utc": "2026-07-25T03:00:40.347290+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999536796022573,
+    "diagonal_minimum": 0.99993062190957,
+    "maximum": 0.9999536796022573,
+    "minimum": 0.27315979139267554,
+    "shape": [
+      13,
+      13
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "ADRB1",
+  "gene_trait_uid": "gt_bbdbb86b1024cfac",
+  "matrix_cache": "output/15c3_cache/cmp_ba79e47f387626ac.npz",
+  "n_reference_usable": 13,
+  "n_requested": 13,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 10011888,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943503,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "10:115786233:G:A"
+    },
+    {
+      "comparison_panel_index": 10011889,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943504,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "10:115786236:G:A"
+    },
+    {
+      "comparison_panel_index": 10011960,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943623,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "10:115797947:T:A"
+    },
+    {
+      "comparison_panel_index": 10011899,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943523,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "10:115788111:T:C"
+    },
+    {
+      "comparison_panel_index": 10011926,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943568,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "10:115793237:A:G"
+    },
+    {
+      "comparison_panel_index": 10011890,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943508,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "10:115786611:G:T"
+    },
+    {
+      "comparison_panel_index": 10011938,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943592,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 6,
+      "variant_id": "10:115794898:A:G"
+    },
+    {
+      "comparison_panel_index": 10011940,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943596,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 7,
+      "variant_id": "10:115795225:G:A"
+    },
+    {
+      "comparison_panel_index": 10011941,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943597,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 8,
+      "variant_id": "10:115795236:G:A"
+    },
+    {
+      "comparison_panel_index": 10011951,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943612,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 9,
+      "variant_id": "10:115796337:A:G"
+    },
+    {
+      "comparison_panel_index": 10011962,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943626,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 10,
+      "variant_id": "10:115798184:G:T"
+    },
+    {
+      "comparison_panel_index": 10012158,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943952,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 11,
+      "variant_id": "10:115843445:G:A"
+    },
+    {
+      "comparison_panel_index": 10012177,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 14943988,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 12,
+      "variant_id": "10:115847055:A:G"
+    }
+  ],
+  "request_variant_ids": [
+    "10:115786233:G:A",
+    "10:115786236:G:A",
+    "10:115797947:T:A",
+    "10:115788111:T:C",
+    "10:115793237:A:G",
+    "10:115786611:G:T",
+    "10:115794898:A:G",
+    "10:115795225:G:A",
+    "10:115795236:G:A",
+    "10:115796337:A:G",
+    "10:115798184:G:T",
+    "10:115843445:G:A",
+    "10:115847055:A:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "LDL direct"
+}

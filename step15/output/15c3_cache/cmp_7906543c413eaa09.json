@@ -1,0 +1,129 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "AFR",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9975313631275616,
+    "diagonal_minimum": 0.9938015946921352,
+    "maximum": 0.9975313631275616,
+    "minimum": 4.0553726281094737e-05,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 6637,
+      "pop": "AFR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.bm",
+    "n_requested_unique": 4191,
+    "n_resolved_unique": 4191
+  },
+  "comparison_reference_population": "AFR",
+  "comparison_uid": "cmp_7906543c413eaa09",
+  "completed_at_utc": "2026-07-25T03:14:46.121798+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999288890680559,
+    "diagonal_minimum": 0.9998867030942075,
+    "maximum": 0.9999288890680559,
+    "minimum": 0.011124579225651047,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "PIK3CG",
+  "gene_trait_uid": "gt_2b861b21b2545ae4",
+  "matrix_cache": "output/15c3_cache/cmp_7906543c413eaa09.npz",
+  "n_reference_usable": 6,
+  "n_requested": 6,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 10289281,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11169148,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "7:106450755:A:G"
+    },
+    {
+      "comparison_panel_index": 10289288,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11169157,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "7:106453008:T:C"
+    },
+    {
+      "comparison_panel_index": 10289046,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11168880,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "7:106417247:T:C"
+    },
+    {
+      "comparison_panel_index": 10288954,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11168777,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "7:106406309:A:T"
+    },
+    {
+      "comparison_panel_index": 10289045,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11168878,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "7:106417063:G:A"
+    },
+    {
+      "comparison_panel_index": 10289145,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 11168992,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "7:106431520:A:G"
+    }
+  ],
+  "request_variant_ids": [
+    "7:106450755:A:G",
+    "7:106453008:T:C",
+    "7:106417247:T:C",
+    "7:106406309:A:T",
+    "7:106417063:G:A",
+    "7:106431520:A:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Platelet count"
+}

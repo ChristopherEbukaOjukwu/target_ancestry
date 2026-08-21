@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "comparison_uid": "cmp_5cfdc7606e7a16f9",
+  "gene": "MC4R",
+  "trait": "Glycated haemoglobin (HbA1c)",
+  "trait_key": "Pan-UKB::biomarkers|30750|both_sexes||irnt",
+  "genome_build": "GRCh37",
+  "comparison_population": "CSA",
+  "window": {
+    "chromosome": "18",
+    "start_1based": 57938564,
+    "end_1based": 58140001,
+    "start_0based": 57938563
+  },
+  "source": {
+    "data_url": "https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files/biomarkers-30750-both_sexes-irnt.tsv.bgz",
+    "index": {
+      "url": "https://pan-ukb-us-east-1.s3.amazonaws.com/sumstats_flat_files_tabix/biomarkers-30750-both_sexes-irnt.tsv.bgz.tbi",
+      "path": "input/tabix_indexes/15b2/PanUKB_9d02d57afe6e_biomarkers-30750-both_sexes-irnt.tsv.bgz.tbi",
+      "downloaded": false,
+      "size_bytes": 2236942,
+      "sha256": "fa1921684c4d6f0017e2711637c984500aaf4617820669494876fc439eec7d6c"
+    }
+  },
+  "contig": {
+    "target_chromosome": "18",
+    "selected_contig": "18",
+    "selection_method": "exact_contig_match",
+    "n_tabix_contigs": 23,
+    "tabix_contig_examples": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "X"
+    ]
+  },
+  "header": {
+    "method": "first_bgzf_line",
+    "n_columns": 44,
+    "columns": [
+      "chr",
+      "pos",
+      "ref",
+      "alt",
+      "af_meta_hq",
+      "beta_meta_hq",
+      "se_meta_hq",
+      "neglog10_pval_meta_hq",
+      "neglog10_pval_heterogeneity_hq",
+      "af_meta",
+      "beta_meta",
+      "se_meta",
+      "neglog10_pval_meta",
+      "neglog10_pval_heterogeneity",
+      "af_AFR",
+      "af_AMR",
+      "af_CSA",
+      "af_EAS",
+      "af_EUR",
+      "af_MID",
+      "beta_AFR",
+      "beta_AMR",
+      "beta_CSA",
+      "beta_EAS",
+      "beta_EUR",
+      "beta_MID",
+      "se_AFR",
+      "se_AMR",
+      "se_CSA",
+      "se_EAS",
+      "se_EUR",
+      "se_MID",
+      "neglog10_pval_AFR",
+      "neglog10_pval_AMR",
+      "neglog10_pval_CSA",
+      "neglog10_pval_EAS",
+      "neglog10_pval_EUR",
+      "neglog10_pval_MID",
+      "low_confidence_AFR",
+      "low_confidence_AMR",
+      "low_confidence_CSA",
+      "low_confidence_EAS",
+      "low_confidence_EUR",
+      "low_confidence_MID"
+    ],
+    "saved_to": "output/15b2_panukb_header.txt"
+  },
+  "field_mapping": {
+    "base": {
+      "chrom": "chr",
+      "pos": "pos",
+      "ref": "ref",
+      "alt": "alt"
+    },
+    "populations": {
+      "EUR": {
+        "beta": "beta_EUR",
+        "se": "se_EUR",
+        "p": "neglog10_pval_EUR",
+        "low_confidence": "low_confidence_EUR",
+        "frequency_fields": [
+          "af_EUR"
+        ],
+        "sample_fields_in_data": []
+      },
+      "CSA": {
+        "beta": "beta_CSA",
+        "se": "se_CSA",
+        "p": "neglog10_pval_CSA",
+        "low_confidence": "low_confidence_CSA",
+        "frequency_fields": [
+          "af_CSA"
+        ],
+        "sample_fields_in_data": []
+      }
+    },
+    "p_value_representation": "negative_log10_p",
+    "effect_allele_note": "The file exposes REF/ALT and population beta fields; ALT orientation remains tied to the official Pan-UKB specification."
+  },
+  "trait_sample_metadata": {
+    "EUR": {
+      "n_cases_EUR": 400825.0,
+      "n_controls_EUR": null,
+      "phenotype_qc_EUR": "PASS"
+    },
+    "CSA": {
+      "n_cases_CSA": 8329.0,
+      "n_controls_CSA": null,
+      "phenotype_qc_CSA": "PASS"
+    }
+  },
+  "regional_query": {
+    "n_records": 2221,
+    "n_parsed_records": 2221,
+    "n_malformed_records": 0,
+    "minimum_position": 57938601,
+    "maximum_position": 58139974,
+    "numeric_field_summary": {
+      "beta_EUR": {
+        "finite_fraction": 0.8469158036920306,
+        "minimum": -0.853,
+        "maximum": 0.8766
+      },
+      "se_EUR": {
+        "finite_fraction": 0.8469158036920306,
+        "minimum": 0.002475,
+        "maximum": 0.6268
+      },
+      "neglog10_pval_EUR": {
+        "finite_fraction": 0.8469158036920306,
+        "minimum": 0.0001263,
+        "maximum": 5.4
+      },
+      "af_EUR": {
+        "finite_fraction": 0.8469158036920306,
+        "minimum": 1.06e-05,
+        "maximum": 0.9995
+      },
+      "beta_CSA": {
+        "finite_fraction": 0.5231877532642953,
+        "minimum": -3.69,
+        "maximum": 1.005
+      },
+      "se_CSA": {
+        "finite_fraction": 0.5231877532642953,
+        "minimum": 0.01612,
+        "maximum": 2.148
+      },
+      "neglog10_pval_CSA": {
+        "finite_fraction": 0.5231877532642953,
+        "minimum": 0.0003853,
+        "maximum": 2.785
+      },
+      "af_CSA": {
+        "finite_fraction": 0.5231877532642953,
+        "minimum": 6.38e-05,
+        "maximum": 0.9974
+      }
+    }
+  },
+  "missing_requirements": []
+}

@@ -1,0 +1,31 @@
+{
+  "n_target_indication_pairs": 790,
+  "n_indications": 203,
+  "n_panukb_traits_with_eur_and_qc_non_eur": 452,
+  "n_panukb_direct_disease_candidates": 62,
+  "n_panukb_quantitative_or_biomarker_candidates": 218,
+  "n_panukb_other_candidates": 172,
+  "n_gbmi_published_endpoints": 14,
+  "panukb_genome_build": "GRCh37",
+  "gbmi_genome_build": "GRCh38",
+  "automatic_mapping_decisions": false,
+  "allowed_mapping_tiers": [
+    "Direct disease",
+    "Direct quantitative readout",
+    "Closely related phenotype",
+    "Proxy biomarker",
+    "Exclude"
+  ],
+  "gbmi_unresolved_fields": [
+    "endpoint-specific ancestry availability",
+    "summary-statistic filenames",
+    "remote paths",
+    "per-ancestry sample sizes"
+  ],
+  "outputs": {
+    "trait_catalog": "output/15a_trait_catalog.csv",
+    "panukb_quantitative_catalog": "output/15a_panukb_quantitative_catalog.csv",
+    "direct_candidates": "output/15a_direct_mapping_candidates.csv",
+    "review_template": "output/15a_indication_mapping_review.csv"
+  }
+}

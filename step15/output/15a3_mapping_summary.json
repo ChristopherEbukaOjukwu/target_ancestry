@@ -1,0 +1,51 @@
+{
+  "step": "15A3",
+  "status": "LOCKED",
+  "n_candidate_rows": 96,
+  "n_primary_mapping_rows": 33,
+  "n_sensitivity_mapping_rows": 49,
+  "n_rejected_mapping_rows": 14,
+  "n_indications_with_primary_mapping": 33,
+  "n_indications_with_sensitivity_only": 5,
+  "sensitivity_only_indication_ids": [
+    "D000755",
+    "D003876",
+    "D003922",
+    "D006255",
+    "D065631"
+  ],
+  "n_pair_trait_rows_locked": 644,
+  "n_target_indication_pairs_covered": 290,
+  "n_primary_target_indication_pairs_covered": 261,
+  "n_genes_covered": 182,
+  "n_gene_trait_units": 504,
+  "n_primary_gene_trait_units": 222,
+  "n_sensitivity_only_gene_trait_units": 282,
+  "n_mixed_pool_gene_trait_units": 28,
+  "n_primary_mixed_pool_gene_trait_units": 9,
+  "n_primary_approval_eligible_gene_trait_units": 213,
+  "primary_units_by_source": {
+    "Pan-UKB": 163,
+    "GBMI": 59
+  },
+  "primary_units_by_mapping_tier": {
+    "Direct quantitative readout": 150,
+    "Direct disease": 59,
+    "Proxy biomarker": 13
+  },
+  "pool_policy": {
+    "primary": "Exclude gene-trait-source units represented in both Pool A and Pool B.",
+    "sensitivity": "Retain mixed units with assignment to Pool A if any Pool A mapping is present; otherwise Pool B."
+  },
+  "outputs": {
+    "decisions": "output/15a3_mapping_decisions.csv",
+    "locked": "output/15_trait_mapping_locked.csv",
+    "primary": "output/15_trait_mapping_primary.csv",
+    "sensitivity": "output/15_trait_mapping_sensitivity.csv",
+    "rejected": "output/15_trait_mapping_rejected.csv",
+    "pair_csv": "output/15_pair_trait_mapping_locked.csv",
+    "pair_parquet": "output/15_pair_trait_mapping_locked.parquet",
+    "unit_csv": "output/15_gene_trait_units_locked.csv",
+    "unit_parquet": "output/15_gene_trait_units_locked.parquet"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "step": "15A2",
+  "automatic_mapping_acceptance": false,
+  "panukb": {
+    "genome_build": "GRCh37",
+    "n_quantitative_or_biomarker_traits_input": 218,
+    "n_canonical_core_traits": 55,
+    "n_primary_core_traits": 40,
+    "n_secondary_core_traits": 15,
+    "core_by_domain": {
+      "hematology": 16,
+      "renal": 7,
+      "lipids": 6,
+      "anthropometry": 5,
+      "pulmonary": 3,
+      "mineral": 3,
+      "hepatic": 3,
+      "blood_pressure": 2,
+      "renal_electrolyte": 2,
+      "hematology_allergy": 1,
+      "hepatic_bone": 1,
+      "inflammation": 1,
+      "growth_endocrine": 1,
+      "glycemia": 1,
+      "protein": 1,
+      "endocrine": 1,
+      "bone": 1
+    }
+  },
+  "gbmi": {
+    "genome_build": "GRCh38",
+    "release": "GBMI_052021",
+    "bucket": "https://gbmi-sumstats.s3.amazonaws.com",
+    "verification_note": "public S3 listing parsed: 745 objects",
+    "n_published_endpoints": 14,
+    "n_verified_data_files": 36,
+    "n_verified_endpoints": 12,
+    "n_cross_ancestry_eligible_endpoints": 9,
+    "eligible_endpoint_codes": [
+      "Asthma",
+      "COPD",
+      "Gout",
+      "HCM",
+      "HF",
+      "IPF",
+      "POAG",
+      "Stroke",
+      "VTE"
+    ],
+    "source_population_SAS_harmonized_to": "CSA"
+  },
+  "mapping_workspace": {
+    "n_indications": 203,
+    "n_indications_with_at_least_one_candidate": 47,
+    "n_unmapped_indications": 156,
+    "n_candidate_rows": 96,
+    "candidates_by_source": {
+      "Pan-UKB": 88,
+      "GBMI": 8
+    },
+    "candidates_by_tier": {
+      "Proxy biomarker": 49,
+      "Direct quantitative readout": 37,
+      "Direct disease": 8,
+      "Closely related phenotype": 2
+    }
+  },
+  "important_limits": [
+    "No indication-to-trait mapping is locked in Step 15A2.",
+    "GBMI sample sizes are not inferred from file existence.",
+    "A GBMI endpoint is eligible only if EUR and at least one non-EUR file are independently verified.",
+    "Pan-UKB duplicate measurements are collapsed to one canonical trait per construct.",
+    "Unsupported indications remain unmapped rather than receiving forced lexical matches."
+  ],
+  "outputs": {
+    "panukb_core": "output/15a2_panukb_core_traits.csv",
+    "gbmi_files": "output/15a2_gbmi_verified_files.csv",
+    "gbmi_endpoints": "output/15a2_gbmi_verified_endpoints.csv",
+    "mapping_candidates": "output/15a2_mapping_candidates.csv",
+    "unmapped_indications": "output/15a2_unmapped_indications.csv"
+  }
+}

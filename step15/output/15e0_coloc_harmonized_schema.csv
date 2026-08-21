@@ -1,0 +1,98 @@
+comparison_uid,candidate_source,path,column,dtype,n_nonmissing,n_unique_nonmissing,example_values
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_uid,object,1133,1,cmp_90ebb269ca08e668
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,gene_trait_uid,object,1133,1,gt_24b34ddef722adb5
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,gene,object,1133,1,ADORA1
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,candidate_source,object,1133,1,GBMI
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,candidate_trait_key,object,1133,1,GBMI::Asthma
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,candidate_trait_name,object,1133,1,Asthma
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_population,object,1133,1,AFR
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,unit_analysis_role,object,1133,1,PRIMARY
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,mixed_pool,bool,1133,1,False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,primary_approval_eligible,bool,1133,1,True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,chrom,object,1133,1,1
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,pos,Int64,1133,1133,202991913 || 202991948 || 202992422 || 202992627 || 202992751
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,ref,string,1133,35,C || T || A || TC || G
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,alt,string,1133,22,G || A || C || CTAT || T
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,variant_id_eur_key,string,1133,1133,1:202991913:C:G || 1:202991948:C:A || 1:202992422:T:C || 1:202992627:C:CTAT || 1:202992751:A:C
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_biallelic_snp_source_eur_key,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_beta_source,float64,1133,1128,-0.012178 || -0.011823 || 0.34988 || 0.003136 || 0.21977
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_se,float64,1133,1111,0.0076924 || 0.0077694 || 0.40312 || 0.0075775 || 0.18469
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_p,float64,1133,1091,0.1134 || 0.1281 || 0.3854 || 0.679 || 0.2341
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_af_source,float64,1133,998,0.1051 || 0.1024 || 7.381e-05 || 0.8614 || 0.9992
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_n_cases,int64,1133,121,121940 || 40168 || 96981 || 58291 || 46775
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_n_controls,int64,1133,121,1254131 || 416943 || 1045818 || 550918 || 503464
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_diff_af_gnomad,boolean,1133,2,False || True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_strand_flip_flag,boolean,1133,1,False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,variant_id_comparison_key,string,1133,1133,1:202991913:C:G || 1:202991948:C:A || 1:202992422:T:C || 1:202992627:C:CTAT || 1:202992751:A:C
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_biallelic_snp_source_comparison_key,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_beta_source,float64,1133,1129,0.10936 || 0.11679 || 0.1078 || -0.076102 || -0.021448
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_se,float64,1133,1114,0.046514 || 0.046718 || 0.081018 || 0.04156 || 0.035798
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_p,float64,1133,1071,0.01872 || 0.01242 || 0.1833 || 0.06708 || 0.5491
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_af_source,float64,1133,1056,0.08179 || 0.08086 || 0.02712 || 0.2551 || 0.8234
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_n_cases,int64,1133,18,5051 || 4762 || 3314 || 2212 || 3603
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_n_controls,int64,1133,18,27607 || 26670 || 14638 || 11641 || 15575
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_diff_af_gnomad,boolean,1133,2,False || True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_strand_flip_flag,boolean,1133,1,False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,allele_relation,object,1133,2,exact || swapped
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,variant_id,string,1133,1133,1:202991913:C:G || 1:202991948:C:A || 1:202992422:T:C || 1:202992627:C:CTAT || 1:202992751:A:C
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,primary_harmonized,bool,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,sensitivity_harmonized,bool,1133,1,True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_beta,float64,1133,1128,-0.012178 || -0.011823 || 0.34988 || 0.003136 || 0.21977
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_af,float64,1133,998,0.1051 || 0.1024 || 7.381e-05 || 0.8614 || 0.9992
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_beta,float64,1133,1129,0.10936 || 0.11679 || 0.1078 || -0.076102 || -0.021448
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_af,float64,1133,1056,0.08179 || 0.08086 || 0.02712 || 0.2551 || 0.8234
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_biallelic_snp,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_beta_se,bool,1133,1,True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_p,bool,1133,1,True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,valid_af,bool,1133,1,True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_maf,float64,1133,995,0.1051 || 0.1024 || 7.381e-05 || 0.13859999999999995 || 0.0008000000000000229
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_maf,float64,1133,1055,0.08179 || 0.08086 || 0.02712 || 0.2551 || 0.17659999999999998
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,maf_pass,bool,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,quality_pass,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,qc_qualified,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,qc_qualified_sensitivity,boolean,1133,2,True || False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_gws,boolean,1133,2,False || True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_gws,boolean,1133,1,False
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,eur_gws_sensitivity,boolean,1133,2,False || True
+cmp_90ebb269ca08e668,GBMI,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet,comparison_gws_sensitivity,boolean,1133,1,False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_uid,object,2102,1,cmp_9d8c13f3b6460d45
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,gene_trait_uid,object,2102,1,gt_c2f3696fd5d03431
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,gene,object,2102,1,PNPLA3
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,candidate_source,object,2102,1,Pan-UKB
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,candidate_trait_key,object,2102,1,Pan-UKB::biomarkers|30620|both_sexes||irnt
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,candidate_trait_name,object,2102,1,Alanine aminotransferase
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_population,object,2102,1,AFR
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,unit_analysis_role,object,2102,1,PRIMARY
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,mixed_pool,bool,2102,1,False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,primary_approval_eligible,bool,2102,1,True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,chrom,object,2102,1,22
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,pos,Int64,2102,2098,44219716 || 44219944 || 44220060 || 44220119 || 44220143
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,ref,string,2102,52,T || A || C || G || TAAAG
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,alt,string,2102,36,C || T || A || G || ACAAT
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,variant_id,string,2102,2102,22:44219716:T:C || 22:44219944:A:C || 22:44220060:C:T || 22:44220119:C:A || 22:44220143:T:C
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_beta,float64,1926,1833,-0.008137 || 0.005836 || -0.09905 || -0.005011 || -0.004489
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_se,float64,1926,1500,0.00457 || 0.00307 || 0.246 || 0.00277 || 0.00238
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_af,float64,1926,1668,0.07099 || 0.1718 || 3.968e-05 || 0.2259 || 0.6129
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_neglog10_p,float64,1926,1752,1.125 || 1.242 || 0.1629 || 1.152 || 1.227
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_p,float64,1926,1752,0.07498942093324558 || 0.057279603098582925 || 0.6872266615842488 || 0.07046930689671471 || 0.059292532457999966
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_low_confidence,boolean,1926,2,False || True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_beta,float64,1640,1553,0.2364 || 0.02019 || 0.004463 || -0.1524 || 0.005678
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_se,float64,1640,1307,0.1324 || 0.05623 || 0.03797 || 0.2125 || 0.01763
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_af,float64,1640,1478,0.00504 || 0.02383 || 0.05567 || 0.001784 || 0.6243
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_neglog10_p,float64,1640,1521,1.13 || 0.1429 || 0.04266 || 0.3247 || 0.1265
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_p,float64,1640,1521,0.07413102413009177 || 0.7196146563265814 || 0.906441957503063 || 0.47347821318515243 || 0.7473086341912762
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_low_confidence,boolean,1640,2,False || True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,allele_relation,object,2102,1,exact
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,primary_harmonized,bool,2102,1,True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,sensitivity_harmonized,bool,2102,1,True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,valid_biallelic_snp,boolean,2102,2,True || False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,valid_beta_se,bool,2102,2,True || False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,valid_p,bool,2102,2,True || False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,valid_af,bool,2102,2,True || False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_maf,float64,1926,1666,0.07099 || 0.1718 || 3.968e-05 || 0.2259 || 0.3871
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_maf,float64,1640,1473,0.00504 || 0.02383 || 0.05567 || 0.001784 || 0.37570000000000003
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,maf_pass,bool,2102,2,False || True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,quality_pass,boolean,2102,2,True || False
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,qc_qualified,boolean,2102,2,False || True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,eur_gws,boolean,2102,2,False || True
+cmp_9d8c13f3b6460d45,Pan-UKB,intermediate/15b4/comparisons/cmp_9d8c13f3b6460d45.parquet,comparison_gws,boolean,2102,1,False

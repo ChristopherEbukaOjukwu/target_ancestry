@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+x-amz-id-2: SivwfbtTNaGQjHM74ND0QShpnRz6VRe7/cu6oF8a5QL4o2mLsS7S0O+Z9glY/FXwp3YD2gFmzPWbqSGQ/iL3AF0/JCgAy4SA
+x-amz-request-id: 931BYW2TM6AY4YNA
+Date: Thu, 23 Jul 2026 18:39:06 GMT
+Last-Modified: Wed, 26 Jun 2024 18:15:52 GMT
+ETag: "0735065d06ea8ffb098c119ef419c821"
+x-amz-storage-class: INTELLIGENT_TIERING
+x-amz-server-side-encryption: AES256
+x-amz-version-id: 4aeOTgbmYt4xJLG.c34TggHLI_r6HhSY
+Accept-Ranges: bytes
+Content-Type: binary/octet-stream
+Content-Length: 1420758
+Server: AmazonS3
+

@@ -1,0 +1,7 @@
+trait_type,is_binary,n_phenotypes,n_both_sexes,median_qc_populations,max_qc_populations
+continuous,False,197,197,2.0,5
+categorical,True,145,145,2.0,5
+phecode,True,38,38,2.0,4
+prescriptions,True,27,27,2.0,3
+icd10,True,24,24,2.0,3
+biomarkers,False,21,21,3.0,4

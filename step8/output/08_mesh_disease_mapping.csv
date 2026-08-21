@@ -1,0 +1,361 @@
+mesh_release,indication_mesh_id,indication_mesh_term,mesh_descriptor_name,mesh_category_code,mesh_category_name,tree_numbers,n_tree_numbers_in_category,term_matches_descriptor
+2026,D001850,"Bone Diseases, Infectious","Bone Diseases, Infectious",C01,Infections,C01.160,1,True
+2026,D029481,"Bronchitis, Chronic","Bronchitis, Chronic",C01,Infections,C01.748.099.567,1,True
+2026,D000086382,COVID-19,COVID-19,C01,Infections,C01.748.610.763.500|C01.925.705.500|C01.925.782.600.550.200.163,3,True
+2026,D012220,Rhinitis,Rhinitis,C01,Infections,C01.748.674,1,True
+2026,D018805,Sepsis,Sepsis,C01,Infections,C01.757,1,True
+2026,D012852,Sinusitis,Sinusitis,C01,Infections,C01.748.749,1,True
+2026,D001943,Breast Neoplasms,Breast Neoplasms,C04,Neoplasms,C04.588.180,1,True
+2026,D002289,"Carcinoma, Non-Small-Cell Lung","Carcinoma, Non-Small-Cell Lung",C04,Neoplasms,C04.588.894.797.520.109.220.249,1,True
+2026,D015179,Colorectal Neoplasms,Colorectal Neoplasms,C04,Neoplasms,C04.588.274.476.411.307,1,True
+2026,D016889,Endometrial Neoplasms,Endometrial Neoplasms,C04,Neoplasms,C04.588.945.418.948.585,1,True
+2026,D004938,Esophageal Neoplasms,Esophageal Neoplasms,C04,Neoplasms,C04.588.274.476.205|C04.588.443.353,2,True
+2026,D005770,Gastrointestinal Neoplasms,Gastrointestinal Neoplasms,C04,Neoplasms,C04.588.274.476,1,True
+2026,D005909,Glioblastoma,Glioblastoma,C04,Neoplasms,C04.557.465.625.600.380.080.335|C04.557.470.670.380.080.335|C04.557.580.625.600.380.080.335,3,True
+2026,D006258,Head and Neck Neoplasms,Head and Neck Neoplasms,C04,Neoplasms,C04.588.443,1,True
+2026,D019337,Hematologic Neoplasms,Hematologic Neoplasms,C04,Neoplasms,C04.588.448,1,True
+2026,D006689,Hodgkin Disease,Hodgkin Disease,C04,Neoplasms,C04.557.386.355,1,True
+2026,D055623,"Keratosis, Actinic","Keratosis, Actinic",C04,Neoplasms,C04.834.450,1,True
+2026,D007680,Kidney Neoplasms,Kidney Neoplasms,C04,Neoplasms,C04.588.945.947.535,1,True
+2026,D007889,Leiomyoma,Leiomyoma,C04,Neoplasms,C04.557.450.590.450,1,True
+2026,D007890,Leiomyosarcoma,Leiomyosarcoma,C04,Neoplasms,C04.557.450.590.455|C04.557.450.795.455,2,True
+2026,D015451,"Leukemia, Lymphocytic, Chronic, B-Cell","Leukemia, Lymphocytic, Chronic, B-Cell",C04,Neoplasms,C04.557.337.428.080.125,1,True
+2026,D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive","Leukemia, Myelogenous, Chronic, BCR-ABL Positive",C04,Neoplasms,C04.557.337.539.250,1,True
+2026,D008175,Lung Neoplasms,Lung Neoplasms,C04,Neoplasms,C04.588.894.797.520,1,True
+2026,D008223,Lymphoma,Lymphoma,C04,Neoplasms,C04.557.386,1,True
+2026,D008224,"Lymphoma, Follicular","Lymphoma, Follicular",C04,Neoplasms,C04.557.386.480.350,1,True
+2026,D008527,Medulloblastoma,Medulloblastoma,C04,Neoplasms,C04.557.465.625.600.380.515|C04.557.465.625.600.590.500|C04.557.470.670.380.515|C04.557.470.670.590.500|C04.557.580.625.600.380.515|C04.557.580.625.600.590.500,6,True
+2026,D008545,Melanoma,Melanoma,C04,Neoplasms,C04.557.465.625.650.510|C04.557.580.625.650.510|C04.557.665.510|C04.588.805.377,4,True
+2026,D009101,Multiple Myeloma,Multiple Myeloma,C04,Neoplasms,C04.557.595.500,1,True
+2026,D009303,Nasopharyngeal Neoplasms,Nasopharyngeal Neoplasms,C04,Neoplasms,C04.588.443.665.710.650,1,True
+2026,D009369,Neoplasms,Neoplasms,C04,Neoplasms,C04,1,True
+2026,D018307,"Neoplasms, Squamous Cell","Neoplasms, Squamous Cell",C04,Neoplasms,C04.557.470.700,1,True
+2026,D018242,"Neuroectodermal Tumors, Primitive","Neuroectodermal Tumors, Primitive",C04,Neoplasms,C04.557.465.625.600.590|C04.557.470.670.590|C04.557.580.625.600.590,3,True
+2026,D010051,Ovarian Neoplasms,Ovarian Neoplasms,C04,Neoplasms,C04.588.322.455,1,True
+2026,D011085,Polycystic Ovary Syndrome,Polycystic Ovary Syndrome,C04,Neoplasms,C04.182.612.765,1,True
+2026,D011087,Polycythemia Vera,Polycythemia Vera,C04,Neoplasms,C04.588.448.200.500,1,True
+2026,D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,Precursor Cell Lymphoblastic Leukemia-Lymphoma,C04,Neoplasms,C04.557.337.428.600,1,True
+2026,D011471,Prostatic Neoplasms,Prostatic Neoplasms,C04,Neoplasms,C04.588.945.440.770,1,True
+2026,D012208,Rhabdomyosarcoma,Rhabdomyosarcoma,C04,Neoplasms,C04.557.450.590.550.660|C04.557.450.795.550.660,2,True
+2026,D055752,Small Cell Lung Carcinoma,Small Cell Lung Carcinoma,C04,Neoplasms,C04.588.894.797.520.109.220.624,1,True
+2026,D013274,Stomach Neoplasms,Stomach Neoplasms,C04,Neoplasms,C04.588.274.476.767,1,True
+2026,D013736,Testicular Neoplasms,Testicular Neoplasms,C04,Neoplasms,C04.588.322.762|C04.588.945.440.915,2,True
+2026,D014523,Urethral Neoplasms,Urethral Neoplasms,C04,Neoplasms,C04.588.945.947.945,1,True
+2026,D001749,Urinary Bladder Neoplasms,Urinary Bladder Neoplasms,C04,Neoplasms,C04.588.945.947.960,1,True
+2026,D014565,Urogenital Neoplasms,Urogenital Neoplasms,C04,Neoplasms,C04.588.945,1,True
+2026,D014983,Xeroderma Pigmentosum,Xeroderma Pigmentosum,C04,Neoplasms,C04.834.867,1,True
+2026,D001171,"Arthritis, Juvenile","Arthritis, Juvenile",C05,Musculoskeletal Diseases,C05.550.114.122|C05.799.056,2,True
+2026,D015535,"Arthritis, Psoriatic","Arthritis, Psoriatic",C05,Musculoskeletal Diseases,C05.116.900.853.625.800.424|C05.550.114.145|C05.550.114.865.800.424,3,True
+2026,D001172,"Arthritis, Rheumatoid","Arthritis, Rheumatoid",C05,Musculoskeletal Diseases,C05.550.114.154|C05.799.114,2,True
+2026,D001850,"Bone Diseases, Infectious","Bone Diseases, Infectious",C05,Musculoskeletal Diseases,C05.116.165,1,True
+2026,D001851,"Bone Diseases, Metabolic","Bone Diseases, Metabolic",C05,Musculoskeletal Diseases,C05.116.198,1,True
+2026,D006073,Gout,Gout,C05,Musculoskeletal Diseases,C05.550.114.423|C05.550.354.500|C05.799.414,3,True
+2026,D009223,Myotonic Dystrophy,Myotonic Dystrophy,C05,Musculoskeletal Diseases,C05.651.534.500.500|C05.651.662.750,2,True
+2026,D010003,Osteoarthritis,Osteoarthritis,C05,Musculoskeletal Diseases,C05.550.114.606|C05.799.613,2,True
+2026,D010024,Osteoporosis,Osteoporosis,C05,Musculoskeletal Diseases,C05.116.198.579,1,True
+2026,D012859,Sjogren's Syndrome,Sjogren's Syndrome,C05,Musculoskeletal Diseases,C05.550.114.154.774|C05.799.114.774,2,True
+2026,D013167,"Spondylitis, Ankylosing","Spondylitis, Ankylosing",C05,Musculoskeletal Diseases,C05.116.900.853.625.800.744.500|C05.550.069.340.500|C05.550.114.865.800.744.500,3,True
+2026,D002446,Celiac Disease,Celiac Disease,C06,Digestive System Diseases,C06.405.469.637.250,1,True
+2026,D002761,Cholangitis,Cholangitis,C06,Digestive System Diseases,C06.130.120.200,1,True
+2026,D003093,"Colitis, Ulcerative","Colitis, Ulcerative",C06,Digestive System Diseases,C06.405.205.265.231|C06.405.205.731.249|C06.405.469.158.188.231|C06.405.469.432.249,4,True
+2026,D015179,Colorectal Neoplasms,Colorectal Neoplasms,C06,Digestive System Diseases,C06.301.371.411.307|C06.405.249.411.307|C06.405.469.158.356|C06.405.469.491.307|C06.405.469.860.180,5,True
+2026,D003424,Crohn Disease,Crohn Disease,C06,Digestive System Diseases,C06.405.205.731.500|C06.405.469.432.500,2,True
+2026,D004381,Duodenal Ulcer,Duodenal Ulcer,C06,Digestive System Diseases,C06.405.469.275.800.348|C06.405.748.586.349,2,True
+2026,D057765,Eosinophilic Esophagitis,Eosinophilic Esophagitis,C06,Digestive System Diseases,C06.405.117.620.209|C06.405.205.663.209,2,True
+2026,D004938,Esophageal Neoplasms,Esophageal Neoplasms,C06,Digestive System Diseases,C06.301.371.205|C06.405.117.430|C06.405.249.205,3,True
+2026,D042882,Gallstones,Gallstones,C06,Digestive System Diseases,C06.130.409.633|C06.130.564.332.500,2,True
+2026,D005764,Gastroesophageal Reflux,Gastroesophageal Reflux,C06,Digestive System Diseases,C06.405.117.119.500.484,1,True
+2026,D005770,Gastrointestinal Neoplasms,Gastrointestinal Neoplasms,C06,Digestive System Diseases,C06.301.371|C06.405.249,2,True
+2026,D015212,Inflammatory Bowel Diseases,Inflammatory Bowel Diseases,C06,Digestive System Diseases,C06.405.205.731|C06.405.469.432,2,True
+2026,D008103,Liver Cirrhosis,Liver Cirrhosis,C06,Digestive System Diseases,C06.552.630,1,True
+2026,D008105,"Liver Cirrhosis, Biliary","Liver Cirrhosis, Biliary",C06,Digestive System Diseases,C06.130.120.135.250.250|C06.552.150.250|C06.552.630.400,3,True
+2026,D008107,Liver Diseases,Liver Diseases,C06,Digestive System Diseases,C06.552,1,True
+2026,D065626,Non-alcoholic Fatty Liver Disease,Non-alcoholic Fatty Liver Disease,C06,Digestive System Diseases,C06.552.241.519,1,True
+2026,D013274,Stomach Neoplasms,Stomach Neoplasms,C06,Digestive System Diseases,C06.301.371.767|C06.405.249.767|C06.405.748.789,3,True
+2026,D013276,Stomach Ulcer,Stomach Ulcer,C06,Digestive System Diseases,C06.405.469.275.800.849|C06.405.748.586.849,2,True
+2026,D019896,alpha 1-Antitrypsin Deficiency,alpha 1-Antitrypsin Deficiency,C06,Digestive System Diseases,C06.552.074,1,True
+2026,D009303,Nasopharyngeal Neoplasms,Nasopharyngeal Neoplasms,C07,Stomatognathic Diseases,C07.550.350.650|C07.550.745.650,2,True
+2026,D012859,Sjogren's Syndrome,Sjogren's Syndrome,C07,Stomatognathic Diseases,C07.465.815.929.669,1,True
+2026,D001249,Asthma,Asthma,C08,Respiratory Tract Diseases,C08.127.108|C08.381.495.108|C08.674.095,3,True
+2026,D029481,"Bronchitis, Chronic","Bronchitis, Chronic",C08,Respiratory Tract Diseases,C08.127.446.567|C08.381.495.146.567|C08.381.495.389.500|C08.730.099.567,4,True
+2026,D000086382,COVID-19,COVID-19,C08,Respiratory Tract Diseases,C08.381.677.807.500|C08.730.610.763.500,2,True
+2026,D002289,"Carcinoma, Non-Small-Cell Lung","Carcinoma, Non-Small-Cell Lung",C08,Respiratory Tract Diseases,C08.381.540.140.500|C08.785.520.100.220.500,2,True
+2026,D008175,Lung Neoplasms,Lung Neoplasms,C08,Respiratory Tract Diseases,C08.381.540|C08.785.520,2,True
+2026,D009298,Nasal Polyps,Nasal Polyps,C08,Respiratory Tract Diseases,C08.460.572,1,True
+2026,D029424,"Pulmonary Disease, Chronic Obstructive","Pulmonary Disease, Chronic Obstructive",C08,Respiratory Tract Diseases,C08.381.495.389,1,True
+2026,D011655,Pulmonary Embolism,Pulmonary Embolism,C08,Respiratory Tract Diseases,C08.381.746,1,True
+2026,D012220,Rhinitis,Rhinitis,C08,Respiratory Tract Diseases,C08.460.799|C08.730.674,2,True
+2026,D065631,"Rhinitis, Allergic","Rhinitis, Allergic",C08,Respiratory Tract Diseases,C08.460.799.315|C08.674.453,2,True
+2026,D006255,"Rhinitis, Allergic, Seasonal","Rhinitis, Allergic, Seasonal",C08,Respiratory Tract Diseases,C08.460.799.315.750|C08.674.453.750,2,True
+2026,D012852,Sinusitis,Sinusitis,C08,Respiratory Tract Diseases,C08.460.692.752|C08.730.749,2,True
+2026,D055752,Small Cell Lung Carcinoma,Small Cell Lung Carcinoma,C08,Respiratory Tract Diseases,C08.381.540.140.750|C08.785.520.100.220.750,2,True
+2026,D019896,alpha 1-Antitrypsin Deficiency,alpha 1-Antitrypsin Deficiency,C08,Respiratory Tract Diseases,C08.381.112,1,True
+2026,D009298,Nasal Polyps,Nasal Polyps,C09,Otorhinolaryngologic Diseases,C09.603.557,1,True
+2026,D009303,Nasopharyngeal Neoplasms,Nasopharyngeal Neoplasms,C09,Otorhinolaryngologic Diseases,C09.647.710.650|C09.775.350.650|C09.775.549.650,3,True
+2026,D012220,Rhinitis,Rhinitis,C09,Otorhinolaryngologic Diseases,C09.603.799,1,True
+2026,D065631,"Rhinitis, Allergic","Rhinitis, Allergic",C09,Otorhinolaryngologic Diseases,C09.603.799.315,1,True
+2026,D006255,"Rhinitis, Allergic, Seasonal","Rhinitis, Allergic, Seasonal",C09,Otorhinolaryngologic Diseases,C09.603.799.315.750,1,True
+2026,D012852,Sinusitis,Sinusitis,C09,Otorhinolaryngologic Diseases,C09.603.692.752,1,True
+2026,D000544,Alzheimer Disease,Alzheimer Disease,C10,Nervous System Diseases,C10.228.140.380.100|C10.574.945.249,2,True
+2026,D000690,Amyotrophic Lateral Sclerosis,Amyotrophic Lateral Sclerosis,C10,Nervous System Diseases,C10.228.854.139|C10.574.562.250|C10.574.950.050|C10.668.467.250,4,True
+2026,D003704,Dementia,Dementia,C10,Nervous System Diseases,C10.228.140.380,1,True
+2026,D003929,Diabetic Neuropathies,Diabetic Neuropathies,C10,Nervous System Diseases,C10.668.829.300,1,True
+2026,D020920,Dyssomnias,Dyssomnias,C10,Nervous System Diseases,C10.886.425,1,True
+2026,D004828,"Epilepsies, Partial","Epilepsies, Partial",C10,Nervous System Diseases,C10.228.140.490.360,1,True
+2026,D004827,Epilepsy,Epilepsy,C10,Nervous System Diseases,C10.228.140.490,1,True
+2026,D004829,"Epilepsy, Generalized","Epilepsy, Generalized",C10,Nervous System Diseases,C10.228.140.490.375,1,True
+2026,D057180,Frontotemporal Dementia,Frontotemporal Dementia,C10,Nervous System Diseases,C10.228.140.380.266.299|C10.574.950.300.299,2,True
+2026,D006712,Homocystinuria,Homocystinuria,C10,Nervous System Diseases,C10.228.140.163.100.365,1,True
+2026,D020177,Idiopathic Hypersomnia,Idiopathic Hypersomnia,C10,Nervous System Diseases,C10.886.425.800.200.400,1,True
+2026,D008881,Migraine Disorders,Migraine Disorders,C10,Nervous System Diseases,C10.228.140.546.399.750,1,True
+2026,D009103,Multiple Sclerosis,Multiple Sclerosis,C10,Nervous System Diseases,C10.114.375.500|C10.314.350.500,2,True
+2026,D019578,Multiple System Atrophy,Multiple System Atrophy,C10,Nervous System Diseases,C10.177.575.550|C10.228.140.079.612|C10.228.662.550|C10.574.928.625,4,True
+2026,D009223,Myotonic Dystrophy,Myotonic Dystrophy,C10,Nervous System Diseases,C10.574.500.547|C10.668.491.175.500.500|C10.668.491.606.750,3,True
+2026,D009290,Narcolepsy,Narcolepsy,C10,Nervous System Diseases,C10.886.425.800.200.750,1,True
+2026,D009437,Neuralgia,Neuralgia,C10,Nervous System Diseases,C10.668.829.600,1,True
+2026,D010300,Parkinson Disease,Parkinson Disease,C10,Nervous System Diseases,C10.228.140.079.862.500|C10.228.662.600.400|C10.574.928.750,3,True
+2026,D012148,Restless Legs Syndrome,Restless Legs Syndrome,C10,Nervous System Diseases,C10.803|C10.886.425.800.700|C10.886.659.634,3,True
+2026,D020178,"Sleep Disorders, Circadian Rhythm","Sleep Disorders, Circadian Rhythm",C10,Nervous System Diseases,C10.281.800|C10.886.425.200,2,True
+2026,D007319,Sleep Initiation and Maintenance Disorders,Sleep Initiation and Maintenance Disorders,C10,Nervous System Diseases,C10.886.425.800.800,1,True
+2026,D012893,Sleep Wake Disorders,Sleep Wake Disorders,C10,Nervous System Diseases,C10.886,1,True
+2026,D058496,Smith-Magenis Syndrome,Smith-Magenis Syndrome,C10,Nervous System Diseases,C10.281.900,1,True
+2026,D020521,Stroke,Stroke,C10,Nervous System Diseases,C10.228.140.300.775,1,True
+2026,D013494,"Supranuclear Palsy, Progressive","Supranuclear Palsy, Progressive",C10,Nervous System Diseases,C10.228.140.079.882|C10.228.662.700|C10.292.562.750.500|C10.574.945.500|C10.597.622.447.690,5,True
+2026,D000417,Albinism,Albinism,C11,Eye Diseases,C11.270.040,1,True
+2026,D005901,Glaucoma,Glaucoma,C11,Eye Diseases,C11.525.381,1,True
+2026,D008269,Macular Edema,Macular Edema,C11,Eye Diseases,C11.768.585.439.245,1,True
+2026,D009216,Myopia,Myopia,C11,Eye Diseases,C11.744.636,1,True
+2026,D012164,Retinal Diseases,Retinal Diseases,C11,Eye Diseases,C11.768,1,True
+2026,D012170,Retinal Vein Occlusion,Retinal Vein Occlusion,C11,Eye Diseases,C11.768.760,1,True
+2026,D012174,Retinitis Pigmentosa,Retinitis Pigmentosa,C11,Eye Diseases,C11.270.684|C11.768.585.658.500,2,True
+2026,D012859,Sjogren's Syndrome,Sjogren's Syndrome,C11,Eye Diseases,C11.496.260.719,1,True
+2026,D013494,"Supranuclear Palsy, Progressive","Supranuclear Palsy, Progressive",C11,Eye Diseases,C11.590.472.500,1,True
+2026,D057135,Wet Macular Degeneration,Wet Macular Degeneration,C11,Eye Diseases,C11.768.585.439.622,1,True
+2026,D058186,Acute Kidney Injury,Acute Kidney Injury,C12,Urogenital Diseases,C12.050.351.968.419.780.050|C12.200.777.419.780.050|C12.950.419.780.050,3,True
+2026,D003928,Diabetic Nephropathies,Diabetic Nephropathies,C12,Urogenital Diseases,C12.050.351.968.419.192|C12.200.777.419.192|C12.950.419.192,3,True
+2026,D016889,Endometrial Neoplasms,Endometrial Neoplasms,C12,Urogenital Diseases,C12.050.351.500.852.762.200|C12.050.351.937.418.875.200|C12.100.250.852.762.200|C12.900.418.875.200,4,True
+2026,D004715,Endometriosis,Endometriosis,C12,Urogenital Diseases,C12.050.351.500.163|C12.100.250.163,2,True
+2026,D005922,"Glomerulonephritis, IGA","Glomerulonephritis, IGA",C12,Urogenital Diseases,C12.050.351.968.419.570.363.608|C12.200.777.419.570.363.608|C12.950.419.570.363.608,3,True
+2026,D005923,"Glomerulosclerosis, Focal Segmental","Glomerulosclerosis, Focal Segmental",C12,Urogenital Diseases,C12.050.351.968.419.570.363.640|C12.200.777.419.570.363.660|C12.950.419.570.363.640,3,True
+2026,D007676,"Kidney Failure, Chronic","Kidney Failure, Chronic",C12,Urogenital Diseases,C12.050.351.968.419.780.750.500|C12.200.777.419.780.750.500|C12.950.419.780.750.500,3,True
+2026,D007680,Kidney Neoplasms,Kidney Neoplasms,C12,Urogenital Diseases,C12.050.351.937.820.535|C12.050.351.968.419.473|C12.200.758.820.750|C12.200.777.419.473|C12.900.820.535|C12.950.419.473|C12.950.983.535,7,True
+2026,D008181,Lupus Nephritis,Lupus Nephritis,C12,Urogenital Diseases,C12.050.351.968.419.570.363.680|C12.200.777.419.570.363.680|C12.950.419.570.363.680,3,True
+2026,D010051,Ovarian Neoplasms,Ovarian Neoplasms,C12,Urogenital Diseases,C12.050.351.500.056.630.705|C12.050.351.937.418.685|C12.100.250.056.630.705|C12.900.418.685,4,True
+2026,D011085,Polycystic Ovary Syndrome,Polycystic Ovary Syndrome,C12,Urogenital Diseases,C12.050.351.500.056.630.580.765|C12.100.250.056.630.580.765,2,True
+2026,D011470,Prostatic Hyperplasia,Prostatic Hyperplasia,C12,Urogenital Diseases,C12.100.500.565.500|C12.200.294.565.500,2,True
+2026,D011471,Prostatic Neoplasms,Prostatic Neoplasms,C12,Urogenital Diseases,C12.100.500.260.750|C12.100.500.565.625|C12.200.294.260.750|C12.200.294.565.625|C12.200.758.409.750|C12.900.619.750,6,True
+2026,D051437,Renal Insufficiency,Renal Insufficiency,C12,Urogenital Diseases,C12.050.351.968.419.780|C12.200.777.419.780|C12.950.419.780,3,True
+2026,D013736,Testicular Neoplasms,Testicular Neoplasms,C12,Urogenital Diseases,C12.100.500.260.937|C12.200.294.260.937|C12.200.758.409.937|C12.900.619.937,4,True
+2026,D014523,Urethral Neoplasms,Urethral Neoplasms,C12,Urogenital Diseases,C12.050.351.937.820.890|C12.050.351.968.767.601|C12.200.758.820.937|C12.200.777.767.601|C12.900.820.890|C12.950.767.601|C12.950.983.890,7,True
+2026,D001749,Urinary Bladder Neoplasms,Urinary Bladder Neoplasms,C12,Urogenital Diseases,C12.050.351.937.820.945|C12.050.351.968.829.707|C12.200.758.820.968|C12.200.777.829.813|C12.900.820.945|C12.950.829.707|C12.950.983.945,7,True
+2026,D014565,Urogenital Neoplasms,Urogenital Neoplasms,C12,Urogenital Diseases,C12.050.351.937|C12.200.758|C12.900,3,True
+2026,D001145,"Arrhythmias, Cardiac","Arrhythmias, Cardiac",C14,Cardiovascular Diseases,C14.280.067,1,True
+2026,D050197,Atherosclerosis,Atherosclerosis,C14,Cardiovascular Diseases,C14.907.137.126.307,1,True
+2026,D001281,Atrial Fibrillation,Atrial Fibrillation,C14,Cardiovascular Diseases,C14.280.067.198,1,True
+2026,D002318,Cardiovascular Diseases,Cardiovascular Diseases,C14,Cardiovascular Diseases,C14,1,True
+2026,D017719,Diabetic Foot,Diabetic Foot,C14,Cardiovascular Diseases,C14.907.320.191,1,True
+2026,D006333,Heart Failure,Heart Failure,C14,Cardiovascular Diseases,C14.280.434,1,True
+2026,D006973,Hypertension,Hypertension,C14,Cardiovascular Diseases,C14.907.489,1,True
+2026,D009101,Multiple Myeloma,Multiple Myeloma,C14,Cardiovascular Diseases,C14.907.454.460,1,True
+2026,D009203,Myocardial Infarction,Myocardial Infarction,C14,Cardiovascular Diseases,C14.280.647.500|C14.907.585.500,2,True
+2026,D010493,Pericarditis,Pericarditis,C14,Cardiovascular Diseases,C14.280.720,1,True
+2026,D016491,Peripheral Vascular Diseases,Peripheral Vascular Diseases,C14,Cardiovascular Diseases,C14.907.617,1,True
+2026,D011655,Pulmonary Embolism,Pulmonary Embolism,C14,Cardiovascular Diseases,C14.907.355.350.700,1,True
+2026,D012170,Retinal Vein Occlusion,Retinal Vein Occlusion,C14,Cardiovascular Diseases,C14.907.355.830.925.650|C14.907.760,2,True
+2026,D020521,Stroke,Stroke,C14,Cardiovascular Diseases,C14.907.253.855,1,True
+2026,D017180,"Tachycardia, Ventricular","Tachycardia, Ventricular",C14,Cardiovascular Diseases,C14.280.067.845.940|C14.280.123.875.940,2,True
+2026,D013625,Takayasu Arteritis,Takayasu Arteritis,C14,Cardiovascular Diseases,C14.907.109.239.650|C14.907.940.090.800,2,True
+2026,D013924,Thrombophlebitis,Thrombophlebitis,C14,Cardiovascular Diseases,C14.907.355.830.925.770|C14.907.617.718.788|C14.907.940.740.910,3,True
+2026,D013927,Thrombosis,Thrombosis,C14,Cardiovascular Diseases,C14.907.355.830,1,True
+2026,D014647,Varicose Ulcer,Varicose Ulcer,C14,Cardiovascular Diseases,C14.907.927.730,1,True
+2026,D014657,Vasculitis,Vasculitis,C14,Cardiovascular Diseases,C14.907.940,1,True
+2026,D020246,Venous Thrombosis,Venous Thrombosis,C14,Cardiovascular Diseases,C14.907.355.830.925,1,True
+2026,D000740,Anemia,Anemia,C15,Hemic and Lymphatic Diseases,C15.378.050,1,True
+2026,D000755,"Anemia, Sickle Cell","Anemia, Sickle Cell",C15,Hemic and Lymphatic Diseases,C15.378.050.141.150.150|C15.378.420.155,2,True
+2026,D001778,Blood Coagulation Disorders,Blood Coagulation Disorders,C15,Hemic and Lymphatic Diseases,C15.378.100,1,True
+2026,D057765,Eosinophilic Esophagitis,Eosinophilic Esophagitis,C15,Hemic and Lymphatic Diseases,C15.378.553.231.341,1,True
+2026,D005168,Factor VII Deficiency,Factor VII Deficiency,C15,Hemic and Lymphatic Diseases,C15.378.100.100.310|C15.378.100.141.310|C15.378.463.310,3,True
+2026,D005173,Factor XI Deficiency,Factor XI Deficiency,C15,Hemic and Lymphatic Diseases,C15.378.100.100.325|C15.378.100.141.325|C15.378.463.325,3,True
+2026,D019337,Hematologic Neoplasms,Hematologic Neoplasms,C15,Hemic and Lymphatic Diseases,C15.378.400,1,True
+2026,D006467,Hemophilia A,Hemophilia A,C15,Hemic and Lymphatic Diseases,C15.378.100.100.500|C15.378.100.141.500|C15.378.463.500,3,True
+2026,D006689,Hodgkin Disease,Hodgkin Disease,C15,Hemic and Lymphatic Diseases,C15.604.515.569.355,1,True
+2026,D017681,Hypereosinophilic Syndrome,Hypereosinophilic Syndrome,C15,Hemic and Lymphatic Diseases,C15.378.553.231.549,1,True
+2026,D015451,"Leukemia, Lymphocytic, Chronic, B-Cell","Leukemia, Lymphocytic, Chronic, B-Cell",C15,Hemic and Lymphatic Diseases,C15.378.508.428.080.125|C15.604.515.560.080.125,2,True
+2026,D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive","Leukemia, Myelogenous, Chronic, BCR-ABL Positive",C15,Hemic and Lymphatic Diseases,C15.378.190.636.370|C15.378.508.539.250,2,True
+2026,D007970,Leukopenia,Leukopenia,C15,Hemic and Lymphatic Diseases,C15.378.243.750|C15.378.553.546,2,True
+2026,D008223,Lymphoma,Lymphoma,C15,Hemic and Lymphatic Diseases,C15.604.515.569,1,True
+2026,D008224,"Lymphoma, Follicular","Lymphoma, Follicular",C15,Hemic and Lymphatic Diseases,C15.604.515.569.480.350,1,True
+2026,D009101,Multiple Myeloma,Multiple Myeloma,C15,Hemic and Lymphatic Diseases,C15.378.147.780.650|C15.378.463.515.460,2,True
+2026,D009196,Myeloproliferative Disorders,Myeloproliferative Disorders,C15,Hemic and Lymphatic Diseases,C15.378.190.636,1,True
+2026,D009503,Neutropenia,Neutropenia,C15,Hemic and Lymphatic Diseases,C15.378.243.750.184.564|C15.378.553.546.184.564,2,True
+2026,D011087,Polycythemia Vera,Polycythemia Vera,C15,Hemic and Lymphatic Diseases,C15.378.190.250.500|C15.378.190.636.753|C15.378.400.200.500,3,True
+2026,D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,Precursor Cell Lymphoblastic Leukemia-Lymphoma,C15,Hemic and Lymphatic Diseases,C15.378.508.428.600|C15.604.515.560.600,2,True
+2026,D055728,Primary Myelofibrosis,Primary Myelofibrosis,C15,Hemic and Lymphatic Diseases,C15.378.190.636.765,1,True
+2026,D016553,"Purpura, Thrombocytopenic, Idiopathic","Purpura, Thrombocytopenic, Idiopathic",C15,Hemic and Lymphatic Diseases,C15.378.100.802.687.600|C15.378.140.855.925.750.600|C15.378.243.937.925.750.600|C15.378.463.740,4,True
+2026,D012507,Sarcoidosis,Sarcoidosis,C15,Hemic and Lymphatic Diseases,C15.604.515.827,1,True
+2026,D013789,Thalassemia,Thalassemia,C15,Hemic and Lymphatic Diseases,C15.378.050.141.150.875|C15.378.420.826,2,True
+2026,D013921,Thrombocytopenia,Thrombocytopenia,C15,Hemic and Lymphatic Diseases,C15.378.140.855|C15.378.243.937,2,True
+2026,D013922,Thrombocytosis,Thrombocytosis,C15,Hemic and Lymphatic Diseases,C15.378.140.860|C15.378.190.636.860,2,True
+2026,D014842,von Willebrand Diseases,von Willebrand Diseases,C15,Hemic and Lymphatic Diseases,C15.378.100.100.900|C15.378.100.141.900|C15.378.140.900|C15.378.463.920,4,True
+2026,D000417,Albinism,Albinism,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.290.040|C16.320.565.100.102|C16.320.850.080,3,True
+2026,D000755,"Anemia, Sickle Cell","Anemia, Sickle Cell",C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.070.150|C16.320.365.155,2,True
+2026,D003414,Crigler-Najjar Syndrome,Crigler-Najjar Syndrome,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.300.281,1,True
+2026,D003876,"Dermatitis, Atopic","Dermatitis, Atopic",C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.850.210,1,True
+2026,D005168,Factor VII Deficiency,Factor VII Deficiency,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.099.310,1,True
+2026,D005173,Factor XI Deficiency,Factor XI Deficiency,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.099.325,1,True
+2026,D006073,Gout,Gout,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.798.368,1,True
+2026,D006432,Hemochromatosis,Hemochromatosis,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.618.337,1,True
+2026,D006467,Hemophilia A,Hemophilia A,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.099.500,1,True
+2026,D006712,Homocystinuria,Homocystinuria,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.100.480.500|C16.320.565.189.365,2,True
+2026,D008072,Hyperlipoproteinemia Type I,Hyperlipoproteinemia Type I,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.398.465,1,True
+2026,D006938,Hyperlipoproteinemia Type II,Hyperlipoproteinemia Type II,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.398.481,1,True
+2026,D052456,Hypoalphalipoproteinemias,Hypoalphalipoproteinemias,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.398.500.330,1,True
+2026,D007014,Hypophosphatasia,Hypophosphatasia,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.618.482,1,True
+2026,D007863,Lecithin Cholesterol Acyltransferase Deficiency,Lecithin Cholesterol Acyltransferase Deficiency,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.565.398.500.330.500,1,True
+2026,D009223,Myotonic Dystrophy,Myotonic Dystrophy,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.400.542|C16.320.577.500,2,True
+2026,D012174,Retinitis Pigmentosa,Retinitis Pigmentosa,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.290.684,1,True
+2026,D058496,Smith-Magenis Syndrome,Smith-Magenis Syndrome,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.131.077.879|C16.131.260.887|C16.320.180.887,3,True
+2026,D013789,Thalassemia,Thalassemia,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.070.875|C16.320.365.826,2,True
+2026,D014983,Xeroderma Pigmentosum,Xeroderma Pigmentosum,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.131.831.936|C16.320.850.970,2,True
+2026,D019896,alpha 1-Antitrypsin Deficiency,alpha 1-Antitrypsin Deficiency,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.060,1,True
+2026,D014842,von Willebrand Diseases,von Willebrand Diseases,C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",C16.320.099.920,1,True
+2026,D000417,Albinism,Albinism,C17,Skin and Connective Tissue Diseases,C17.800.621.440.102|C17.800.827.080,2,True
+2026,D000505,Alopecia,Alopecia,C17,Skin and Connective Tissue Diseases,C17.800.329.937.122,1,True
+2026,D001171,"Arthritis, Juvenile","Arthritis, Juvenile",C17,Skin and Connective Tissue Diseases,C17.300.775.049,1,True
+2026,D015535,"Arthritis, Psoriatic","Arthritis, Psoriatic",C17,Skin and Connective Tissue Diseases,C17.800.859.675.175,1,True
+2026,D001172,"Arthritis, Rheumatoid","Arthritis, Rheumatoid",C17,Skin and Connective Tissue Diseases,C17.300.775.099,1,True
+2026,D001943,Breast Neoplasms,Breast Neoplasms,C17,Skin and Connective Tissue Diseases,C17.800.090.500,1,True
+2026,D003876,"Dermatitis, Atopic","Dermatitis, Atopic",C17,Skin and Connective Tissue Diseases,C17.800.174.193|C17.800.815.193|C17.800.827.210,3,True
+2026,D017719,Diabetic Foot,Diabetic Foot,C17,Skin and Connective Tissue Diseases,C17.800.893.592.450.200,1,True
+2026,D004485,Eczema,Eczema,C17,Skin and Connective Tissue Diseases,C17.800.174.620|C17.800.815.620,2,True
+2026,D006177,Gynecomastia,Gynecomastia,C17,Skin and Connective Tissue Diseases,C17.800.090.875,1,True
+2026,D006712,Homocystinuria,Homocystinuria,C17,Skin and Connective Tissue Diseases,C17.300.428,1,True
+2026,D055623,"Keratosis, Actinic","Keratosis, Actinic",C17,Skin and Connective Tissue Diseases,C17.800.428.570,1,True
+2026,D008180,"Lupus Erythematosus, Systemic","Lupus Erythematosus, Systemic",C17,Skin and Connective Tissue Diseases,C17.300.480,1,True
+2026,D008181,Lupus Nephritis,Lupus Nephritis,C17,Skin and Connective Tissue Diseases,C17.300.480.680,1,True
+2026,D008545,Melanoma,Melanoma,C17,Skin and Connective Tissue Diseases,C17.800.882.445,1,True
+2026,D010787,Photosensitivity Disorders,Photosensitivity Disorders,C17,Skin and Connective Tissue Diseases,C17.800.600,1,True
+2026,D010916,Pityriasis Rubra Pilaris,Pityriasis Rubra Pilaris,C17,Skin and Connective Tissue Diseases,C17.800.859.600.685,1,True
+2026,D011565,Psoriasis,Psoriasis,C17,Skin and Connective Tissue Diseases,C17.800.859.675,1,True
+2026,D012859,Sjogren's Syndrome,Sjogren's Syndrome,C17,Skin and Connective Tissue Diseases,C17.300.775.099.774,1,True
+2026,D013625,Takayasu Arteritis,Takayasu Arteritis,C17,Skin and Connective Tissue Diseases,C17.800.862.875,1,True
+2026,D014647,Varicose Ulcer,Varicose Ulcer,C17,Skin and Connective Tissue Diseases,C17.800.893.592.730,1,True
+2026,D014983,Xeroderma Pigmentosum,Xeroderma Pigmentosum,C17,Skin and Connective Tissue Diseases,C17.800.600.925|C17.800.621.936|C17.800.804.936|C17.800.827.970,4,True
+2026,D000417,Albinism,Albinism,C18,Nutritional and Metabolic Diseases,C18.452.648.100.102,1,True
+2026,D000690,Amyotrophic Lateral Sclerosis,Amyotrophic Lateral Sclerosis,C18,Nutritional and Metabolic Diseases,C18.452.845.800.050,1,True
+2026,D001851,"Bone Diseases, Metabolic","Bone Diseases, Metabolic",C18,Nutritional and Metabolic Diseases,C18.452.104,1,True
+2026,D002446,Celiac Disease,Celiac Disease,C18,Nutritional and Metabolic Diseases,C18.452.603.250,1,True
+2026,D003414,Crigler-Najjar Syndrome,Crigler-Najjar Syndrome,C18,Nutritional and Metabolic Diseases,C18.452.648.300.281,1,True
+2026,D003920,Diabetes Mellitus,Diabetes Mellitus,C18,Nutritional and Metabolic Diseases,C18.452.394.750,1,True
+2026,D003922,"Diabetes Mellitus, Type 1","Diabetes Mellitus, Type 1",C18,Nutritional and Metabolic Diseases,C18.452.394.750.124,1,True
+2026,D003924,"Diabetes Mellitus, Type 2","Diabetes Mellitus, Type 2",C18,Nutritional and Metabolic Diseases,C18.452.394.750.149,1,True
+2026,D050171,Dyslipidemias,Dyslipidemias,C18,Nutritional and Metabolic Diseases,C18.452.584.500,1,True
+2026,D057180,Frontotemporal Dementia,Frontotemporal Dementia,C18,Nutritional and Metabolic Diseases,C18.452.845.800.300.299,1,True
+2026,D006073,Gout,Gout,C18,Nutritional and Metabolic Diseases,C18.452.648.798.368,1,True
+2026,D006432,Hemochromatosis,Hemochromatosis,C18,Nutritional and Metabolic Diseases,C18.452.565.500.480|C18.452.648.618.337,2,True
+2026,D006712,Homocystinuria,Homocystinuria,C18,Nutritional and Metabolic Diseases,C18.452.132.100.365|C18.452.648.100.480.500|C18.452.648.189.365,3,True
+2026,D006934,Hypercalcemia,Hypercalcemia,C18,Nutritional and Metabolic Diseases,C18.452.174.451|C18.452.950.340,2,True
+2026,D006937,Hypercholesterolemia,Hypercholesterolemia,C18,Nutritional and Metabolic Diseases,C18.452.584.500.500.396,1,True
+2026,D006949,Hyperlipidemias,Hyperlipidemias,C18,Nutritional and Metabolic Diseases,C18.452.584.500.500,1,True
+2026,D008072,Hyperlipoproteinemia Type I,Hyperlipoproteinemia Type I,C18,Nutritional and Metabolic Diseases,C18.452.584.500.500.644.237|C18.452.584.563.465|C18.452.648.398.465,3,True
+2026,D006938,Hyperlipoproteinemia Type II,Hyperlipoproteinemia Type II,C18,Nutritional and Metabolic Diseases,C18.452.584.500.500.644.475|C18.452.584.563.481|C18.452.648.398.481,3,True
+2026,D015228,Hypertriglyceridemia,Hypertriglyceridemia,C18,Nutritional and Metabolic Diseases,C18.452.584.500.500.851,1,True
+2026,D052456,Hypoalphalipoproteinemias,Hypoalphalipoproteinemias,C18,Nutritional and Metabolic Diseases,C18.452.584.500.875.330|C18.452.584.563.500.330|C18.452.648.398.500.330,3,True
+2026,D006996,Hypocalcemia,Hypocalcemia,C18,Nutritional and Metabolic Diseases,C18.452.174.509|C18.452.950.509,2,True
+2026,D007014,Hypophosphatasia,Hypophosphatasia,C18,Nutritional and Metabolic Diseases,C18.452.648.618.482,1,True
+2026,D017674,Hypophosphatemia,Hypophosphatemia,C18,Nutritional and Metabolic Diseases,C18.452.750.400,1,True
+2026,D007863,Lecithin Cholesterol Acyltransferase Deficiency,Lecithin Cholesterol Acyltransferase Deficiency,C18,Nutritional and Metabolic Diseases,C18.452.584.500.875.330.500|C18.452.584.563.500.330.500|C18.452.648.398.500.330.500,3,True
+2026,D008659,Metabolic Diseases,Metabolic Diseases,C18,Nutritional and Metabolic Diseases,C18.452,1,True
+2026,D024821,Metabolic Syndrome,Metabolic Syndrome,C18,Nutritional and Metabolic Diseases,C18.452.394.968.500.570|C18.452.625,2,True
+2026,D009765,Obesity,Obesity,C18,Nutritional and Metabolic Diseases,C18.654.726.750.500,1,True
+2026,D010024,Osteoporosis,Osteoporosis,C18,Nutritional and Metabolic Diseases,C18.452.104.579,1,True
+2026,D014983,Xeroderma Pigmentosum,Xeroderma Pigmentosum,C18,Nutritional and Metabolic Diseases,C18.452.284.975,1,True
+2026,D003920,Diabetes Mellitus,Diabetes Mellitus,C19,Endocrine System Diseases,C19.246,1,True
+2026,D003922,"Diabetes Mellitus, Type 1","Diabetes Mellitus, Type 1",C19,Endocrine System Diseases,C19.246.267,1,True
+2026,D003924,"Diabetes Mellitus, Type 2","Diabetes Mellitus, Type 2",C19,Endocrine System Diseases,C19.246.300,1,True
+2026,D017719,Diabetic Foot,Diabetic Foot,C19,Endocrine System Diseases,C19.246.099.500.191|C19.246.099.937.250,2,True
+2026,D003928,Diabetic Nephropathies,Diabetic Nephropathies,C19,Endocrine System Diseases,C19.246.099.875,1,True
+2026,D003929,Diabetic Neuropathies,Diabetic Neuropathies,C19,Endocrine System Diseases,C19.246.099.937,1,True
+2026,D004700,Endocrine System Diseases,Endocrine System Diseases,C19,Endocrine System Diseases,C19,1,True
+2026,D049950,"Hyperparathyroidism, Primary","Hyperparathyroidism, Primary",C19,Endocrine System Diseases,C19.642.355.239,1,True
+2026,D006962,"Hyperparathyroidism, Secondary","Hyperparathyroidism, Secondary",C19,Endocrine System Diseases,C19.642.355.480,1,True
+2026,D006980,Hyperthyroidism,Hyperthyroidism,C19,Endocrine System Diseases,C19.874.397,1,True
+2026,D007037,Hypothyroidism,Hypothyroidism,C19,Endocrine System Diseases,C19.874.482,1,True
+2026,D010051,Ovarian Neoplasms,Ovarian Neoplasms,C19,Endocrine System Diseases,C19.344.410|C19.391.630.705,2,True
+2026,D011085,Polycystic Ovary Syndrome,Polycystic Ovary Syndrome,C19,Endocrine System Diseases,C19.391.630.580.765,1,True
+2026,D011628,"Puberty, Delayed","Puberty, Delayed",C19,Endocrine System Diseases,C19.391.690,1,True
+2026,D013736,Testicular Neoplasms,Testicular Neoplasms,C19,Endocrine System Diseases,C19.344.762|C19.391.829.782,2,True
+2026,D001171,"Arthritis, Juvenile","Arthritis, Juvenile",C20,Immune System Diseases,C20.111.198,1,True
+2026,D001172,"Arthritis, Rheumatoid","Arthritis, Rheumatoid",C20,Immune System Diseases,C20.111.199,1,True
+2026,D001249,Asthma,Asthma,C20,Immune System Diseases,C20.543.480.680.095,1,True
+2026,D001327,Autoimmune Diseases,Autoimmune Diseases,C20,Immune System Diseases,C20.111,1,True
+2026,D003876,"Dermatitis, Atopic","Dermatitis, Atopic",C20,Immune System Diseases,C20.543.480.343,1,True
+2026,D003922,"Diabetes Mellitus, Type 1","Diabetes Mellitus, Type 1",C20,Immune System Diseases,C20.111.327,1,True
+2026,D057765,Eosinophilic Esophagitis,Eosinophilic Esophagitis,C20,Immune System Diseases,C20.543.480.356,1,True
+2026,D005922,"Glomerulonephritis, IGA","Glomerulonephritis, IGA",C20,Immune System Diseases,C20.111.525,1,True
+2026,D006689,Hodgkin Disease,Hodgkin Disease,C20,Immune System Diseases,C20.683.515.761.355,1,True
+2026,D006967,Hypersensitivity,Hypersensitivity,C20,Immune System Diseases,C20.543,1,True
+2026,D015451,"Leukemia, Lymphocytic, Chronic, B-Cell","Leukemia, Lymphocytic, Chronic, B-Cell",C20,Immune System Diseases,C20.683.515.528.080.125,1,True
+2026,D008180,"Lupus Erythematosus, Systemic","Lupus Erythematosus, Systemic",C20,Immune System Diseases,C20.111.590,1,True
+2026,D008181,Lupus Nephritis,Lupus Nephritis,C20,Immune System Diseases,C20.111.590.560,1,True
+2026,D008223,Lymphoma,Lymphoma,C20,Immune System Diseases,C20.683.515.761,1,True
+2026,D008224,"Lymphoma, Follicular","Lymphoma, Follicular",C20,Immune System Diseases,C20.683.515.761.480.350,1,True
+2026,D009101,Multiple Myeloma,Multiple Myeloma,C20,Immune System Diseases,C20.683.515.845|C20.683.780.650,2,True
+2026,D009103,Multiple Sclerosis,Multiple Sclerosis,C20,Immune System Diseases,C20.111.258.250.500,1,True
+2026,D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,Precursor Cell Lymphoblastic Leukemia-Lymphoma,C20,Immune System Diseases,C20.683.515.528.600,1,True
+2026,D016553,"Purpura, Thrombocytopenic, Idiopathic","Purpura, Thrombocytopenic, Idiopathic",C20,Immune System Diseases,C20.111.759|C20.841.600,2,True
+2026,D065631,"Rhinitis, Allergic","Rhinitis, Allergic",C20,Immune System Diseases,C20.543.480.680.443,1,True
+2026,D006255,"Rhinitis, Allergic, Seasonal","Rhinitis, Allergic, Seasonal",C20,Immune System Diseases,C20.543.480.680.443.750,1,True
+2026,D012507,Sarcoidosis,Sarcoidosis,C20,Immune System Diseases,C20.543.418.575,1,True
+2026,D012859,Sjogren's Syndrome,Sjogren's Syndrome,C20,Immune System Diseases,C20.111.199.774,1,True
+2026,D000505,Alopecia,Alopecia,C23,"Pathological Conditions, Signs and Symptoms",C23.300.035,1,True
+2026,D001145,"Arrhythmias, Cardiac","Arrhythmias, Cardiac",C23,"Pathological Conditions, Signs and Symptoms",C23.550.073,1,True
+2026,D001281,Atrial Fibrillation,Atrial Fibrillation,C23,"Pathological Conditions, Signs and Symptoms",C23.550.073.198,1,True
+2026,D029481,"Bronchitis, Chronic","Bronchitis, Chronic",C23,"Pathological Conditions, Signs and Symptoms",C23.550.291.500.875.750,1,True
+2026,D042882,Gallstones,Gallstones,C23,"Pathological Conditions, Signs and Symptoms",C23.300.175.525,1,True
+2026,D007249,Inflammation,Inflammation,C23,"Pathological Conditions, Signs and Symptoms",C23.550.470,1,True
+2026,D007676,"Kidney Failure, Chronic","Kidney Failure, Chronic",C23,"Pathological Conditions, Signs and Symptoms",C23.550.291.500.906.500,1,True
+2026,D015451,"Leukemia, Lymphocytic, Chronic, B-Cell","Leukemia, Lymphocytic, Chronic, B-Cell",C23,"Pathological Conditions, Signs and Symptoms",C23.550.291.500.483,1,True
+2026,D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive","Leukemia, Myelogenous, Chronic, BCR-ABL Positive",C23,"Pathological Conditions, Signs and Symptoms",C23.550.291.500.485,1,True
+2026,D008103,Liver Cirrhosis,Liver Cirrhosis,C23,"Pathological Conditions, Signs and Symptoms",C23.550.355.412,1,True
+2026,D008105,"Liver Cirrhosis, Biliary","Liver Cirrhosis, Biliary",C23,"Pathological Conditions, Signs and Symptoms",C23.550.355.412.400,1,True
+2026,D009203,Myocardial Infarction,Myocardial Infarction,C23,"Pathological Conditions, Signs and Symptoms",C23.550.513.355.750|C23.550.717.489.750,2,True
+2026,D009298,Nasal Polyps,Nasal Polyps,C23,"Pathological Conditions, Signs and Symptoms",C23.300.825.557,1,True
+2026,D009437,Neuralgia,Neuralgia,C23,"Pathological Conditions, Signs and Symptoms",C23.888.592.612.664,1,True
+2026,D009765,Obesity,Obesity,C23,"Pathological Conditions, Signs and Symptoms",C23.888.144.699.500,1,True
+2026,D029424,"Pulmonary Disease, Chronic Obstructive","Pulmonary Disease, Chronic Obstructive",C23,"Pathological Conditions, Signs and Symptoms",C23.550.291.500.875,1,True
+2026,D016553,"Purpura, Thrombocytopenic, Idiopathic","Purpura, Thrombocytopenic, Idiopathic",C23,"Pathological Conditions, Signs and Symptoms",C23.550.414.950.687.600|C23.888.885.687.687.600,2,True
+2026,D018805,Sepsis,Sepsis,C23,"Pathological Conditions, Signs and Symptoms",C23.550.470.790.500,1,True
+2026,D012893,Sleep Wake Disorders,Sleep Wake Disorders,C23,"Pathological Conditions, Signs and Symptoms",C23.888.592.796,1,True
+2026,D013494,"Supranuclear Palsy, Progressive","Supranuclear Palsy, Progressive",C23,"Pathological Conditions, Signs and Symptoms",C23.888.592.636.447.690,1,True
+2026,D017180,"Tachycardia, Ventricular","Tachycardia, Ventricular",C23,"Pathological Conditions, Signs and Symptoms",C23.550.073.845.940,1,True
+2026,D019896,alpha 1-Antitrypsin Deficiency,alpha 1-Antitrypsin Deficiency,C23,"Pathological Conditions, Signs and Symptoms",C23.550.325.500.500,1,True
+2026,D020178,"Sleep Disorders, Circadian Rhythm","Sleep Disorders, Circadian Rhythm",C24,Occupational Diseases,C24.900,1,True
+2026,D019973,Alcohol-Related Disorders,Alcohol-Related Disorders,C25,Chemically-Induced Disorders,C25.775.100,1,True
+2026,D000437,Alcoholism,Alcoholism,C25,Chemically-Induced Disorders,C25.775.100.250,1,True
+2026,D009293,Opioid-Related Disorders,Opioid-Related Disorders,C25,Chemically-Induced Disorders,C25.775.643.500,1,True
+2026,D019966,Substance-Related Disorders,Substance-Related Disorders,C25,Chemically-Induced Disorders,C25.775,1,True
+2026,D014029,Tobacco Use Disorder,Tobacco Use Disorder,C25,Chemically-Induced Disorders,C25.775.912,1,True
+2026,D019973,Alcohol-Related Disorders,Alcohol-Related Disorders,F03,Mental Disorders,F03.900.100,1,True
+2026,D000437,Alcoholism,Alcoholism,F03,Mental Disorders,F03.900.100.350,1,True
+2026,D000544,Alzheimer Disease,Alzheimer Disease,F03,Mental Disorders,F03.615.400.100,1,True
+2026,D001008,Anxiety Disorders,Anxiety Disorders,F03,Mental Disorders,F03.080,1,True
+2026,D001714,Bipolar Disorder,Bipolar Disorder,F03,Mental Disorders,F03.600.150.500,1,True
+2026,D003704,Dementia,Dementia,F03,Mental Disorders,F03.615.400,1,True
+2026,D003865,"Depressive Disorder, Major",Major Depressive Disorder,F03,Mental Disorders,F03.600.300.375,1,False
+2026,D020920,Dyssomnias,Dyssomnias,F03,Mental Disorders,F03.870.400,1,True
+2026,D057180,Frontotemporal Dementia,Frontotemporal Dementia,F03,Mental Disorders,F03.615.400.380.299,1,True
+2026,D020177,Idiopathic Hypersomnia,Idiopathic Hypersomnia,F03,Mental Disorders,F03.870.400.800.200.400,1,True
+2026,D009290,Narcolepsy,Narcolepsy,F03,Mental Disorders,F03.870.400.800.200.750,1,True
+2026,D009771,Obsessive-Compulsive Disorder,Obsessive-Compulsive Disorder,F03,Mental Disorders,F03.080.600,1,True
+2026,D009293,Opioid-Related Disorders,Opioid-Related Disorders,F03,Mental Disorders,F03.900.647.500,1,True
+2026,D016584,Panic Disorder,Panic Disorder,F03,Mental Disorders,F03.080.700,1,True
+2026,D000072861,"Phobia, Social","Phobia, Social",F03,Mental Disorders,F03.080.725.500,1,True
+2026,D011618,Psychotic Disorders,Psychotic Disorders,F03,Mental Disorders,F03.700.675,1,True
+2026,D012148,Restless Legs Syndrome,Restless Legs Syndrome,F03,Mental Disorders,F03.870.400.800.700|F03.870.664.634,2,True
+2026,D012559,Schizophrenia,Schizophrenia,F03,Mental Disorders,F03.700.750,1,True
+2026,D020178,"Sleep Disorders, Circadian Rhythm","Sleep Disorders, Circadian Rhythm",F03,Mental Disorders,F03.870.400.200,1,True
+2026,D007319,Sleep Initiation and Maintenance Disorders,Sleep Initiation and Maintenance Disorders,F03,Mental Disorders,F03.870.400.800.800,1,True
+2026,D012893,Sleep Wake Disorders,Sleep Wake Disorders,F03,Mental Disorders,F03.870,1,True
+2026,D019966,Substance-Related Disorders,Substance-Related Disorders,F03,Mental Disorders,F03.900,1,True
+2026,D014029,Tobacco Use Disorder,Tobacco Use Disorder,F03,Mental Disorders,F03.900.912,1,True

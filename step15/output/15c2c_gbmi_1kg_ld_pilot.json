@@ -1,0 +1,78 @@
+{
+  "comparison_population": "EAS",
+  "comparison_r_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 1.0,
+    "diagonal_minimum": 0.9999999999999998,
+    "matrix_maximum": 1.0,
+    "matrix_minimum": -0.22036000754930535,
+    "n_finite_entries": 81,
+    "n_total_entries": 81,
+    "shape": [
+      9,
+      9
+    ],
+    "symmetric": true
+  },
+  "comparison_reference_population": "EAS",
+  "comparison_uid": "cmp_f22a7cef0aba19fb",
+  "completed_at_utc": "2026-07-24T23:25:23.371775+00:00",
+  "eur_r_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 1.0,
+    "diagonal_minimum": 1.0,
+    "matrix_maximum": 1.0,
+    "matrix_minimum": 0.5402091958843072,
+    "n_finite_entries": 81,
+    "n_total_entries": 81,
+    "shape": [
+      9,
+      9
+    ],
+    "symmetric": true
+  },
+  "gene": "EPHX2",
+  "gene_trait_uid": "gt_d84fcd64ca861af7",
+  "n_comparison_panel_samples": 504,
+  "n_comparison_vcf_samples": 504,
+  "n_eur_panel_samples": 503,
+  "n_eur_vcf_samples": 503,
+  "n_requested_variants": 9,
+  "n_resolved_exact": 9,
+  "n_usable_in_both": 9,
+  "outputs": {
+    "EAS_pairwise_n": "output/15c2c_gbmi_pairwise_n_EAS.csv",
+    "EAS_r": "output/15c2c_gbmi_ld_r_EAS.csv",
+    "EAS_r2": "output/15c2c_gbmi_ld_r2_EAS.csv",
+    "EUR_pairwise_n": "output/15c2c_gbmi_pairwise_n_EUR.csv",
+    "EUR_r": "output/15c2c_gbmi_ld_r_EUR.csv",
+    "EUR_r2": "output/15c2c_gbmi_ld_r2_EUR.csv",
+    "variant_resolution": "output/15c2c_gbmi_variant_resolution.csv"
+  },
+  "records_scanned": 976,
+  "sample_panel": {
+    "downloaded_now": true,
+    "path": "input/reference/1000G/integrated_call_samples_v3.20130502.ALL.panel",
+    "sha256": "b4023dc6ee2d62ee89c8d4d347db4d348e65518d66d346574cdae7a4bbd76858",
+    "size_bytes": 55156,
+    "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel"
+  },
+  "scientific_scope": "Exact variant resolution and population-specific dosage LD only; no greedy pruning or portability slope.",
+  "script_version": "15C2C.1",
+  "status": "PASS",
+  "step": "15C2C",
+  "trait": "Chronic obstructive pulmonary disease",
+  "variant_order": [
+    "8:27565545:G:C",
+    "8:27584547:G:A",
+    "8:27580789:A:C",
+    "8:27548836:A:T",
+    "8:27557833:A:C",
+    "8:27568560:T:A",
+    "8:27558605:A:G",
+    "8:27577684:T:C",
+    "8:27562290:C:T"
+  ],
+  "vcf_index_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr8.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi",
+  "vcf_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr8.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz"
+}

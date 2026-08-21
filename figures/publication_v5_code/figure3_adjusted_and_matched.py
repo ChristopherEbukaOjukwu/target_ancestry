@@ -1,0 +1,322 @@
+#!/usr/bin/env python3
+"""Main Figure 3: adjusted and matched ancestry–launch analyses."""
+
+from __future__ import annotations
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from loaders import (
+    load_pair_models,
+    load_practical_effects,
+    load_within_gene,
+    load_within_indication_models,
+)
+from style import (
+    MAIN_DIR,
+    clean_axis,
+    panel_label,
+    save_figure,
+    set_style,
+    value_label,
+)
+
+
+PAIR_ORDER = {"M1": 1, "M2": 2, "M3": 3, "M4": 4}
+WITHIN_ORDER = {"W1": 1, "W2": 2, "W3": 3}
+
+PAIR_LABELS = {
+    "M1": "M1",
+    "M2": "M2",
+    "M3": "M3",
+    "M4": "M4",
+}
+
+WITHIN_LABELS = {
+    "W1": "W1",
+    "W2": "W2",
+    "W3": "W3",
+}
+
+
+def order_models(
+    frame: pd.DataFrame,
+    order: dict[str, int],
+    labels: dict[str, str],
+) -> pd.DataFrame:
+    data = frame.copy()
+    data["_order"] = data["model"].map(order)
+
+    data = (
+        data.sort_values(["_order", "model"])
+        .drop_duplicates(subset=["model"])
+        .reset_index(drop=True)
+    )
+
+    data["label"] = data["model"].replace(labels)
+    return data
+
+
+def forest_panel(
+    ax: plt.Axes,
+    data: pd.DataFrame,
+    *,
+    reference: float,
+    xlabel: str,
+    title: str,
+    panel: str,
+    xlim: tuple[float, float],
+    digits: int,
+) -> None:
+    plot = data.reset_index(drop=True).copy()
+    y = np.arange(len(plot))[::-1]
+
+    estimate = pd.to_numeric(
+        plot["estimate"],
+        errors="coerce",
+    ).to_numpy()
+
+    lower = pd.to_numeric(
+        plot["lower"],
+        errors="coerce",
+    ).to_numpy()
+
+    upper = pd.to_numeric(
+        plot["upper"],
+        errors="coerce",
+    ).to_numpy()
+
+    ax.plot(
+        estimate,
+        y,
+        linewidth=1.2,
+        alpha=0.45,
+        zorder=1,
+    )
+
+    ax.errorbar(
+        estimate,
+        y,
+        xerr=np.vstack(
+            [
+                estimate - lower,
+                upper - estimate,
+            ]
+        ),
+        fmt="o",
+        capsize=3.2,
+        elinewidth=1.9,
+        markeredgewidth=0,
+        zorder=3,
+    )
+
+    ax.axvline(
+        reference,
+        linestyle="--",
+        linewidth=1.0,
+    )
+
+    ax.set_yticks(
+        y,
+        plot["label"].astype(str),
+    )
+
+    ax.set_xlabel(xlabel)
+    ax.set_title(title, loc="left")
+    ax.set_xlim(*xlim)
+
+    panel_label(ax, panel)
+    clean_axis(ax, "x")
+
+    span = xlim[1] - xlim[0]
+    value_x = xlim[1] - 0.02 * span
+
+    for yi, est, lo, hi in zip(
+        y,
+        estimate,
+        lower,
+        upper,
+    ):
+        ax.text(
+            value_x,
+            yi,
+            value_label(
+                est,
+                lo,
+                hi,
+                digits=digits,
+            ),
+            ha="right",
+            va="center",
+            fontsize=8.5,
+        )
+
+
+def main():
+    set_style()
+
+    pair_models = order_models(
+        load_pair_models(),
+        PAIR_ORDER,
+        PAIR_LABELS,
+    )
+
+    within_models = order_models(
+        load_within_indication_models(),
+        WITHIN_ORDER,
+        WITHIN_LABELS,
+    )
+
+    practical = order_models(
+        load_practical_effects(),
+        PAIR_ORDER,
+        PAIR_LABELS,
+    )
+
+    within_gene = (
+        load_within_gene()
+        .sort_values("difference")
+        .reset_index(drop=True)
+    )
+
+    fig = plt.figure(
+        figsize=(11.5, 8.1),
+        constrained_layout=True,
+    )
+
+    gs = fig.add_gridspec(2, 2)
+
+    ax_a = fig.add_subplot(gs[0, 0])
+    ax_b = fig.add_subplot(gs[0, 1])
+    ax_c = fig.add_subplot(gs[1, 0])
+    ax_d = fig.add_subplot(gs[1, 1])
+
+    forest_panel(
+        ax_a,
+        pair_models,
+        reference=1.0,
+        xlabel="Odds ratio per additional ancestry",
+        title="Pair-level ancestry association",
+        panel="a",
+        xlim=(0.76, 1.48),
+        digits=2,
+    )
+
+    forest_panel(
+        ax_b,
+        within_models,
+        reference=1.0,
+        xlabel="Conditional odds ratio per additional ancestry",
+        title="Within-indication ancestry association",
+        panel="b",
+        xlim=(0.65, 1.55),
+        digits=2,
+    )
+
+    x = np.arange(len(within_gene))
+
+    ax_c.axhline(
+        0,
+        linestyle="--",
+        linewidth=1.0,
+    )
+
+    ax_c.vlines(
+        x,
+        0,
+        within_gene["difference"],
+        linewidth=1.3,
+    )
+
+    ax_c.scatter(
+        x,
+        within_gene["difference"],
+        s=34,
+        zorder=3,
+    )
+
+    ax_c.set_xticks([])
+    ax_c.set_xlabel("Informative genes, ranked")
+    ax_c.set_ylabel(
+        "Ancestry difference\n"
+        "(Launched minus Phase I–III)"
+    )
+
+    ax_c.set_title(
+        "Within-gene differences do not favor launched targets",
+        loc="left",
+    )
+
+    panel_label(ax_c, "c")
+    ax_c.margins(x=0.04, y=0.10)
+    clean_axis(ax_c, "y")
+
+    n_a = int((within_gene["difference"] > 0).sum())
+    n_b = int((within_gene["difference"] < 0).sum())
+    n_tie = int((within_gene["difference"] == 0).sum())
+
+    ax_c.text(
+        0.02,
+        0.96,
+        f"A broader: {n_a}   Tie: {n_tie}   B broader: {n_b}",
+        transform=ax_c.transAxes,
+        va="top",
+        fontweight="bold",
+    )
+
+    # Label the three most negative and three most positive genes.
+    # Use row indices rather than DataFrame.drop_duplicates(), because
+    # Step 7 may contain object columns holding NumPy arrays.
+    extreme_indices = sorted(
+        set(
+            within_gene.head(3).index.tolist()
+            + within_gene.tail(3).index.tolist()
+        )
+    )
+
+    for index in extreme_indices:
+        row = within_gene.loc[index]
+
+        ax_c.text(
+            index,
+            row["difference"]
+            + (0.13 if row["difference"] >= 0 else -0.13),
+            str(row["gene_label"]),
+            ha="center",
+            va=(
+                "bottom"
+                if row["difference"] >= 0
+                else "top"
+            ),
+            fontsize=7.8,
+            rotation=35,
+        )
+
+    forest_panel(
+        ax_d,
+        practical,
+        reference=0.0,
+        xlabel=(
+            "Approval-probability difference for 5 versus 1 "
+            "represented ancestries (percentage points)"
+        ),
+        title="Practical effect across the observed range",
+        panel="d",
+        xlim=(-10, 18),
+        digits=1,
+    )
+
+    save_figure(
+        fig,
+        "Figure3_adjusted_and_matched_analyses",
+        MAIN_DIR,
+    )
+
+    plt.close(fig)
+
+    print("Wrote Figure 3.")
+
+
+if __name__ == "__main__":
+    main()

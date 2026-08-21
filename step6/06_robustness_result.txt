@@ -1,0 +1,92 @@
+Loading: ../step4/output/04_trails.parquet
+  790 pairs
+
+============================================================
+CHECK 1: Drop known-diverse pharmacogenomic targets
+============================================================
+
+Known-diverse targets present in data: ['PCSK9', 'UGT1A1']
+Pairs they account for, by pool:
+pool
+A    4
+B    1
+
+Mean n_ancestries by bin, BEFORE dropping:
+pool          A     B  A - B
+study_bin                   
+1-2        1.48  1.49  -0.01
+3-5        1.95  2.25  -0.29
+6-10       3.61  3.12   0.49
+11+        5.34  4.96   0.39
+
+Mean n_ancestries by bin, AFTER dropping known-diverse targets:
+pool          A     B  A - B
+study_bin                   
+1-2        1.48  1.49  -0.01
+3-5        1.95  2.25  -0.29
+6-10       3.50  3.12   0.38
+11+        5.29  4.96   0.33
+
+Pool A pairs removed: 4
+Pool B pairs removed: 1
+
+============================================================
+CHECK 2: Stage decomposition (initial vs. replication)
+============================================================
+
+Mean n_ancestries_initial by bin and pool:
+pool          A     B  A - B
+study_bin                   
+1-2        1.46  1.37   0.09
+3-5        1.95  1.98  -0.02
+6-10       3.35  2.79   0.56
+11+        5.21  4.47   0.74
+
+Mean n_ancestries_replication by bin and pool:
+pool          A     B  A - B
+study_bin                   
+1-2        0.38  0.41  -0.02
+3-5        0.68  0.89  -0.21
+6-10       0.91  1.39  -0.48
+11+        2.92  3.10  -0.18
+
+Fraction of pairs with ANY replication evidence, by bin and pool:
+pool          A     B  A - B
+study_bin                   
+1-2        0.35  0.28   0.07
+3-5        0.59  0.54   0.06
+6-10       0.57  0.82  -0.26
+11+        0.95  0.95   0.00
+
+============================================================
+CHECK 3: Collapse to one row per (gene, pool)
+============================================================
+
+Unique (gene, pool) rows: 440
+  Pool A: 97
+  Pool B: 343
+  Genes appearing in BOTH pools: 57
+
+Mean n_ancestries by bin and pool (gene-level):
+                mean  count
+study_bin pool             
+1-2       A     1.50     32
+          B     1.52    153
+3-5       A     2.31     26
+          B     2.55     73
+6-10      A     3.50     14
+          B     3.61     59
+11+       A     5.76     25
+          B     5.14     58
+
+Mean diff by bin (gene-level):
+pool          A     B  A - B
+study_bin                   
+1-2        1.50  1.52  -0.02
+3-5        2.31  2.55  -0.24
+6-10       3.50  3.61  -0.11
+11+        5.76  5.14   0.62
+
+============================================================
+END OF ROBUSTNESS CHECKS
+============================================================

@@ -1,0 +1,3 @@
+variable,test,statistic,degrees_of_freedom,p_value
+pool,Chi-square,0.4115780619366863,1,0.5211696282746052
+ccat,Chi-square,20.235794154799997,3,0.00015167425504672712

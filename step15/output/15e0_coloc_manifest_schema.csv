@@ -1,0 +1,81 @@
+column,dtype,n_nonmissing,n_unique_nonmissing,groups,example_values
+comparison_uid,object,538,538,identity,cmp_90ebb269ca08e668 || cmp_3ba52eabf3056c1c || cmp_26e44c681a21da82 || cmp_882aa5528898efd7 || cmp_1879bacc3f143d63
+gene_trait_uid,object,538,213,identity,gt_24b34ddef722adb5 || gt_d1a63f782d9591b6 || gt_d9617b3ca0a01afd || gt_17737ee47ab15a2c || gt_8ec8b2adc38392c6
+gene,object,538,168,identity,ADORA1 || ADORA2B || ADRB2 || CHRM3 || CSF2
+candidate_source,object,538,2,identity,GBMI || Pan-UKB
+candidate_trait_key,object,538,22,identity,GBMI::Asthma || GBMI::COPD || GBMI::Gout || GBMI::HF || GBMI::Stroke
+candidate_trait_name,object,538,22,identity,Asthma || Chronic obstructive pulmonary disease || Gout || Heart failure || Stroke
+comparison_population,object,538,5,identity,AFR || AMR || CSA || EAS || MID
+unit_analysis_role,object,538,1,eligibility_power,PRIMARY
+mixed_pool,bool,538,1,eligibility_power,False
+primary_approval_eligible,bool,538,1,eligibility_power,True
+maf_threshold,float64,538,1,,0.01
+gws_p_threshold,float64,538,1,,5e-08
+min_portability_variants_pre_ld,int64,538,1,,3
+min_coloc_variants,int64,538,1,eligibility_power,50
+n_raw_eur_variants,int64,538,186,sample_size,2584 || 2166 || 2010 || 7709 || 1868
+n_raw_comparison_variants,int64,538,322,sample_size,1797 || 1043 || 873 || 1548 || 1799
+n_raw_shared_rows,float64,332,132,sample_size,2102.0 || 1709.0 || 1878.0 || 2835.0 || 1883.0
+n_duplicate_key_rows_excluded,int64,538,1,sample_size,0
+n_harmonized_exact,int64,538,318,sample_size,1132 || 1039 || 846 || 916 || 1029
+n_harmonized_swapped,int64,538,7,sample_size,1 || 0 || 4 || 3 || 2
+n_harmonized_primary,int64,538,318,eligibility_power | sample_size,1132 || 1039 || 846 || 916 || 1029
+n_harmonized_sensitivity,int64,538,317,sample_size,1133 || 1039 || 846 || 917 || 1029
+n_valid_biallelic_snp,int64,538,327,sample_size,1067 || 985 || 846 || 848 || 940
+n_valid_beta_se,int64,538,444,sample_size,1133 || 1039 || 846 || 917 || 1029
+n_valid_p,int64,538,444,sample_size,1133 || 1039 || 846 || 917 || 1029
+n_valid_af,int64,538,447,sample_size,1133 || 1039 || 846 || 917 || 1029
+n_maf_pass,int64,538,404,sample_size,649 || 764 || 671 || 687 || 407
+n_quality_pass,int64,538,467,sample_size,1127 || 1036 || 844 || 911 || 1028
+n_qc_qualified,int64,538,411,sample_size,606 || 719 || 669 || 628 || 362
+n_qc_qualified_sensitivity,float64,206,181,sample_size,606.0 || 719.0 || 669.0 || 628.0 || 362.0
+n_eur_gws_qc,int64,538,134,sample_size,44 || 99 || 0 || 51 || 50
+n_comparison_gws_qc,int64,538,16,sample_size,0 || 1 || 81 || 21 || 92
+n_eur_gws_qc_sensitivity,float64,206,40,sample_size,44.0 || 99.0 || 0.0 || 51.0 || 50.0
+n_comparison_gws_qc_sensitivity,float64,206,9,sample_size,0.0 || 1.0 || 81.0 || 21.0 || 92.0
+sample_metadata_usable,bool,538,1,sample_size,True
+gbmi_swapped_sensitivity_only,bool,538,2,,True || False
+n_eur_strand_flip_flagged,float64,206,4,sample_size,0.0 || 3.0 || 1.0 || 2.0
+n_comparison_strand_flip_flagged,float64,206,3,sample_size,0.0 || 2.0 || 1.0
+n_eur_diff_af_gnomad_flagged,float64,206,14,sample_size,5.0 || 3.0 || 2.0 || 6.0 || 1.0
+n_comparison_diff_af_gnomad_flagged,float64,206,14,sample_size,4.0 || 2.0 || 1.0 || 0.0 || 7.0
+eur_trait_type,object,538,3,identity | trait_type,binary || biomarkers || continuous
+eur_coloc_type,object,538,2,eligibility_power,cc || quant
+eur_n_cases_median,float64,206,15,sample_size,121940.0 || 117670.0 || 118889.0 || 120646.0 || 58559.0
+eur_n_controls_median,float64,206,16,sample_size,1254131.0 || 1198773.0 || 1240541.0 || 1232343.0 || 1245933.0
+eur_n_total_median,float64,206,16,sample_size,1376071.0 || 1316443.0 || 1359430.0 || 1349938.0 || 1366579.0
+eur_case_fraction_median,float64,206,13,sample_size,0.08861461363548828 || 0.08938480435537277 || 0.08828322402144333 || 0.0587990766298798 || 0.05728641712190184
+eur_usable,bool,538,1,,True
+comparison_trait_type,object,538,3,identity | trait_type,binary || biomarkers || continuous
+comparison_coloc_type,object,538,2,eligibility_power,cc || quant
+comparison_n_cases_median,float64,206,24,sample_size,5051.0 || 4069.0 || 4015.0 || 18549.0 || 3603.0
+comparison_n_controls_median,float64,206,26,sample_size,27607.0 || 14104.0 || 27091.0 || 322655.0 || 15575.0
+comparison_n_total_median,float64,206,27,sample_size,32658.0 || 18173.0 || 31106.0 || 341204.0 || 19178.0
+comparison_case_fraction_median,float64,206,24,sample_size,0.15466348214832507 || 0.22390359324272271 || 0.12907477657043656 || 0.05436337205894421 || 0.18460338680926916
+comparison_usable,bool,538,1,,True
+portability_pre_ld_eligible,bool,538,2,eligibility_power,True || False
+portability_failure_reason,object,538,2,,fewer_than_3_qualified_EUR_GWS_variants
+coloc_input_eligible,bool,538,1,eligibility_power,True
+coloc_failure_reason,object,538,1,eligibility_power,
+coloc_powered_both_ancestries,bool,538,2,eligibility_power,False || True
+harmonized_parquet,object,538,538,,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.parquet || intermediate/15b4/comparisons/cmp_3ba52eabf3056c1c.parquet || intermediate/15b4/comparisons/cmp_26e44c681a21da82.parquet || intermediate/15b4/comparisons/cmp_882aa5528898efd7.parquet || intermediate/15b4/comparisons/cmp_1879bacc3f143d63.parquet
+harmonized_sidecar,object,538,538,,intermediate/15b4/comparisons/cmp_90ebb269ca08e668.json || intermediate/15b4/comparisons/cmp_3ba52eabf3056c1c.json || intermediate/15b4/comparisons/cmp_26e44c681a21da82.json || intermediate/15b4/comparisons/cmp_882aa5528898efd7.json || intermediate/15b4/comparisons/cmp_1879bacc3f143d63.json
+cache_action,object,538,1,,PROCESSED_NOW
+eur_n_cases,float64,332,16,sample_size,400822.0 || 367192.0 || 400988.0 || 419163.0 || 401867.0
+eur_n_controls,float64,0,0,sample_size,
+eur_n_total,float64,332,16,sample_size,400822.0 || 367192.0 || 400988.0 || 419163.0 || 401867.0
+eur_case_fraction,float64,0,0,sample_size,
+comparison_n_cases,float64,332,25,sample_size,6214.0 || 8407.0 || 5759.0 || 7694.0 || 8422.0
+comparison_n_controls,float64,0,0,sample_size,
+comparison_n_total,float64,332,25,sample_size,6214.0 || 8407.0 || 5759.0 || 7694.0 || 8422.0
+comparison_case_fraction,float64,0,0,sample_size,
+is_primary_mapping,bool,538,1,eligibility_power,True
+is_nonmixed,bool,538,1,eligibility_power,True
+primary_mechanistic_universe,bool,538,1,eligibility_power,True
+portability_primary_locked,bool,538,2,eligibility_power,True || False
+portability_sensitivity_locked,bool,538,2,eligibility_power,True || False
+coloc_primary_locked,bool,538,1,eligibility_power,True
+coloc_powered_primary_locked,bool,538,2,eligibility_power,False || True
+coloc_sensitivity_locked,bool,538,1,eligibility_power,True
+coloc_powered_sensitivity_locked,bool,538,2,eligibility_power,False || True
+approval_analysis_eligible,bool,538,1,eligibility_power,True

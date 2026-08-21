@@ -1,0 +1,96 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "AFR",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9954819690580492,
+    "diagonal_minimum": 0.9927019711494387,
+    "maximum": 0.9954819690580492,
+    "minimum": 0.06627669913892492,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 6637,
+      "pop": "AFR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.bm",
+    "n_requested_unique": 4191,
+    "n_resolved_unique": 4191
+  },
+  "comparison_reference_population": "AFR",
+  "comparison_uid": "cmp_e9eaa046575337b9",
+  "completed_at_utc": "2026-07-25T03:11:18.479796+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9998757041629047,
+    "diagonal_minimum": 0.9998736278076785,
+    "maximum": 0.9998757041629047,
+    "minimum": 0.9446987256001491,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "KDM1A",
+  "gene_trait_uid": "gt_3e77fef73aae3ddd",
+  "matrix_cache": "output/15c3_cache/cmp_e9eaa046575337b9.npz",
+  "n_reference_usable": 3,
+  "n_requested": 3,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 173778,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 187294,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "1:23405794:A:C"
+    },
+    {
+      "comparison_panel_index": 173772,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 187288,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "1:23404671:A:G"
+    },
+    {
+      "comparison_panel_index": 173792,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 187309,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "1:23407097:A:G"
+    }
+  ],
+  "request_variant_ids": [
+    "1:23405794:A:C",
+    "1:23404671:A:G",
+    "1:23407097:A:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Platelet count"
+}

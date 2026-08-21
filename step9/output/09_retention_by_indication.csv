@@ -1,0 +1,305 @@
+indication_mesh_id,indication_mesh_term,n_total,n_included,n_linked,n_A,n_B,included_A,included_B,retention_rate,linkage_rate,retention_A,retention_B
+D015179,Colorectal Neoplasms,38,14,14,4,34,0,14,0.3684210526315789,0.3684210526315789,0.0,0.4117647058823529
+D009765,Obesity,32,31,31,4,28,4,27,0.96875,0.96875,1.0,0.9642857142857143
+D001249,Asthma,30,29,29,4,26,4,25,0.9666666666666667,0.9666666666666667,1.0,0.9615384615384616
+D001943,Breast Neoplasms,30,16,16,5,25,2,14,0.5333333333333333,0.5333333333333333,0.4,0.56
+D002289,"Carcinoma, Non-Small-Cell Lung",29,2,2,15,14,1,1,0.06896551724137931,0.06896551724137931,0.06666666666666667,0.07142857142857142
+D003093,"Colitis, Ulcerative",28,26,26,3,25,2,24,0.9285714285714286,0.9285714285714286,0.6666666666666666,0.96
+D011471,Prostatic Neoplasms,28,16,16,1,27,1,15,0.5714285714285714,0.5714285714285714,1.0,0.5555555555555556
+D006949,Hyperlipidemias,22,22,22,4,18,4,18,1.0,1.0,1.0,1.0
+D003424,Crohn Disease,22,19,19,1,21,1,18,0.8636363636363636,0.8636363636363636,1.0,0.8571428571428571
+D029424,"Pulmonary Disease, Chronic Obstructive",20,20,20,3,17,3,17,1.0,1.0,1.0,1.0
+D010051,Ovarian Neoplasms,20,7,7,3,17,0,7,0.35,0.35,0.0,0.4117647058823529
+D006973,Hypertension,19,19,19,8,11,8,11,1.0,1.0,1.0,1.0
+D007249,Inflammation,18,18,18,1,17,1,17,1.0,1.0,1.0,1.0
+D003924,"Diabetes Mellitus, Type 2",18,18,18,9,9,9,9,1.0,1.0,1.0,1.0
+D004938,Esophageal Neoplasms,18,1,1,1,17,0,1,0.05555555555555555,0.05555555555555555,0.0,0.058823529411764705
+D008545,Melanoma,17,4,4,2,15,0,4,0.23529411764705882,0.23529411764705882,0.0,0.26666666666666666
+D008228,"Lymphoma, Non-Hodgkin",16,0,0,2,14,0,0,0.0,0.0,0.0,0.0
+D008527,Medulloblastoma,16,1,1,0,16,0,1,0.0625,0.0625,,0.0625
+D013274,Stomach Neoplasms,16,3,3,4,12,0,3,0.1875,0.1875,0.0,0.25
+D006258,Head and Neck Neoplasms,15,2,2,1,14,0,2,0.13333333333333333,0.13333333333333333,0.0,0.14285714285714285
+D001172,"Arthritis, Rheumatoid",15,15,15,3,12,3,12,1.0,1.0,1.0,1.0
+D006937,Hypercholesterolemia,14,14,14,3,11,3,11,1.0,1.0,1.0,1.0
+D015228,Hypertriglyceridemia,14,14,14,3,11,3,11,1.0,1.0,1.0,1.0
+D055752,Small Cell Lung Carcinoma,14,1,1,4,10,0,1,0.07142857142857142,0.07142857142857142,0.0,0.1
+D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,14,1,1,3,11,0,1,0.07142857142857142,0.07142857142857142,0.0,0.09090909090909091
+D003920,Diabetes Mellitus,14,13,13,3,11,2,11,0.9285714285714286,0.9285714285714286,0.6666666666666666,1.0
+D015451,"Leukemia, Lymphocytic, Chronic, B-Cell",13,1,1,1,12,1,0,0.07692307692307693,0.07692307692307693,1.0,0.0
+D001749,Urinary Bladder Neoplasms,13,1,1,3,10,1,0,0.07692307692307693,0.07692307692307693,0.3333333333333333,0.0
+D007680,Kidney Neoplasms,13,2,2,5,8,2,0,0.15384615384615385,0.15384615384615385,0.4,0.0
+D011565,Psoriasis,12,12,12,3,9,3,9,1.0,1.0,1.0,1.0
+D000544,Alzheimer Disease,12,11,11,1,11,1,10,0.9166666666666666,0.9166666666666666,1.0,0.9090909090909091
+D005909,Glioblastoma,12,1,1,0,12,0,1,0.08333333333333333,0.08333333333333333,,0.08333333333333333
+D016889,Endometrial Neoplasms,12,1,1,3,9,0,1,0.08333333333333333,0.08333333333333333,0.0,0.1111111111111111
+D015470,"Leukemia, Myeloid, Acute",12,0,0,4,8,0,0,0.0,0.0,0.0,0.0
+D003876,"Dermatitis, Atopic",12,12,12,2,10,2,10,1.0,1.0,1.0,1.0
+D000740,Anemia,11,11,11,4,7,4,7,1.0,1.0,1.0,1.0
+D009369,Neoplasms,11,11,11,1,10,1,10,1.0,1.0,1.0,1.0
+D008180,"Lupus Erythematosus, Systemic",11,10,10,0,11,0,10,0.9090909090909091,0.9090909090909091,,0.9090909090909091
+D008113,Liver Neoplasms,10,0,0,1,9,0,0,0.0,0.0,0.0,0.0
+D013922,Thrombocytosis,10,10,10,2,8,2,8,1.0,1.0,1.0,1.0
+D013921,Thrombocytopenia,10,10,10,4,6,4,6,1.0,1.0,1.0,1.0
+D001327,Autoimmune Diseases,10,10,10,0,10,0,10,1.0,1.0,,1.0
+D008223,Lymphoma,10,1,1,1,9,0,1,0.1,0.1,0.0,0.1111111111111111
+D065631,"Rhinitis, Allergic",9,9,9,1,8,1,8,1.0,1.0,1.0,1.0
+D016403,"Lymphoma, Large B-Cell, Diffuse",9,0,0,2,7,0,0,0.0,0.0,0.0,0.0
+D013964,Thyroid Neoplasms,9,0,0,3,6,0,0,0.0,0.0,0.0,0.0
+D015535,"Arthritis, Psoriatic",9,9,9,3,6,3,6,1.0,1.0,1.0,1.0
+D050197,Atherosclerosis,9,9,9,1,8,1,8,1.0,1.0,1.0,1.0
+D002583,Uterine Cervical Neoplasms,9,0,0,0,9,0,0,0.0,0.0,,0.0
+D015212,Inflammatory Bowel Diseases,9,9,9,0,9,0,9,1.0,1.0,,1.0
+D012174,Retinitis Pigmentosa,8,2,2,1,7,0,2,0.25,0.25,0.0,0.2857142857142857
+D008175,Lung Neoplasms,8,1,1,0,8,0,1,0.125,0.125,,0.125
+D006938,Hyperlipoproteinemia Type II,8,8,8,3,5,3,5,1.0,1.0,1.0,1.0
+D009101,Multiple Myeloma,8,2,2,0,8,0,2,0.25,0.25,,0.25
+D009103,Multiple Sclerosis,8,7,7,0,8,0,7,0.875,0.875,,0.875
+D016553,"Purpura, Thrombocytopenic, Idiopathic",7,5,5,2,5,1,4,0.7142857142857143,0.7142857142857143,0.5,0.8
+D004827,Epilepsy,7,2,2,5,2,2,0,0.2857142857142857,0.2857142857142857,0.4,0.0
+D016393,"Lymphoma, B-Cell",7,0,0,1,6,0,0,0.0,0.0,0.0,0.0
+D007676,"Kidney Failure, Chronic",7,6,6,1,6,1,5,0.8571428571428571,0.8571428571428571,1.0,0.8333333333333334
+D005770,Gastrointestinal Neoplasms,7,2,2,0,7,0,2,0.2857142857142857,0.2857142857142857,,0.2857142857142857
+D001008,Anxiety Disorders,7,7,7,1,6,1,6,1.0,1.0,1.0,1.0
+D001281,Atrial Fibrillation,7,6,6,2,5,2,4,0.8571428571428571,0.8571428571428571,1.0,0.8
+D018358,Neuroendocrine Tumors,7,0,0,4,3,0,0,0.0,0.0,0.0,0.0
+D010300,Parkinson Disease,7,6,6,0,7,0,6,0.8571428571428571,0.8571428571428571,,0.8571428571428571
+D012859,Sjogren's Syndrome,6,6,6,1,5,1,5,1.0,1.0,1.0,1.0
+D004829,"Epilepsy, Generalized",6,2,2,6,0,2,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,
+D007319,Sleep Initiation and Maintenance Disorders,6,6,6,3,3,3,3,1.0,1.0,1.0,1.0
+D013927,Thrombosis,6,5,5,3,3,2,3,0.8333333333333334,0.8333333333333334,0.6666666666666666,1.0
+D057765,Eosinophilic Esophagitis,6,6,6,2,4,2,4,1.0,1.0,1.0,1.0
+D010190,Pancreatic Neoplasms,5,0,0,0,5,0,0,0.0,0.0,,0.0
+D006467,Hemophilia A,5,3,3,5,0,3,0,0.6,0.6,0.6,
+D018307,"Neoplasms, Squamous Cell",5,1,1,0,5,0,1,0.2,0.2,,0.2
+D001714,Bipolar Disorder,5,5,5,3,2,3,2,1.0,1.0,1.0,1.0
+D050171,Dyslipidemias,5,5,5,3,2,3,2,1.0,1.0,1.0,1.0
+D051437,Renal Insufficiency,5,5,5,0,5,0,5,1.0,1.0,,1.0
+D020246,Venous Thrombosis,5,4,4,2,3,2,2,0.8,0.8,1.0,0.6666666666666666
+D003922,"Diabetes Mellitus, Type 1",5,4,5,0,5,0,4,0.8,1.0,,0.8
+D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive",5,1,1,2,3,0,1,0.2,0.2,0.0,0.3333333333333333
+D012893,Sleep Wake Disorders,5,5,5,1,4,1,4,1.0,1.0,1.0,1.0
+D013789,Thalassemia,5,3,3,1,4,0,3,0.6,0.6,0.0,0.75
+D006967,Hypersensitivity,5,4,4,0,5,0,4,0.8,0.8,,0.8
+D009472,Neuronal Ceroid-Lipofuscinoses,5,0,0,1,4,0,0,0.0,0.0,0.0,0.0
+D057180,Frontotemporal Dementia,4,2,2,0,4,0,2,0.5,0.5,,0.5
+D010024,Osteoporosis,4,3,3,1,3,1,2,0.75,0.75,1.0,0.6666666666666666
+D013736,Testicular Neoplasms,4,2,2,0,4,0,2,0.5,0.5,,0.5
+D002318,Cardiovascular Diseases,4,4,4,0,4,0,4,1.0,1.0,,1.0
+D002276,Carcinoid Tumor,4,0,0,0,4,0,0,0.0,0.0,,0.0
+D012559,Schizophrenia,4,4,4,1,3,1,3,1.0,1.0,1.0,1.0
+D000690,Amyotrophic Lateral Sclerosis,4,1,1,1,3,0,1,0.25,0.25,0.0,0.3333333333333333
+D065626,Non-alcoholic Fatty Liver Disease,4,1,4,1,3,0,1,0.25,1.0,0.0,0.3333333333333333
+D009503,Neutropenia,4,4,4,2,2,2,2,1.0,1.0,1.0,1.0
+D008269,Macular Edema,4,4,4,1,3,1,3,1.0,1.0,1.0,1.0
+D015477,"Leukemia, Myelomonocytic, Chronic",4,0,0,0,4,0,0,0.0,0.0,,0.0
+D014029,Tobacco Use Disorder,4,4,4,1,3,1,3,1.0,1.0,1.0,1.0
+D014523,Urethral Neoplasms,4,2,2,0,4,0,2,0.5,0.5,,0.5
+D012512,"Sarcoma, Ewing",4,0,0,0,4,0,0,0.0,0.0,,0.0
+D008881,Migraine Disorders,4,3,3,3,1,2,1,0.75,0.75,0.6666666666666666,1.0
+D008181,Lupus Nephritis,4,4,4,0,4,0,4,1.0,1.0,,1.0
+D013167,"Spondylitis, Ankylosing",4,4,4,0,4,0,4,1.0,1.0,,1.0
+D018242,"Neuroectodermal Tumors, Primitive",3,1,1,0,3,0,1,0.3333333333333333,0.3333333333333333,,0.3333333333333333
+D000755,"Anemia, Sickle Cell",3,2,2,0,3,0,2,0.6666666666666666,0.6666666666666666,,0.6666666666666666
+D014565,Urogenital Neoplasms,3,2,2,0,3,0,2,0.6666666666666666,0.6666666666666666,,0.6666666666666666
+D016399,"Lymphoma, T-Cell",3,0,0,0,3,0,0,0.0,0.0,,0.0
+D004392,Dwarfism,3,0,0,0,3,0,0,0.0,0.0,,0.0
+D016410,"Lymphoma, T-Cell, Cutaneous",3,0,0,0,3,0,0,0.0,0.0,,0.0
+D005901,Glaucoma,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D013494,"Supranuclear Palsy, Progressive",3,3,3,0,3,0,3,1.0,1.0,,1.0
+D005923,"Glomerulosclerosis, Focal Segmental",3,3,3,0,3,0,3,1.0,1.0,,1.0
+D011618,Psychotic Disorders,3,3,3,1,2,1,2,1.0,1.0,1.0,1.0
+D009062,Mouth Neoplasms,3,0,0,0,3,0,0,0.0,0.0,,0.0
+D001778,Blood Coagulation Disorders,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D020521,Stroke,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D024821,Metabolic Syndrome,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D017681,Hypereosinophilic Syndrome,3,2,2,0,3,0,2,0.6666666666666666,0.6666666666666666,,0.6666666666666666
+D018805,Sepsis,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D000347,Afibrinogenemia,3,0,0,3,0,0,0,0.0,0.0,0.0,
+D058186,Acute Kidney Injury,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D012516,Osteosarcoma,3,0,0,0,3,0,0,0.0,0.0,,0.0
+D012852,Sinusitis,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D009298,Nasal Polyps,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D009447,Neuroblastoma,3,0,0,0,3,0,0,0.0,0.0,,0.0
+D008107,Liver Diseases,3,3,3,0,3,0,3,1.0,1.0,,1.0
+D017719,Diabetic Foot,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D020178,"Sleep Disorders, Circadian Rhythm",2,1,1,1,1,1,0,0.5,0.5,1.0,0.0
+D019578,Multiple System Atrophy,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D028227,"Amyloid Neuropathies, Familial",2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D018295,"Neoplasms, Basal Cell",2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D003117,Color Vision Defects,2,0,0,0,2,0,0,0.0,0.0,,0.0
+D002836,Hemophilia B,2,0,0,2,0,0,0,0.0,0.0,0.0,
+D020914,"Myopathies, Structural, Congenital",2,0,0,0,2,0,0,0.0,0.0,,0.0
+D020920,Dyssomnias,2,1,1,0,2,0,1,0.5,0.5,,0.5
+D004831,"Epilepsies, Myoclonic",2,0,0,0,2,0,0,0.0,0.0,,0.0
+D005764,Gastroesophageal Reflux,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D014842,von Willebrand Diseases,2,1,1,1,1,1,0,0.5,0.5,1.0,0.0
+D014625,Vaginal Neoplasms,2,0,0,0,2,0,0,0.0,0.0,,0.0
+D006255,"Rhinitis, Allergic, Seasonal",2,2,2,0,2,0,2,1.0,1.0,,1.0
+D006689,Hodgkin Disease,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D006432,Hemochromatosis,2,1,1,0,2,0,1,0.5,0.5,,0.5
+D006009,Glycogen Storage Disease Type II,2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D006073,Gout,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D004393,"Dwarfism, Pituitary",2,0,0,0,2,0,0,0.0,0.0,,0.0
+D005922,"Glomerulonephritis, IGA",2,2,2,0,2,0,2,1.0,1.0,,1.0
+D003863,Depression,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D003865,"Depressive Disorder, Major",2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D004700,Endocrine System Diseases,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D016511,Severe Combined Immunodeficiency,2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D017180,"Tachycardia, Ventricular",2,1,1,1,1,1,0,0.5,0.5,1.0,0.0
+D008105,"Liver Cirrhosis, Biliary",2,1,1,1,1,0,1,0.5,0.5,0.0,1.0
+D008072,Hyperlipoproteinemia Type I,2,1,1,2,0,1,0,0.5,0.5,0.5,
+D012148,Restless Legs Syndrome,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D008268,Macular Degeneration,2,0,0,0,2,0,0,0.0,0.0,,0.0
+D008593,Menopause,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D010003,Osteoarthritis,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D009290,Narcolepsy,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D009223,Myotonic Dystrophy,2,1,1,0,2,0,1,0.5,0.5,,0.5
+D009216,Myopia,2,2,2,2,0,2,0,1.0,1.0,1.0,
+D009203,Myocardial Infarction,2,2,2,1,1,1,1,1.0,1.0,1.0,1.0
+D009771,Obsessive-Compulsive Disorder,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D057130,Leber Congenital Amaurosis,2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D057135,Wet Macular Degeneration,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D056693,Propionic Acidemia,2,0,0,0,2,0,0,0.0,0.0,,0.0
+D000592,"Amino Acid Metabolism, Inborn Errors",2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D054179,"Angioedemas, Hereditary",2,0,0,1,1,0,0,0.0,0.0,0.0,0.0
+D000437,Alcoholism,2,2,2,0,2,0,2,1.0,1.0,,1.0
+D000152,Acne Vulgaris,2,0,2,0,2,0,0,0.0,1.0,,0.0
+D000072861,"Phobia, Social",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D000073376,Epileptic Syndromes,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D000081207,Primary Immunodeficiency Diseases,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D000086382,COVID-19,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D000172,Acromegaly,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D000326,Adrenoleukodystrophy,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D000417,Albinism,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D000505,Alopecia,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D000746,"Anemia, Hemolytic, Congenital Nonspherocytic",1,0,0,1,0,0,0,0.0,0.0,0.0,
+D055623,"Keratosis, Actinic",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D055728,Primary Myelofibrosis,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D056587,Cryopyrin-Associated Periodic Syndromes,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D058496,Smith-Magenis Syndrome,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D061205,Vascular Calcification,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D009506,Nevus,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D010022,Osteopetrosis,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D010493,Pericarditis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D010787,Photosensitivity Disorders,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D010916,Pityriasis Rubra Pilaris,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D011085,Polycystic Ovary Syndrome,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D011087,Polycythemia Vera,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D011164,Porphyrias,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D011470,Prostatic Hyperplasia,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D009134,"Muscular Atrophy, Spinal",1,0,0,1,0,0,0,0.0,0.0,0.0,
+D009196,Myeloproliferative Disorders,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D009221,Myositis Ossificans,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D009293,Opioid-Related Disorders,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D009303,Nasopharyngeal Neoplasms,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D009394,"Nephritis, Hereditary",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D009437,Neuralgia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D011628,"Puberty, Delayed",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D011655,Pulmonary Embolism,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D011697,"Purpura, Thrombotic Thrombocytopenic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D012164,Retinal Diseases,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D012170,Retinal Vein Occlusion,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D012208,Rhabdomyosarcoma,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D012220,Rhinitis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D012497,Sandhoff Disease,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D012507,Sarcoidosis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D008305,Malignant Hyperthermia,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D008363,alpha-Mannosidosis,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D008415,Mastocytosis,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D008659,Metabolic Diseases,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D009084,Mucopolysaccharidosis III,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D009085,Mucopolysaccharidosis IV,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D007890,Leiomyosarcoma,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D007946,"Leukemia, Mast-Cell",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D007965,"Leukodystrophy, Globoid Cell",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D007966,"Leukodystrophy, Metachromatic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D007970,Leukopenia,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D008059,Mucopolysaccharidosis I,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D008103,Liver Cirrhosis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D008224,"Lymphoma, Follicular",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D012628,"Dermatitis, Seborrheic",1,0,1,0,1,0,0,0.0,1.0,,0.0
+D013036,"Spasms, Infantile",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D013276,Stomach Ulcer,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D013625,Takayasu Arteritis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D013661,Tay-Sachs Disease,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D013683,"Telangiectasia, Hereditary Hemorrhagic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D013924,Thrombophlebitis,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D014647,Varicose Ulcer,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D014657,Vasculitis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D014693,Ventricular Fibrillation,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D014808,Vitamin D Deficiency,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D014923,Wiskott-Aldrich Syndrome,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D014983,Xeroderma Pigmentosum,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D006962,"Hyperparathyroidism, Secondary",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D006966,Hyperprolactinemia,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D006980,Hyperthyroidism,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D006996,Hypocalcemia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D007006,Hypogonadism,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D007011,Hypoparathyroidism,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D007014,Hypophosphatasia,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D007037,Hypothyroidism,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D007863,Lecithin Cholesterol Acyltransferase Deficiency,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D007889,Leiomyoma,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D006177,Gynecomastia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D006333,Heart Failure,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D006463,Hemolytic-Uremic Syndrome,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D006712,Homocystinuria,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D006816,Huntington Disease,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D006934,Hypercalcemia,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D015209,"Cholangitis, Sclerosing",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D015223,Wolman Disease,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D015794,Choroideremia,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D016464,Lysosomal Storage Diseases,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D016491,Peripheral Vascular Diseases,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D004828,"Epilepsies, Partial",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D004916,Erythromelalgia,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D005168,Factor VII Deficiency,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D005173,Factor XI Deficiency,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D005621,Friedreich Ataxia,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D005776,Gaucher Disease,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D003704,Dementia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D003928,Diabetic Nephropathies,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D003929,Diabetic Neuropathies,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D004381,Duodenal Ulcer,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D004485,Eczema,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D004715,Endometriosis,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D004820,Epidermolysis Bullosa,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D016532,Mucopolysaccharidosis II,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D016537,"Gangliosidosis, GM1",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D016538,Mucopolysaccharidosis VII,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D016584,Panic Disorder,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D017204,Angelman Syndrome,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D017674,Hypophosphatemia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D018316,Gliosarcoma,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D002446,Celiac Disease,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D002761,Cholangitis,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D002780,"Cholestasis, Intrahepatic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D003233,"Conjunctivitis, Allergic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D003414,Crigler-Najjar Syndrome,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D003528,"Carcinoma, Adenoid Cystic",1,0,0,0,1,0,0,0.0,0.0,,0.0
+D003550,Cystic Fibrosis,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D019337,Hematologic Neoplasms,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D019896,alpha 1-Antitrypsin Deficiency,1,1,1,1,0,1,0,1.0,1.0,1.0,
+D019966,Substance-Related Disorders,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D019973,Alcohol-Related Disorders,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D020152,Antithrombin III Deficiency,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D020176,Tyrosinemias,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D020177,Idiopathic Hypersomnia,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D020388,"Muscular Dystrophy, Duchenne",1,0,0,1,0,0,0,0.0,0.0,0.0,
+D000795,Fabry Disease,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D001145,"Arrhythmias, Cardiac",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D001171,"Arthritis, Juvenile",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D001478,Basal Cell Nevus Syndrome,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D001656,Biliary Atresia,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D001850,"Bone Diseases, Infectious",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D001851,"Bone Diseases, Metabolic",1,1,1,0,1,0,1,1.0,1.0,,1.0
+D029481,"Bronchitis, Chronic",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D038261,Alexander Disease,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D041441,Retinoschisis,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D042882,Gallstones,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D046152,Gastrointestinal Stromal Tumors,1,0,0,1,0,0,0,0.0,0.0,0.0,
+D049950,"Hyperparathyroidism, Primary",1,1,1,1,0,1,0,1.0,1.0,1.0,
+D052120,Glycogen Storage Disease Type IIb,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D052245,Usher Syndromes,1,0,0,0,1,0,0,0.0,0.0,,0.0
+D052456,Hypoalphalipoproteinemias,1,1,1,0,1,0,1,1.0,1.0,,1.0
+D053549,Pachyonychia Congenita,1,0,0,0,1,0,0,0.0,0.0,,0.0

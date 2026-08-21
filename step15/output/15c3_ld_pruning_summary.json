@@ -1,0 +1,78 @@
+{
+  "completed_at_utc": "2026-07-25T13:27:14.754745+00:00",
+  "input_counts": {
+    "comparisons": 235,
+    "comparisons_by_source": {
+      "GBMI": 66,
+      "Pan-UKB": 169
+    },
+    "variant_request_rows": 29860
+  },
+  "missing_or_stale_caches": [],
+  "outputs": {
+    "comparison_pruning_results": "output/15c3_comparison_pruning_results.parquet",
+    "primary_final_comparisons": "output/15c3_portability_comparisons_primary_final.parquet",
+    "retained_variant_tables": {
+      "0.01": "output/15c3_portability_variants_r2_0p01_retained.parquet",
+      "0.1": "output/15c3_portability_variants_primary_retained.parquet",
+      "0.2": "output/15c3_portability_variants_r2_0p20_retained.parquet"
+    },
+    "variant_pruning_decisions": "output/15c3_variant_pruning_decisions.parquet",
+    "variant_reference_resolution": "output/15c3_variant_reference_resolution.parquet"
+  },
+  "primary_final_comparisons": 104,
+  "processing_errors": [],
+  "pruning_rule": {
+    "criterion": "candidate r2 strictly below threshold against every retained variant in both ancestry references",
+    "minimum_retained_variants": 3,
+    "primary_threshold": 0.1,
+    "ranking": "EUR p ascending, then position, REF, ALT, variant ID",
+    "thresholds": [
+      0.01,
+      0.1,
+      0.2
+    ]
+  },
+  "scientific_scope": "Ancestry-paired LD pruning only; no portability slope estimated.",
+  "script_version": "15C3.2",
+  "status": "PASS_WITH_LD_EXCLUSIONS",
+  "step": "15C3",
+  "threshold_results": {
+    "0.01": {
+      "eligible_by_source": {
+        "GBMI": 3,
+        "Pan-UKB": 27
+      },
+      "n_comparisons": 235,
+      "n_not_eligible": 205,
+      "n_portability_eligible": 30,
+      "total_variants_reference_usable": 29683,
+      "total_variants_requested": 29860,
+      "total_variants_retained": 411
+    },
+    "0.1": {
+      "eligible_by_source": {
+        "GBMI": 28,
+        "Pan-UKB": 76
+      },
+      "n_comparisons": 235,
+      "n_not_eligible": 131,
+      "n_portability_eligible": 104,
+      "total_variants_reference_usable": 29683,
+      "total_variants_requested": 29860,
+      "total_variants_retained": 890
+    },
+    "0.2": {
+      "eligible_by_source": {
+        "GBMI": 31,
+        "Pan-UKB": 96
+      },
+      "n_comparisons": 235,
+      "n_not_eligible": 108,
+      "n_portability_eligible": 127,
+      "total_variants_reference_usable": 29683,
+      "total_variants_requested": 29860,
+      "total_variants_retained": 1228
+    }
+  }
+}

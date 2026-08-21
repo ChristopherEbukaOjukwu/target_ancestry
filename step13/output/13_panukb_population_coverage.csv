@@ -1,0 +1,7 @@
+population,n_eligible_phenotypes,n_binary,n_quantitative,binary_case_median,binary_case_q25,binary_case_q75,quantitative_n_median,quantitative_n_q25,quantitative_n_q75,binary_control_median
+AFR,92,40,52,385.0,169.75,1654.25,6454.0,6185.25,6458.0,5411.5
+AMR,0,0,0,,,,,,,
+CSA,349,151,198,1031.0,432.0,2399.5,8411.0,7696.25,8649.0,7496.0
+EAS,62,34,28,240.0,84.5,548.75,2600.0,2435.5,2660.25,2373.0
+EUR,452,234,218,34680.0,16598.5,108835.75,407122.0,371396.25,413162.5,375285.0
+MID,136,70,66,200.0,112.75,423.75,1535.0,1497.25,1546.0,1334.0

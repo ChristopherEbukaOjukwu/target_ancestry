@@ -1,0 +1,18 @@
+{
+  "n_portability_coloc_overlap": 15,
+  "n_portability_comparisons": 104,
+  "n_portability_units": 50,
+  "outputs": {
+    "analysis_table": "15g_portability_analysis_table.parquet",
+    "coloc_stratified": "15g_coloc_stratified_portability.csv",
+    "locus_specific": "15g_locus_specific_portability.csv",
+    "precision_weighted_meta": "15g_precision_weighted_meta.csv",
+    "random_effects_units": "15g_random_effects_unit_summary.csv",
+    "sample_size_report": "15g_sample_size_precision_report.csv",
+    "threshold_sensitivity": "15g_precision_threshold_sensitivity.csv"
+  },
+  "primary_r2": 0.1,
+  "sample_size_metadata_available_for": 0,
+  "status": "PASS",
+  "step": "15G"
+}

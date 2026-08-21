@@ -1,0 +1,126 @@
+{
+  "coloc_final_unit_class_counts": {
+    "ANCESTRY_DISCORDANT": 1,
+    "MIXED_WITH_PRIOR_SENSITIVITY": 1,
+    "PRIOR_SENSITIVE": 4,
+    "ROBUST_DISTINCT": 3,
+    "ROBUST_SHARED": 5
+  },
+  "coloc_inference_status": "DESCRIPTIVE_ONLY; no approval hypothesis test because only 14 units were powered.",
+  "comparison_mechanistic_availability_counts": {
+    "BOTH": 15,
+    "COLOC_POWERED_ONLY": 2,
+    "NEITHER": 432,
+    "PORTABILITY_ONLY": 89
+  },
+  "completed_at_utc": "2026-07-26T18:45:13.137102+00:00",
+  "counts": {
+    "both_final_comparisons": 15,
+    "both_final_units": 13,
+    "coloc_powered_final_comparisons": 17,
+    "coloc_powered_final_units": 14,
+    "coloc_powered_units_by_pool": {
+      "A": 5,
+      "B": 9
+    },
+    "portability_final_comparisons": 104,
+    "portability_final_units": 50,
+    "portability_units_by_pool": {
+      "A": 18,
+      "B": 32
+    },
+    "primary_comparisons": 538,
+    "primary_units": 213,
+    "primary_units_by_pool": {
+      "A": 46,
+      "B": 167
+    }
+  },
+  "design": {
+    "colocalization": "Step 15E2 powered-unit final stability classification; pool summaries are descriptive only.",
+    "portability": "Step 15D primary r2 < 0.10 unit estimates; naive, FIQT, and Deming reported symmetrically.",
+    "portability_pool_comparison": "Exploratory unit-level median contrast, stratified bootstrap interval, label-permutation p-value, and Cliff's delta.",
+    "primary_unit_universe": "Step 15B5 PRIMARY, nonmixed, approval-eligible gene-trait-source units."
+  },
+  "outputs": {
+    "coloc_pool_summary_csv": "output/15f_coloc_pool_summary.csv",
+    "coloc_pool_summary_parquet": "output/15f_coloc_pool_summary.parquet",
+    "coverage_csv": "output/15f_mechanistic_coverage.csv",
+    "coverage_parquet": "output/15f_mechanistic_coverage.parquet",
+    "mechanistic_comparisons_csv": "output/15f_mechanistic_comparisons.csv",
+    "mechanistic_comparisons_parquet": "output/15f_mechanistic_comparisons.parquet",
+    "mechanistic_units_csv": "output/15f_mechanistic_units.csv",
+    "mechanistic_units_parquet": "output/15f_mechanistic_units.parquet",
+    "notes_markdown": "output/15f_results_notes.md",
+    "portability_pool_contrasts_csv": "output/15f_portability_pool_contrasts.csv",
+    "portability_pool_contrasts_parquet": "output/15f_portability_pool_contrasts.parquet",
+    "portability_pool_summary_csv": "output/15f_portability_pool_summary.csv",
+    "portability_pool_summary_parquet": "output/15f_portability_pool_summary.parquet",
+    "summary_json": "output/15f_mechanistic_summary.json"
+  },
+  "portability_pool_contrasts": [
+    {
+      "bootstrap_replicates": 20000,
+      "cliffs_delta_A_vs_B": -0.0798611111111111,
+      "cliffs_delta_magnitude": "NEGLIGIBLE",
+      "difference_ci_lower": -0.4463087611844668,
+      "difference_ci_upper": 0.3306027320499192,
+      "direction_definition": "Positive values mean Pool A (launched/approved) is higher.",
+      "estimator": "naive",
+      "exploratory_permutation_p_two_sided": 0.8650413495865041,
+      "inference_status": "EXPLORATORY_UNADJUSTED_UNIT_LEVEL",
+      "median_difference_A_minus_B": -0.016402433470508404,
+      "median_pool_A": 0.602034410194882,
+      "median_pool_B": 0.6184368436653904,
+      "n_pool_A": 18,
+      "n_pool_B": 32,
+      "permutation_extreme_count": 86504,
+      "permutation_replicates": 100000
+    },
+    {
+      "bootstrap_replicates": 20000,
+      "cliffs_delta_A_vs_B": -0.059027777777777776,
+      "cliffs_delta_magnitude": "NEGLIGIBLE",
+      "difference_ci_lower": -0.4531714677725201,
+      "difference_ci_upper": 0.35970976041499936,
+      "direction_definition": "Positive values mean Pool A (launched/approved) is higher.",
+      "estimator": "fiqt",
+      "exploratory_permutation_p_two_sided": 0.8953610463895361,
+      "inference_status": "EXPLORATORY_UNADJUSTED_UNIT_LEVEL",
+      "median_difference_A_minus_B": -0.015831924725957514,
+      "median_pool_A": 0.6053809748492391,
+      "median_pool_B": 0.6212128995751967,
+      "n_pool_A": 18,
+      "n_pool_B": 32,
+      "permutation_extreme_count": 89536,
+      "permutation_replicates": 100000
+    },
+    {
+      "bootstrap_replicates": 20000,
+      "cliffs_delta_A_vs_B": 0.0,
+      "cliffs_delta_magnitude": "NEGLIGIBLE",
+      "difference_ci_lower": -0.30263677854284365,
+      "difference_ci_upper": 0.3341511590610834,
+      "direction_definition": "Positive values mean Pool A (launched/approved) is higher.",
+      "estimator": "deming",
+      "exploratory_permutation_p_two_sided": 0.8559814401855982,
+      "inference_status": "EXPLORATORY_UNADJUSTED_UNIT_LEVEL",
+      "median_difference_A_minus_B": 0.02803307488193041,
+      "median_pool_A": 0.6287996296385714,
+      "median_pool_B": 0.600766554756641,
+      "n_pool_A": 18,
+      "n_pool_B": 32,
+      "permutation_extreme_count": 85598,
+      "permutation_replicates": 100000
+    }
+  ],
+  "script_version": "15F.1",
+  "status": "PASS",
+  "step": "15F",
+  "unit_mechanistic_availability_counts": {
+    "BOTH": 13,
+    "COLOC_POWERED_ONLY": 1,
+    "NEITHER": 162,
+    "PORTABILITY_ONLY": 37
+  }
+}

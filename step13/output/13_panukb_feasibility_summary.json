@@ -1,0 +1,36 @@
+{
+  "step": "13A",
+  "input_provenance": {
+    "manifest_path": "input/manifests/phenotype_manifest.tsv.bgz",
+    "manifest_size_bytes": 1420758,
+    "manifest_sha256": "58343c50b06be5cee7a56a1d1a38c30065aa4321a8d8e6b3471d971e0a5b812c",
+    "trails_path": "../step4/output/04_trails.parquet"
+  },
+  "manifest_validation": {
+    "n_rows": 7223,
+    "n_pop_count_inconsistencies": 0
+  },
+  "feasibility_counts": {
+    "study_pairs": 790,
+    "study_indications": 203,
+    "eligible_panukb_phenotypes_ge2_qc_pops": 452,
+    "eligible_ge3_qc_pops": 147,
+    "eligible_ge4_qc_pops": 37,
+    "eligible_binary": 234,
+    "eligible_quantitative": 218,
+    "candidate_rows": 1624,
+    "indications_with_exact_normalized_candidate": 4
+  },
+  "rules": {
+    "phenotype_eligibility": "num_pops_pass_qc >= 2",
+    "ancestry_inclusion": "manifest pops_pass_qc only",
+    "automatic_mapping_decisions": false,
+    "allowed_manual_mapping_tiers": [
+      "Direct",
+      "Closely-related",
+      "Proxy",
+      "Exclude"
+    ],
+    "primary_candidate_tier": "Direct"
+  }
+}

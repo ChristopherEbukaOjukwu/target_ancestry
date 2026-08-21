@@ -1,0 +1,28 @@
+==============================================================================
+STEP 15C3 — FULL ANCESTRY-PAIRED LD PRUNING
+==============================================================================
+Comparisons: 235
+Variant requests: 29860
+Thresholds: 0.01, 0.10, 0.20
+Primary threshold: 0.10
+Minimum retained: 3
+Cache: output/15c3_cache
+==============================================================================
+
+GBMI pending comparisons: 1
+1000 Genomes panel: input/reference/1000G/integrated_call_samples_v3.20130502.ALL.panel
+[GBMI 1/1] cmp_596f61a009141a06 | IL5 | SAS | 229 candidates
+
+==============================================================================
+STEP 15C3 — FULL ANCESTRY-PAIRED LD PRUNING
+==============================================================================
+Status: PASS_WITH_LD_EXCLUSIONS
+Primary eligible comparisons: 104 / 235
+r2 < 0.01: 30 eligible comparisons; 411 retained variants
+r2 < 0.10: 104 eligible comparisons; 890 retained variants
+r2 < 0.20: 127 eligible comparisons; 1228 retained variants
+Processing errors: 0
+Missing or stale caches: 0
+Summary: output/15c3_ld_pruning_summary.json
+No portability slope was estimated.
+==============================================================================

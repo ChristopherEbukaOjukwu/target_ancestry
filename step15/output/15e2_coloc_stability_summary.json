@@ -1,0 +1,26 @@
+{
+  "comparison_stability_counts": {
+    "PRIOR_SENSITIVE": 5,
+    "ROBUST_DISTINCT": 6,
+    "ROBUST_SHARED": 6
+  },
+  "completed_at_utc": "2026-07-26T12:38:11.118491+00:00",
+  "n_powered_comparisons": 17,
+  "n_powered_units": 14,
+  "primary_unit_category_counts": {
+    "ANCESTRY_DISCORDANT": 1,
+    "CONSISTENT_DISTINCT": 3,
+    "CONSISTENT_SHARED": 8,
+    "MIXED_OR_INCONCLUSIVE": 2
+  },
+  "script_version": "15E2.2",
+  "status": "PASS",
+  "step": "15E2",
+  "unit_stability_counts": {
+    "ANCESTRY_DISCORDANT": 1,
+    "MIXED_WITH_PRIOR_SENSITIVITY": 1,
+    "PRIOR_SENSITIVE": 4,
+    "ROBUST_DISTINCT": 3,
+    "ROBUST_SHARED": 5
+  }
+}

@@ -1,0 +1,147 @@
+==============================================================================
+STEP 15D — CROSS-ANCESTRY EFFECT PORTABILITY
+==============================================================================
+Eligible comparisons at any threshold: 127
+Pending comparison caches: 124
+Primary comparison bootstrap: 1000
+Headline unit bootstrap: 5000
+Thresholds: 0.01, 0.10, 0.20
+==============================================================================
+[1/124] cmp_08b22a91172968d8 | CSF3R | CSA
+[2/124] cmp_090a8b2e128e603c | PIK3CA | CSA
+[3/124] cmp_09103f39122355d4 | ADRB1 | CSA
+[4/124] cmp_0b17ee7489ac54ca | ABCC8 | CSA
+[5/124] cmp_0c0089ac5cd5de30 | SREBF1 | CSA
+[6/124] cmp_1113c8b20072258e | IL1RL1 | AMR
+[7/124] cmp_112d8ff54d63db77 | PPARG | AFR
+[8/124] cmp_11df635d08e72758 | IL33 | AMR
+[9/124] cmp_158459a232adb0d0 | ENPP1 | CSA
+[10/124] cmp_17d744d1985fa469 | IL1RL1 | EAS
+[11/124] cmp_1c639976f96dce20 | GHRHR | CSA
+[12/124] cmp_1d49c7f6775630d1 | ANGPTL3 | MID
+[13/124] cmp_1e9ae074e40e398a | JAK2 | AFR
+[14/124] cmp_223b568c06092c55 | ABCC8 | MID
+[15/124] cmp_23670cc5cddedef4 | APOE | CSA
+[16/124] cmp_2565e0e2adfe1275 | IL4R | EAS
+[17/124] cmp_29230f9b79750967 | ANGPTL3 | AFR
+[18/124] cmp_297fbf716b9104dc | IL5 | EAS
+[19/124] cmp_29a6d39cecffd0ba | VEGFA | MID
+[20/124] cmp_2bc6da7bd58f8b90 | IL33 | AFR
+[21/124] cmp_2c670ce121f4e2ed | EGLN2 | CSA
+[22/124] cmp_306964470290b51d | DGAT1 | MID
+[23/124] cmp_327b1ec26d6eee5c | ANGPTL4 | MID
+[24/124] cmp_33e4f0a27f768357 | PKLR | CSA
+[25/124] cmp_3618bc9e13b64408 | IL5 | AFR
+[26/124] cmp_36a279eb7569f6dc | IL13 | CSA
+[27/124] cmp_381d86345f6977a1 | TSLP | CSA
+[28/124] cmp_3a2a97dcf17ee031 | EPHX2 | AMR
+[29/124] cmp_3d5d09a2a4352628 | PPARD | MID
+[30/124] cmp_44f6beefa09c6ba0 | ANGPTL4 | AFR
+[31/124] cmp_480d6daf54baee46 | PIK3CA | AFR
+[32/124] cmp_4a7143548dc144b2 | NFKB1 | MID
+[33/124] cmp_4ab05482f9c4b139 | PPARG | CSA
+[34/124] cmp_4af752414605f4d3 | IL1RL1 | CSA
+[35/124] cmp_4cecb255412bf289 | LPL | MID
+[36/124] cmp_50dfe6ec581edb6f | IL1RL1 | AFR
+[37/124] cmp_516979e63b81199e | MAPK3 | MID
+[38/124] cmp_5181e0eccfa7681d | PNPLA3 | CSA
+[39/124] cmp_5235bc263b35ea04 | IL4R | AMR
+[40/124] cmp_55e72b65deff56f6 | APOB | MID
+[41/124] cmp_562bf6b74a067fe1 | IL5 | AMR
+[42/124] cmp_5636a0aa0df77617 | EGLN1 | CSA
+[43/124] cmp_58426512e8b1ab61 | SREBF1 | MID
+[44/124] cmp_58feb2f9cd1731f6 | APOC3 | CSA
+[45/124] cmp_593ae8985cf9fb81 | VEGFA | CSA
+[46/124] cmp_596f61a009141a06 | IL5 | CSA
+[47/124] cmp_5b2b67e88398e55b | JAK2 | EAS
+[48/124] cmp_65b9e21f9ee56f62 | PIK3CG | CSA
+[49/124] cmp_68f8d41b84d58c8a | KCNJ11 | CSA
+[50/124] cmp_6a904cea8c198f4a | DGAT1 | CSA
+[51/124] cmp_6d7ba361d906c9f1 | FGF21 | CSA
+[52/124] cmp_74eb5925c4626270 | IL12B | EAS
+[53/124] cmp_753051b5ab931966 | THPO | EAS
+[54/124] cmp_7906543c413eaa09 | PIK3CG | AFR
+[55/124] cmp_795667e1dbbc5ad6 | MC4R | MID
+[56/124] cmp_7aa41dc81cd9b3ff | IL4R | CSA
+[57/124] cmp_7e3415964666180a | PCSK9 | CSA
+[58/124] cmp_812c7bbd23890504 | IL4R | AFR
+[59/124] cmp_83160b2c36c5fa39 | GDF15 | CSA
+[60/124] cmp_836c47786aded226 | ESR1 | CSA
+[61/124] cmp_85dc45cb0e4ef696 | ADRB1 | EAS
+[62/124] cmp_88c6906de1ea612c | THPO | AFR
+[63/124] cmp_899b25b2a6459d69 | CSF3 | CSA
+[64/124] cmp_89cac3a7cbb61501 | APOC3 | CSA
+[65/124] cmp_8a50a9834b33764d | CSF3R | CSA
+[66/124] cmp_91602ff38973e5c1 | MC4R | CSA
+[67/124] cmp_96ce964d4704c481 | ANGPTL4 | CSA
+[68/124] cmp_9d3113c9f8e31c30 | CETP | CSA
+[69/124] cmp_9d8c13f3b6460d45 | PNPLA3 | AFR
+[70/124] cmp_9de93e69fed596e7 | LPL | CSA
+[71/124] cmp_a0dab9d33f7b3552 | IL33 | CSA
+[72/124] cmp_a3680a01bb140f75 | TP53 | MID
+[73/124] cmp_a38cb42e3379daab | GIPR | MID
+[74/124] cmp_a496afa2fb1d58f1 | KCNJ1 | MID
+[75/124] cmp_a54e8bec4ce3739c | TSLP | EAS
+[76/124] cmp_a6275c7613e223b1 | F11 | AFR
+[77/124] cmp_a65923a60135b609 | GDF15 | AFR
+[78/124] cmp_a76b488e4d6fc321 | IL13 | EAS
+[79/124] cmp_a8cdbbc6ae7dad91 | CSF3 | MID
+[80/124] cmp_ab8ccf0cc0913f47 | IL13 | AFR
+[81/124] cmp_ad635d062a0cb6f4 | KCNJ1 | CSA
+[82/124] cmp_add0fff00fe30c88 | F11 | EAS
+[83/124] cmp_af469cf6305c50e3 | IL33 | EAS
+[84/124] cmp_b2879043e48e8130 | CSF3R | MID
+[85/124] cmp_b64efda1167deddf | GIPR | CSA
+[86/124] cmp_b983f121e89ab0c9 | PPARD | AFR
+[87/124] cmp_ba35246f787ddd2f | TP53 | CSA
+[88/124] cmp_c19fd6087066e5ad | APOC3 | AFR
+[89/124] cmp_c466933c6cddc2c2 | PPARD | CSA
+[90/124] cmp_c46c48b6b8c8c0da | APOB | AFR
+[91/124] cmp_c5f9b26ab4ae44ee | LPA | CSA
+[92/124] cmp_c80e5bff31014a68 | FGF21 | MID
+[93/124] cmp_c93179e9cff3fff4 | GDF15 | CSA
+[94/124] cmp_cdc7ff976577622c | EGLN3 | CSA
+[95/124] cmp_cf4e49ee6917e9e7 | APOB | CSA
+[96/124] cmp_d046571b4d69c0ca | PPARG | CSA
+[97/124] cmp_d17bec475888ffb1 | APOA1 | CSA
+[98/124] cmp_d642ad82b0d16e5e | SOST | CSA
+[99/124] cmp_d6a94e5b9cd24b66 | IL13 | AMR
+[100/124] cmp_d763b6b831bf0c0e | ANGPTL8 | CSA
+[101/124] cmp_d8eb00402944028b | JAK2 | CSA
+[102/124] cmp_d98864543ce360b3 | PPARG | MID
+[103/124] cmp_d9f3563910f04212 | MC4R | AFR
+[104/124] cmp_dae661d54c93c969 | ABCA1 | CSA
+[105/124] cmp_dfe8569d96c5c6ef | APOC3 | MID
+[106/124] cmp_e15f0ef829b34627 | GDF15 | MID
+[107/124] cmp_e380c446557d34be | KCNJ11 | MID
+[108/124] cmp_e3f2f647f7cf5c3c | LEPR | MID
+[109/124] cmp_e54439ed586b3a5c | FGF21 | AFR
+[110/124] cmp_e83cc1f827b5754c | EPHX2 | AFR
+[111/124] cmp_e854c14fa9f40a21 | TSLP | AFR
+[112/124] cmp_eafab6e5a8a920a4 | LPL | AFR
+[113/124] cmp_ebe379c15a6da6e9 | TSLP | AMR
+[114/124] cmp_ed5bdc4e95af264b | SLC22A12 | EAS
+[115/124] cmp_ee4314019136489d | GIPR | MID
+[116/124] cmp_f0cf4964e6b5f030 | ANGPTL3 | CSA
+[117/124] cmp_f1d366955c52855b | F11 | AMR
+[118/124] cmp_f27a27d52a7eddbe | PPARG | MID
+[119/124] cmp_f42d2adaebb6c058 | FAP | MID
+[120/124] cmp_f6c8d3d544ec5e35 | SLC22A12 | AFR
+[121/124] cmp_f91dafdc919ddc0c | HMGCR | CSA
+[122/124] cmp_face308db9f33a70 | IL12B | AFR
+[123/124] cmp_fe5114e73f9be5e8 | PIK3CA | EAS
+[124/124] cmp_fed358ca805b3c3e | IL12B | CSA
+
+==============================================================================
+STEP 15D — CROSS-ANCESTRY EFFECT PORTABILITY
+==============================================================================
+Status: PASS
+Valid comparison caches: 127 / 127
+Invalid or missing caches: 0
+Primary comparisons: 104
+Primary units: 50
+naive: median 0.6099 (95% CI 0.4832, 0.6789)
+fiqt: median 0.6128 (95% CI 0.5049, 0.7420)
+deming: median 0.6008 (95% CI 0.5130, 0.7274)
+Summary: output/15d_portability_summary.json
+==============================================================================

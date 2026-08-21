@@ -1,0 +1,327 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "EAS",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9908849726519919,
+    "diagonal_minimum": 0.9828868925341522,
+    "maximum": 0.9908849726519919,
+    "minimum": 0.1981639112582213,
+    "shape": [
+      24,
+      24
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 2709,
+      "pop": "EAS"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EAS.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EAS.ldadj.bm",
+    "n_requested_unique": 1277,
+    "n_resolved_unique": 1277
+  },
+  "comparison_reference_population": "EAS",
+  "comparison_uid": "cmp_a4a6c8c04a2615d6",
+  "completed_at_utc": "2026-07-25T03:18:51.529892+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999572390651883,
+    "diagonal_minimum": 0.9998999304421557,
+    "maximum": 0.9999572390651883,
+    "minimum": 0.0313298676825558,
+    "shape": [
+      24,
+      24
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "OPRL1",
+  "gene_trait_uid": "gt_76b6b2db2844ebcd",
+  "matrix_cache": "output/15c3_cache/cmp_a4a6c8c04a2615d6.npz",
+  "n_reference_usable": 24,
+  "n_requested": 24,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 9643717,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567704,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "20:62703490:C:T"
+    },
+    {
+      "comparison_panel_index": 9643768,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567870,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "20:62724698:C:T"
+    },
+    {
+      "comparison_panel_index": 9643689,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567626,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "20:62694319:G:T"
+    },
+    {
+      "comparison_panel_index": 9643692,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567632,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "20:62695634:T:A"
+    },
+    {
+      "comparison_panel_index": 9643745,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567798,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "20:62714025:T:C"
+    },
+    {
+      "comparison_panel_index": 9643684,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567611,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "20:62692789:C:T"
+    },
+    {
+      "comparison_panel_index": 9643693,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567634,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 6,
+      "variant_id": "20:62695878:C:A"
+    },
+    {
+      "comparison_panel_index": 9643708,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567674,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 7,
+      "variant_id": "20:62700228:T:G"
+    },
+    {
+      "comparison_panel_index": 9643712,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567681,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 8,
+      "variant_id": "20:62701092:A:C"
+    },
+    {
+      "comparison_panel_index": 9643704,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567663,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 9,
+      "variant_id": "20:62698484:G:A"
+    },
+    {
+      "comparison_panel_index": 9643702,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567661,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 10,
+      "variant_id": "20:62698188:G:A"
+    },
+    {
+      "comparison_panel_index": 9643714,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567696,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 11,
+      "variant_id": "20:62702482:A:C"
+    },
+    {
+      "comparison_panel_index": 9643746,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567799,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 12,
+      "variant_id": "20:62714026:C:T"
+    },
+    {
+      "comparison_panel_index": 9643749,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567803,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 13,
+      "variant_id": "20:62714783:C:G"
+    },
+    {
+      "comparison_panel_index": 9643724,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567718,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 14,
+      "variant_id": "20:62705140:A:C"
+    },
+    {
+      "comparison_panel_index": 9643924,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22568224,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 15,
+      "variant_id": "20:62768122:T:A"
+    },
+    {
+      "comparison_panel_index": 9643737,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567777,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 16,
+      "variant_id": "20:62712053:T:C"
+    },
+    {
+      "comparison_panel_index": 9643731,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567744,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 17,
+      "variant_id": "20:62707527:C:T"
+    },
+    {
+      "comparison_panel_index": 9643886,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22568136,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 18,
+      "variant_id": "20:62756522:G:A"
+    },
+    {
+      "comparison_panel_index": 9643885,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22568134,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 19,
+      "variant_id": "20:62756295:G:A"
+    },
+    {
+      "comparison_panel_index": 9643736,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567772,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 20,
+      "variant_id": "20:62711459:C:T"
+    },
+    {
+      "comparison_panel_index": 9643676,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567593,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 21,
+      "variant_id": "20:62690683:C:T"
+    },
+    {
+      "comparison_panel_index": 9643733,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22567758,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 22,
+      "variant_id": "20:62709274:G:A"
+    },
+    {
+      "comparison_panel_index": 9643889,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 22568141,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 23,
+      "variant_id": "20:62756696:G:A"
+    }
+  ],
+  "request_variant_ids": [
+    "20:62703490:C:T",
+    "20:62724698:C:T",
+    "20:62694319:G:T",
+    "20:62695634:T:A",
+    "20:62714025:T:C",
+    "20:62692789:C:T",
+    "20:62695878:C:A",
+    "20:62700228:T:G",
+    "20:62701092:A:C",
+    "20:62698484:G:A",
+    "20:62698188:G:A",
+    "20:62702482:A:C",
+    "20:62714026:C:T",
+    "20:62714783:C:G",
+    "20:62705140:A:C",
+    "20:62768122:T:A",
+    "20:62712053:T:C",
+    "20:62707527:C:T",
+    "20:62756522:G:A",
+    "20:62756295:G:A",
+    "20:62711459:C:T",
+    "20:62690683:C:T",
+    "20:62709274:G:A",
+    "20:62756696:G:A"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Systolic blood pressure, automated reading"
+}

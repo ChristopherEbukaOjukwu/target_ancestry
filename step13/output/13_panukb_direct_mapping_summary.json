@@ -1,0 +1,23 @@
+{
+  "mesh_source_file": "input/manifests/desc2026.gz",
+  "mesh_production_year": 2026,
+  "n_mesh_descriptors_parsed": 31110,
+  "n_study_indications": 203,
+  "n_indications_missing_mesh2026_record": 0,
+  "n_qc_eligible_icd10_phecode_phenotypes": 62,
+  "top_k_candidates_per_indication": 10,
+  "n_indications_with_exact_mesh_term_candidate": 11,
+  "n_indications_with_full_token_containment_candidate": 22,
+  "automatic_mapping_decisions": false,
+  "allowed_decisions_at_this_stage": [
+    "Direct",
+    "Exclude"
+  ],
+  "excluded_from_direct_candidate_generation": [
+    "categorical",
+    "continuous",
+    "biomarkers",
+    "prescriptions",
+    "other non-ICD10/non-PheCode phenotype types"
+  ]
+}

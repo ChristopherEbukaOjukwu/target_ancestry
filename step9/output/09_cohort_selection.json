@@ -1,0 +1,37 @@
+{
+  "step": "9",
+  "mesh_release": "2026",
+  "support_threshold": 0.8,
+  "flow": {
+    "supported_pairs": 2166,
+    "clinical_stage_pairs": 1354,
+    "linked_gwas_pairs": 797,
+    "complete_ancestry_pairs": 790,
+    "excluded_overall": 564,
+    "selection_stage_counts": {
+      "complete_ancestry": 790,
+      "not_linked_to_parseable_gwas": 557,
+      "linked_no_ancestry": 7
+    }
+  },
+  "retention": {
+    "overall": 0.5834564254062038,
+    "pool_A": 0.564748201438849,
+    "pool_B": 0.5882899628252788
+  },
+  "mesh": {
+    "unique_categories": 21,
+    "mapped_pairs": 1350,
+    "unmapped_pairs": 4
+  },
+  "outputs": [
+    "09_cohort_selection_pairs.parquet",
+    "09_cohort_selection_summary.csv",
+    "09_retention_by_pool.csv",
+    "09_retention_by_phase.csv",
+    "09_retention_by_mesh_category.csv",
+    "09_retention_by_indication.csv",
+    "09_retention_by_evidence_source.csv",
+    "09_cohort_selection_tests.csv"
+  ]
+}

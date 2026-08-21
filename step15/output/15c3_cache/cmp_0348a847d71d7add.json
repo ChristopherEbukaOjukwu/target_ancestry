@@ -1,0 +1,140 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9983183139502082,
+    "diagonal_minimum": 0.996542487364697,
+    "maximum": 0.9983183139502082,
+    "minimum": 0.0004188566559572133,
+    "shape": [
+      7,
+      7
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_0348a847d71d7add",
+  "completed_at_utc": "2026-07-25T03:05:56.179826+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999390879667692,
+    "diagonal_minimum": 0.9998967086018792,
+    "maximum": 0.9999390879667692,
+    "minimum": 0.003048341670024745,
+    "shape": [
+      7,
+      7
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "FAP",
+  "gene_trait_uid": "gt_7139353b566f0bd6",
+  "matrix_cache": "output/15c3_cache/cmp_0348a847d71d7add.npz",
+  "n_reference_usable": 7,
+  "n_requested": 7,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 2103680,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147540,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "2:163124051:C:T"
+    },
+    {
+      "comparison_panel_index": 2103476,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147229,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "2:163076146:T:C"
+    },
+    {
+      "comparison_panel_index": 2103494,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147257,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "2:163082395:C:A"
+    },
+    {
+      "comparison_panel_index": 2103602,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147434,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "2:163110536:A:G"
+    },
+    {
+      "comparison_panel_index": 2103040,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3146623,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "2:162964301:G:A"
+    },
+    {
+      "comparison_panel_index": 2103904,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147844,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "2:163167746:C:G"
+    },
+    {
+      "comparison_panel_index": 2103479,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147233,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 6,
+      "variant_id": "2:163077855:T:A"
+    }
+  ],
+  "request_variant_ids": [
+    "2:163124051:C:T",
+    "2:163076146:T:C",
+    "2:163082395:C:A",
+    "2:163110536:A:G",
+    "2:162964301:G:A",
+    "2:163167746:C:G",
+    "2:163077855:T:A"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Neutrophill count"
+}

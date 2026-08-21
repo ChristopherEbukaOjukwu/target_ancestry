@@ -1,0 +1,118 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9957629138040184,
+    "diagonal_minimum": 0.9957207811230644,
+    "maximum": 0.9957629138040184,
+    "minimum": 0.9923253015138354,
+    "shape": [
+      5,
+      5
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_b6d6dee5331ecf08",
+  "completed_at_utc": "2026-07-25T02:44:17.603870+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999439714844722,
+    "diagonal_minimum": 0.9999419821013131,
+    "maximum": 0.9999439714844722,
+    "minimum": 0.9949850583507396,
+    "shape": [
+      5,
+      5
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "ALDH2",
+  "gene_trait_uid": "gt_fa7c0f92ccea41a7",
+  "matrix_cache": "output/15c3_cache/cmp_b6d6dee5331ecf08.npz",
+  "n_reference_usable": 5,
+  "n_requested": 5,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 11529066,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 17183997,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "12:112340341:T:C"
+    },
+    {
+      "comparison_panel_index": 11529022,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 17183926,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "12:112329028:A:G"
+    },
+    {
+      "comparison_panel_index": 11528989,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 17183874,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "12:112322778:G:A"
+    },
+    {
+      "comparison_panel_index": 11529027,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 17183936,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "12:112331317:G:A"
+    },
+    {
+      "comparison_panel_index": 11529010,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 17183911,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "12:112327057:T:G"
+    }
+  ],
+  "request_variant_ids": [
+    "12:112340341:T:C",
+    "12:112329028:A:G",
+    "12:112322778:G:A",
+    "12:112331317:G:A",
+    "12:112327057:T:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Estimated glomerular filtration rate, serum creatinine"
+}

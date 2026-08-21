@@ -1,0 +1,109 @@
+{
+  "candidate_source": "GBMI",
+  "comparison_pairwise_n_minimum": 347,
+  "comparison_population": "AMR",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 1.0,
+    "diagonal_minimum": 0.9999999999999998,
+    "maximum": 1.0,
+    "minimum": 0.6359410490492936,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "n_samples": 347,
+    "reference_population": "AMR",
+    "vcf_index_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi",
+    "vcf_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz"
+  },
+  "comparison_reference_population": "AMR",
+  "comparison_uid": "cmp_66091c879cda73f3",
+  "completed_at_utc": "2026-07-25T03:40:13.730564+00:00",
+  "eur_pairwise_n_minimum": 503,
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 1.0,
+    "diagonal_minimum": 1.0,
+    "maximum": 1.0,
+    "minimum": 0.6805167351263145,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "n_samples": 503,
+    "reference_population": "EUR",
+    "vcf_index_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi",
+    "vcf_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz"
+  },
+  "gene": "TNFSF15",
+  "gene_trait_uid": "gt_7f50a9fa80553ca7",
+  "matrix_cache": "output/15c3_cache/cmp_66091c879cda73f3.npz",
+  "n_reference_usable": 3,
+  "n_requested": 3,
+  "processing_status": "COMPLETE",
+  "records_scanned": 1451,
+  "reference_resolution": [
+    {
+      "alternate_allele_index": 1,
+      "comparison_panel_index": null,
+      "comparison_reference_af": 0.12680115273775217,
+      "comparison_reference_call_rate": 1.0,
+      "comparison_reference_polymorphic": true,
+      "eur_panel_index": null,
+      "eur_reference_af": 0.24254473161033796,
+      "eur_reference_call_rate": 1.0,
+      "eur_reference_polymorphic": true,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "9:114849783:T:C",
+      "vcf_id": ""
+    },
+    {
+      "alternate_allele_index": 1,
+      "comparison_panel_index": null,
+      "comparison_reference_af": 0.09221902017291066,
+      "comparison_reference_call_rate": 1.0,
+      "comparison_reference_polymorphic": true,
+      "eur_panel_index": null,
+      "eur_reference_af": 0.18190854870775347,
+      "eur_reference_call_rate": 1.0,
+      "eur_reference_polymorphic": true,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "9:114798258:G:T",
+      "vcf_id": ""
+    },
+    {
+      "alternate_allele_index": 1,
+      "comparison_panel_index": null,
+      "comparison_reference_af": 0.12968299711815562,
+      "comparison_reference_call_rate": 1.0,
+      "comparison_reference_polymorphic": true,
+      "eur_panel_index": null,
+      "eur_reference_af": 0.23956262425447317,
+      "eur_reference_call_rate": 1.0,
+      "eur_reference_polymorphic": true,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "9:114835605:G:T",
+      "vcf_id": ""
+    }
+  ],
+  "request_variant_ids": [
+    "9:114849783:T:C",
+    "9:114798258:G:T",
+    "9:114835605:G:T"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Asthma"
+}

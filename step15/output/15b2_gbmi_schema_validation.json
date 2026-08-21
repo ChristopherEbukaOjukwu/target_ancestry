@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "comparison_uid": "cmp_46490d7af44846b5",
+  "gene": "ADRB2",
+  "trait": "Asthma",
+  "trait_key": "GBMI::Asthma",
+  "genome_build": "GRCh38",
+  "comparison_population": "AFR",
+  "source_population_label": "AFR",
+  "window": {
+    "chromosome": "5",
+    "start_1based": 148726611,
+    "end_1based": 148928623,
+    "start_0based": 148726610
+  },
+  "datasets": {
+    "EUR": {
+      "source": {
+        "data_url": "https://gbmi-sumstats.s3.amazonaws.com/Asthma_Bothsex_eur_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz",
+        "index": {
+          "url": "https://gbmi-sumstats.s3.amazonaws.com/Asthma_Bothsex_eur_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz.tbi",
+          "path": "input/tabix_indexes/15b2/GBMI_EUR_e9119daf5f1f_Asthma_Bothsex_eur_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz.tbi",
+          "downloaded": false,
+          "size_bytes": 1842014,
+          "sha256": "5c83cc6efb1aea9ad99bb556da4c9255f6e7532b63f9213f035dba577c8196d2"
+        }
+      },
+      "contig": {
+        "target_chromosome": "5",
+        "selected_contig": "5",
+        "selection_method": "exact_contig_match",
+        "n_tabix_contigs": 23,
+        "tabix_contig_examples": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23"
+        ]
+      },
+      "header": {
+        "method": "tabix_metadata_header",
+        "n_columns": 17,
+        "columns": [
+          "CHR",
+          "POS",
+          "REF",
+          "ALT",
+          "rsid",
+          "all_meta_AF",
+          "inv_var_meta_beta",
+          "inv_var_meta_sebeta",
+          "inv_var_meta_p",
+          "inv_var_het_p",
+          "direction",
+          "N_case",
+          "N_ctrl",
+          "n_dataset",
+          "n_bbk",
+          "is_strand_flip",
+          "is_diff_AF_gnomAD"
+        ],
+        "saved_to": "output/15b2_gbmi_eur_header.txt"
+      },
+      "field_mapping": {
+        "chrom": "CHR",
+        "pos": "POS",
+        "ref": "REF",
+        "alt": "ALT",
+        "beta": "inv_var_meta_beta",
+        "se": "inv_var_meta_sebeta",
+        "p": "inv_var_meta_p",
+        "af": "all_meta_AF",
+        "n": "",
+        "n_cases": "N_case",
+        "n_controls": "N_ctrl"
+      },
+      "regional_query": {
+        "n_records": 2010,
+        "n_parsed_records": 2010,
+        "n_malformed_records": 0,
+        "n_unique_variant_keys": 2010,
+        "n_duplicate_variant_key_rows": 0,
+        "numeric_field_summary": {
+          "inv_var_meta_beta": {
+            "finite_fraction": 1.0,
+            "minimum": -1.6936,
+            "maximum": 1.4915
+          },
+          "inv_var_meta_sebeta": {
+            "finite_fraction": 1.0,
+            "minimum": 0.0046231,
+            "maximum": 0.95803
+          },
+          "inv_var_meta_p": {
+            "finite_fraction": 1.0,
+            "minimum": 2.735e-06,
+            "maximum": 0.9995
+          },
+          "all_meta_AF": {
+            "finite_fraction": 1.0,
+            "minimum": 4.626e-05,
+            "maximum": 0.9889
+          },
+          "N_case": {
+            "finite_fraction": 1.0,
+            "minimum": 5358.0,
+            "maximum": 121940.0
+          },
+          "N_ctrl": {
+            "finite_fraction": 1.0,
+            "minimum": 47220.0,
+            "maximum": 1254131.0
+          }
+        }
+      },
+      "missing_requirements": []
+    },
+    "AFR": {
+      "source": {
+        "data_url": "https://gbmi-sumstats.s3.amazonaws.com/Asthma_Bothsex_afr_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz",
+        "index": {
+          "url": "https://gbmi-sumstats.s3.amazonaws.com/Asthma_Bothsex_afr_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz.tbi",
+          "path": "input/tabix_indexes/15b2/GBMI_AFR_6ccf8d691a62_Asthma_Bothsex_afr_inv_var_meta_GBMI_052021_nbbkgt1.txt.gz.tbi",
+          "downloaded": false,
+          "size_bytes": 1734686,
+          "sha256": "f57874ae837ab86821dc50fa1627cbca730c7578b145ad5c7d3499674dccf39f"
+        }
+      },
+      "contig": {
+        "target_chromosome": "5",
+        "selected_contig": "5",
+        "selection_method": "exact_contig_match",
+        "n_tabix_contigs": 23,
+        "tabix_contig_examples": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23"
+        ]
+      },
+      "header": {
+        "method": "tabix_metadata_header",
+        "n_columns": 17,
+        "columns": [
+          "CHR",
+          "POS",
+          "REF",
+          "ALT",
+          "rsid",
+          "all_meta_AF",
+          "inv_var_meta_beta",
+          "inv_var_meta_sebeta",
+          "inv_var_meta_p",
+          "inv_var_het_p",
+          "direction",
+          "N_case",
+          "N_ctrl",
+          "n_dataset",
+          "n_bbk",
+          "is_strand_flip",
+          "is_diff_AF_gnomAD"
+        ],
+        "saved_to": "output/15b2_gbmi_noneur_header.txt"
+      },
+      "field_mapping": {
+        "chrom": "CHR",
+        "pos": "POS",
+        "ref": "REF",
+        "alt": "ALT",
+        "beta": "inv_var_meta_beta",
+        "se": "inv_var_meta_sebeta",
+        "p": "inv_var_meta_p",
+        "af": "all_meta_AF",
+        "n": "",
+        "n_cases": "N_case",
+        "n_controls": "N_ctrl"
+      },
+      "regional_query": {
+        "n_records": 1670,
+        "n_parsed_records": 1670,
+        "n_malformed_records": 0,
+        "n_unique_variant_keys": 1670,
+        "n_duplicate_variant_key_rows": 0,
+        "numeric_field_summary": {
+          "inv_var_meta_beta": {
+            "finite_fraction": 1.0,
+            "minimum": -0.80375,
+            "maximum": 0.72489
+          },
+          "inv_var_meta_sebeta": {
+            "finite_fraction": 1.0,
+            "minimum": 0.025417,
+            "maximum": 0.48801
+          },
+          "inv_var_meta_p": {
+            "finite_fraction": 1.0,
+            "minimum": 0.00015,
+            "maximum": 0.9998
+          },
+          "all_meta_AF": {
+            "finite_fraction": 1.0,
+            "minimum": 0.002247,
+            "maximum": 0.9882
+          },
+          "N_case": {
+            "finite_fraction": 1.0,
+            "minimum": 1102.0,
+            "maximum": 5051.0
+          },
+          "N_ctrl": {
+            "finite_fraction": 1.0,
+            "minimum": 2997.0,
+            "maximum": 27607.0
+          }
+        }
+      },
+      "missing_requirements": []
+    }
+  },
+  "cross_ancestry_matching": {
+    "n_eur_unique_variant_keys": 2010,
+    "n_noneur_unique_variant_keys": 1670,
+    "n_shared_positions": 1091,
+    "n_exact_chr_pos_ref_alt_matches": 1088,
+    "n_swapped_ref_alt_matches": 1,
+    "exact_match_fraction_of_eur": 0.5412935323383085,
+    "exact_match_fraction_of_noneur": 0.651497005988024,
+    "recommended_primary_key": "normalized chromosome + position + REF + ALT",
+    "allele_action": "Use exact REF/ALT matches as primary. Swapped matches require explicit sign-flip harmonization after confirming source orientation."
+  }
+}

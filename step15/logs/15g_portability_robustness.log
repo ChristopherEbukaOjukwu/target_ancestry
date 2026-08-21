@@ -1,0 +1,35 @@
+/mnt/c/Users/chieb/Downloads/target_ancestry/step15/15g_portability_robustness.py:730: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(data, labels=[c.replace("_", " ") for c in categories])
+==============================================================================
+STEP 15G — PORTABILITY ROBUSTNESS
+==============================================================================
+Comparisons: 104
+Gene–trait–source units: 50
+Portability × powered-coloc overlap: 15
+
+Random-effects summary across units:
+estimator  n  random_mean  random_ci_lower  random_ci_upper     tau2  i2_percent
+   deming 50     0.673200         0.546173         0.800228 0.155448   89.366916
+     fiqt 50     0.684467         0.538951         0.829984 0.201569   89.189433
+    naive 50     0.675310         0.535044         0.815576 0.184679   88.991762
+
+Colocalization-stratified counts:
+                  grouping estimator       coloc_group  n_comparisons_total  n_units  median_slope
+comparison_prior_stability    deming   PRIOR_SENSITIVE                    5        5      0.878352
+comparison_prior_stability    deming   ROBUST_DISTINCT                    5        4      0.699318
+comparison_prior_stability    deming     ROBUST_SHARED                    5        5      0.926949
+comparison_prior_stability      fiqt   PRIOR_SENSITIVE                    5        5      0.867335
+comparison_prior_stability      fiqt   ROBUST_DISTINCT                    5        4      1.088203
+comparison_prior_stability      fiqt     ROBUST_SHARED                    5        5      1.048863
+comparison_prior_stability     naive   PRIOR_SENSITIVE                    5        5      0.861718
+comparison_prior_stability     naive   ROBUST_DISTINCT                    5        4      1.080671
+comparison_prior_stability     naive     ROBUST_SHARED                    5        5      0.870620
+           shared_vs_other    deming NOT_ROBUST_SHARED                   10        8      0.853731
+           shared_vs_other    deming     ROBUST_SHARED                    5        5      0.926949
+           shared_vs_other      fiqt NOT_ROBUST_SHARED                   10        8      0.977769
+           shared_vs_other      fiqt     ROBUST_SHARED                    5        5      1.048863
+           shared_vs_other     naive NOT_ROBUST_SHARED                   10        8      0.971194
+           shared_vs_other     naive     ROBUST_SHARED                    5        5      0.870620
+
+Outputs written to: output
+==============================================================================

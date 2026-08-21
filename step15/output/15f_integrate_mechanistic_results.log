@@ -1,0 +1,24 @@
+==============================================================================
+STEP 15F — INTEGRATED MECHANISTIC RESULTS
+==============================================================================
+Status: PASS
+Primary units: 213
+Primary comparisons: 538
+Portability final: 50 units | 104 comparisons
+Colocalization powered final: 14 units | 17 comparisons
+Both final mechanisms: 13 units
+
+Portability Pool A minus Pool B:
+  naive: median difference=-0.0164 (95% bootstrap interval -0.4463, 0.3306); Cliff's delta=-0.080; permutation p=0.865
+  fiqt: median difference=-0.0158 (95% bootstrap interval -0.4532, 0.3597); Cliff's delta=-0.059; permutation p=0.8954
+  deming: median difference=0.0280 (95% bootstrap interval -0.3026, 0.3342); Cliff's delta=0.000; permutation p=0.856
+
+Final powered colocalization unit classes:
+  ROBUST_SHARED: 5
+  ROBUST_DISTINCT: 3
+  ANCESTRY_DISCORDANT: 1
+  MIXED_WITH_PRIOR_SENSITIVITY: 1
+  PRIOR_SENSITIVE: 4
+
+Summary: output/15f_mechanistic_summary.json
+==============================================================================

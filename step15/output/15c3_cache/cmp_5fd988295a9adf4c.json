@@ -1,0 +1,173 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9981401876665454,
+    "diagonal_minimum": 0.9960372703950287,
+    "maximum": 0.9981401876665454,
+    "minimum": 0.00025538916222303304,
+    "shape": [
+      10,
+      10
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_5fd988295a9adf4c",
+  "completed_at_utc": "2026-07-25T02:44:42.444956+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999275093455553,
+    "diagonal_minimum": 0.9998647565158442,
+    "maximum": 0.9999275093455553,
+    "minimum": 0.012776589746623369,
+    "shape": [
+      10,
+      10
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "APOL1",
+  "gene_trait_uid": "gt_2f8ebd8b90936da0",
+  "matrix_cache": "output/15c3_cache/cmp_5fd988295a9adf4c.npz",
+  "n_reference_usable": 10,
+  "n_requested": 10,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 15538359,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031690,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "22:36556823:G:T"
+    },
+    {
+      "comparison_panel_index": 15538310,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031600,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "22:36550067:T:C"
+    },
+    {
+      "comparison_panel_index": 15538321,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031627,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "22:36552402:T:C"
+    },
+    {
+      "comparison_panel_index": 15538348,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031668,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "22:36555472:C:G"
+    },
+    {
+      "comparison_panel_index": 15538351,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031674,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "22:36555794:C:T"
+    },
+    {
+      "comparison_panel_index": 15538345,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031665,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "22:36555365:A:C"
+    },
+    {
+      "comparison_panel_index": 15538346,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031666,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 6,
+      "variant_id": "22:36555366:A:T"
+    },
+    {
+      "comparison_panel_index": 15538410,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031774,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 7,
+      "variant_id": "22:36564170:G:A"
+    },
+    {
+      "comparison_panel_index": 15538305,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031593,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 8,
+      "variant_id": "22:36549166:T:A"
+    },
+    {
+      "comparison_panel_index": 15538338,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 23031655,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 9,
+      "variant_id": "22:36554588:C:T"
+    }
+  ],
+  "request_variant_ids": [
+    "22:36556823:G:T",
+    "22:36550067:T:C",
+    "22:36552402:T:C",
+    "22:36555472:C:G",
+    "22:36555794:C:T",
+    "22:36555365:A:C",
+    "22:36555366:A:T",
+    "22:36564170:G:A",
+    "22:36549166:T:A",
+    "22:36554588:C:T"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Estimated glomerular filtration rate, serum creatinine"
+}

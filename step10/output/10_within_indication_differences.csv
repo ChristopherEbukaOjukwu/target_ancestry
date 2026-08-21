@@ -1,0 +1,386 @@
+indication_mesh_id,indication_mesh_term,n_pairs,n_A,n_B,exposure,A_mean,B_mean,A_minus_B
+D000544,Alzheimer Disease,11,1,10,n_ancestries_all,1.0,1.0,0.0
+D000544,Alzheimer Disease,11,1,10,n_ancestries_initial,1.0,1.0,0.0
+D000544,Alzheimer Disease,11,1,10,n_ancestries_replication,1.0,0.7,0.30000000000000004
+D000544,Alzheimer Disease,11,1,10,has_replication,1.0,0.5,0.5
+D000544,Alzheimer Disease,11,1,10,has_african,0.0,0.0,0.0
+D000544,Alzheimer Disease,11,1,10,has_east_asian,0.0,0.1,-0.1
+D000544,Alzheimer Disease,11,1,10,has_south_asian,0.0,0.0,0.0
+D000740,Anemia,11,4,7,n_ancestries_all,3.0,3.2857142857142856,-0.2857142857142856
+D000740,Anemia,11,4,7,n_ancestries_initial,3.0,3.2857142857142856,-0.2857142857142856
+D000740,Anemia,11,4,7,n_ancestries_replication,0.0,0.0,0.0
+D000740,Anemia,11,4,7,has_replication,0.0,0.0,0.0
+D000740,Anemia,11,4,7,has_african,0.5,0.5714285714285714,-0.0714285714285714
+D000740,Anemia,11,4,7,has_east_asian,0.5,0.7142857142857143,-0.2142857142857143
+D000740,Anemia,11,4,7,has_south_asian,0.5,0.5714285714285714,-0.0714285714285714
+D001008,Anxiety Disorders,7,1,6,n_ancestries_all,1.0,1.0,0.0
+D001008,Anxiety Disorders,7,1,6,n_ancestries_initial,1.0,1.0,0.0
+D001008,Anxiety Disorders,7,1,6,n_ancestries_replication,1.0,0.6666666666666666,0.33333333333333337
+D001008,Anxiety Disorders,7,1,6,has_replication,1.0,0.6666666666666666,0.33333333333333337
+D001008,Anxiety Disorders,7,1,6,has_african,0.0,0.0,0.0
+D001008,Anxiety Disorders,7,1,6,has_east_asian,0.0,0.0,0.0
+D001008,Anxiety Disorders,7,1,6,has_south_asian,0.0,0.0,0.0
+D001172,"Arthritis, Rheumatoid",15,3,12,n_ancestries_all,2.6666666666666665,2.3333333333333335,0.33333333333333304
+D001172,"Arthritis, Rheumatoid",15,3,12,n_ancestries_initial,2.6666666666666665,2.1666666666666665,0.5
+D001172,"Arthritis, Rheumatoid",15,3,12,n_ancestries_replication,1.3333333333333333,1.0833333333333333,0.25
+D001172,"Arthritis, Rheumatoid",15,3,12,has_replication,0.6666666666666666,0.5833333333333334,0.08333333333333326
+D001172,"Arthritis, Rheumatoid",15,3,12,has_african,0.6666666666666666,0.4166666666666667,0.24999999999999994
+D001172,"Arthritis, Rheumatoid",15,3,12,has_east_asian,1.0,1.0,0.0
+D001172,"Arthritis, Rheumatoid",15,3,12,has_south_asian,0.0,0.0,0.0
+D001249,Asthma,29,4,25,n_ancestries_all,2.5,2.28,0.2200000000000002
+D001249,Asthma,29,4,25,n_ancestries_initial,2.5,2.16,0.33999999999999986
+D001249,Asthma,29,4,25,n_ancestries_replication,1.75,0.96,0.79
+D001249,Asthma,29,4,25,has_replication,1.0,0.68,0.31999999999999995
+D001249,Asthma,29,4,25,has_african,0.5,0.4,0.09999999999999998
+D001249,Asthma,29,4,25,has_east_asian,0.5,0.4,0.09999999999999998
+D001249,Asthma,29,4,25,has_south_asian,0.0,0.0,0.0
+D001281,Atrial Fibrillation,6,2,4,n_ancestries_all,4.0,4.0,0.0
+D001281,Atrial Fibrillation,6,2,4,n_ancestries_initial,4.0,4.0,0.0
+D001281,Atrial Fibrillation,6,2,4,n_ancestries_replication,0.0,1.0,-1.0
+D001281,Atrial Fibrillation,6,2,4,has_replication,0.0,0.75,-0.75
+D001281,Atrial Fibrillation,6,2,4,has_african,1.0,1.0,0.0
+D001281,Atrial Fibrillation,6,2,4,has_east_asian,1.0,1.0,0.0
+D001281,Atrial Fibrillation,6,2,4,has_south_asian,0.0,0.0,0.0
+D001714,Bipolar Disorder,5,3,2,n_ancestries_all,1.6666666666666667,1.0,0.6666666666666667
+D001714,Bipolar Disorder,5,3,2,n_ancestries_initial,1.6666666666666667,1.0,0.6666666666666667
+D001714,Bipolar Disorder,5,3,2,n_ancestries_replication,0.6666666666666666,0.0,0.6666666666666666
+D001714,Bipolar Disorder,5,3,2,has_replication,0.6666666666666666,0.0,0.6666666666666666
+D001714,Bipolar Disorder,5,3,2,has_african,0.0,0.0,0.0
+D001714,Bipolar Disorder,5,3,2,has_east_asian,0.6666666666666666,0.0,0.6666666666666666
+D001714,Bipolar Disorder,5,3,2,has_south_asian,0.0,0.0,0.0
+D001943,Breast Neoplasms,16,2,14,n_ancestries_all,3.5,2.142857142857143,1.3571428571428572
+D001943,Breast Neoplasms,16,2,14,n_ancestries_initial,3.5,1.5,2.0
+D001943,Breast Neoplasms,16,2,14,n_ancestries_replication,2.5,1.9285714285714286,0.5714285714285714
+D001943,Breast Neoplasms,16,2,14,has_replication,1.0,0.7857142857142857,0.2142857142857143
+D001943,Breast Neoplasms,16,2,14,has_african,0.5,0.0,0.5
+D001943,Breast Neoplasms,16,2,14,has_east_asian,1.0,0.6428571428571429,0.3571428571428571
+D001943,Breast Neoplasms,16,2,14,has_south_asian,0.0,0.0,0.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,n_ancestries_all,1.0,1.0,0.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,n_ancestries_replication,1.0,0.0,1.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,has_replication,1.0,0.0,1.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,has_african,0.0,0.0,0.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,has_east_asian,1.0,0.0,1.0
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,1,has_south_asian,0.0,0.0,0.0
+D003093,"Colitis, Ulcerative",26,2,24,n_ancestries_all,2.5,3.1666666666666665,-0.6666666666666665
+D003093,"Colitis, Ulcerative",26,2,24,n_ancestries_initial,1.0,1.2083333333333333,-0.20833333333333326
+D003093,"Colitis, Ulcerative",26,2,24,n_ancestries_replication,2.0,2.9583333333333335,-0.9583333333333335
+D003093,"Colitis, Ulcerative",26,2,24,has_replication,0.5,0.8333333333333334,-0.33333333333333337
+D003093,"Colitis, Ulcerative",26,2,24,has_african,0.0,0.041666666666666664,-0.041666666666666664
+D003093,"Colitis, Ulcerative",26,2,24,has_east_asian,0.5,0.7083333333333334,-0.20833333333333337
+D003093,"Colitis, Ulcerative",26,2,24,has_south_asian,0.5,0.7083333333333334,-0.20833333333333337
+D003424,Crohn Disease,19,1,18,n_ancestries_all,4.0,2.8333333333333335,1.1666666666666665
+D003424,Crohn Disease,19,1,18,n_ancestries_initial,1.0,1.1666666666666667,-0.16666666666666674
+D003424,Crohn Disease,19,1,18,n_ancestries_replication,4.0,2.5555555555555554,1.4444444444444446
+D003424,Crohn Disease,19,1,18,has_replication,1.0,0.7222222222222222,0.2777777777777778
+D003424,Crohn Disease,19,1,18,has_african,0.0,0.0,0.0
+D003424,Crohn Disease,19,1,18,has_east_asian,1.0,0.6111111111111112,0.38888888888888884
+D003424,Crohn Disease,19,1,18,has_south_asian,1.0,0.6111111111111112,0.38888888888888884
+D003863,Depression,2,1,1,n_ancestries_all,1.0,1.0,0.0
+D003863,Depression,2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D003863,Depression,2,1,1,n_ancestries_replication,1.0,1.0,0.0
+D003863,Depression,2,1,1,has_replication,1.0,1.0,0.0
+D003863,Depression,2,1,1,has_african,0.0,0.0,0.0
+D003863,Depression,2,1,1,has_east_asian,0.0,0.0,0.0
+D003863,Depression,2,1,1,has_south_asian,0.0,0.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,n_ancestries_all,1.0,1.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,has_replication,1.0,1.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,has_african,0.0,0.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,has_east_asian,0.0,0.0,0.0
+D003865,"Depressive Disorder, Major",2,1,1,has_south_asian,0.0,0.0,0.0
+D003876,"Dermatitis, Atopic",12,2,10,n_ancestries_all,2.5,2.0,0.5
+D003876,"Dermatitis, Atopic",12,2,10,n_ancestries_initial,2.5,2.0,0.5
+D003876,"Dermatitis, Atopic",12,2,10,n_ancestries_replication,1.5,0.7,0.8
+D003876,"Dermatitis, Atopic",12,2,10,has_replication,0.5,0.3,0.2
+D003876,"Dermatitis, Atopic",12,2,10,has_african,0.5,0.2,0.3
+D003876,"Dermatitis, Atopic",12,2,10,has_east_asian,0.5,0.6,-0.09999999999999998
+D003876,"Dermatitis, Atopic",12,2,10,has_south_asian,0.0,0.0,0.0
+D003920,Diabetes Mellitus,13,2,11,n_ancestries_all,4.0,2.727272727272727,1.272727272727273
+D003920,Diabetes Mellitus,13,2,11,n_ancestries_initial,4.0,2.727272727272727,1.272727272727273
+D003920,Diabetes Mellitus,13,2,11,n_ancestries_replication,0.0,0.2727272727272727,-0.2727272727272727
+D003920,Diabetes Mellitus,13,2,11,has_replication,0.0,0.09090909090909091,-0.09090909090909091
+D003920,Diabetes Mellitus,13,2,11,has_african,1.0,0.45454545454545453,0.5454545454545454
+D003920,Diabetes Mellitus,13,2,11,has_east_asian,1.0,0.6363636363636364,0.36363636363636365
+D003920,Diabetes Mellitus,13,2,11,has_south_asian,1.0,0.45454545454545453,0.5454545454545454
+D003924,"Diabetes Mellitus, Type 2",18,9,9,n_ancestries_all,4.333333333333333,3.888888888888889,0.4444444444444442
+D003924,"Diabetes Mellitus, Type 2",18,9,9,n_ancestries_initial,4.222222222222222,3.888888888888889,0.3333333333333335
+D003924,"Diabetes Mellitus, Type 2",18,9,9,n_ancestries_replication,1.7777777777777777,0.4444444444444444,1.3333333333333333
+D003924,"Diabetes Mellitus, Type 2",18,9,9,has_replication,0.5555555555555556,0.2222222222222222,0.33333333333333337
+D003924,"Diabetes Mellitus, Type 2",18,9,9,has_african,0.7777777777777778,0.6666666666666666,0.11111111111111116
+D003924,"Diabetes Mellitus, Type 2",18,9,9,has_east_asian,0.8888888888888888,0.8888888888888888,0.0
+D003924,"Diabetes Mellitus, Type 2",18,9,9,has_south_asian,0.8888888888888888,0.7777777777777778,0.11111111111111105
+D005764,Gastroesophageal Reflux,2,1,1,n_ancestries_all,1.0,1.0,0.0
+D005764,Gastroesophageal Reflux,2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D005764,Gastroesophageal Reflux,2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D005764,Gastroesophageal Reflux,2,1,1,has_replication,1.0,0.0,1.0
+D005764,Gastroesophageal Reflux,2,1,1,has_african,0.0,0.0,0.0
+D005764,Gastroesophageal Reflux,2,1,1,has_east_asian,0.0,0.0,0.0
+D005764,Gastroesophageal Reflux,2,1,1,has_south_asian,0.0,0.0,0.0
+D006073,Gout,2,1,1,n_ancestries_all,6.0,2.0,4.0
+D006073,Gout,2,1,1,n_ancestries_initial,5.0,2.0,3.0
+D006073,Gout,2,1,1,n_ancestries_replication,3.0,0.0,3.0
+D006073,Gout,2,1,1,has_replication,1.0,0.0,1.0
+D006073,Gout,2,1,1,has_african,1.0,0.0,1.0
+D006073,Gout,2,1,1,has_east_asian,1.0,1.0,0.0
+D006073,Gout,2,1,1,has_south_asian,1.0,0.0,1.0
+D006937,Hypercholesterolemia,14,3,11,n_ancestries_all,5.0,4.818181818181818,0.18181818181818166
+D006937,Hypercholesterolemia,14,3,11,n_ancestries_initial,4.666666666666667,4.818181818181818,-0.15151515151515138
+D006937,Hypercholesterolemia,14,3,11,n_ancestries_replication,2.3333333333333335,2.090909090909091,0.24242424242424265
+D006937,Hypercholesterolemia,14,3,11,has_replication,1.0,0.5454545454545454,0.4545454545454546
+D006937,Hypercholesterolemia,14,3,11,has_african,0.6666666666666666,0.8181818181818182,-0.1515151515151516
+D006937,Hypercholesterolemia,14,3,11,has_east_asian,0.6666666666666666,0.7272727272727273,-0.06060606060606066
+D006937,Hypercholesterolemia,14,3,11,has_south_asian,0.6666666666666666,0.7272727272727273,-0.06060606060606066
+D006938,Hyperlipoproteinemia Type II,8,3,5,n_ancestries_all,7.333333333333333,4.8,2.533333333333333
+D006938,Hyperlipoproteinemia Type II,8,3,5,n_ancestries_initial,7.0,4.8,2.2
+D006938,Hyperlipoproteinemia Type II,8,3,5,n_ancestries_replication,5.0,2.6,2.4
+D006938,Hyperlipoproteinemia Type II,8,3,5,has_replication,1.0,0.8,0.19999999999999996
+D006938,Hyperlipoproteinemia Type II,8,3,5,has_african,1.0,0.6,0.4
+D006938,Hyperlipoproteinemia Type II,8,3,5,has_east_asian,1.0,0.8,0.19999999999999996
+D006938,Hyperlipoproteinemia Type II,8,3,5,has_south_asian,1.0,0.6,0.4
+D006949,Hyperlipidemias,22,4,18,n_ancestries_all,5.25,4.611111111111111,0.6388888888888893
+D006949,Hyperlipidemias,22,4,18,n_ancestries_initial,5.0,4.611111111111111,0.3888888888888893
+D006949,Hyperlipidemias,22,4,18,n_ancestries_replication,3.25,1.9444444444444444,1.3055555555555556
+D006949,Hyperlipidemias,22,4,18,has_replication,1.0,0.6111111111111112,0.38888888888888884
+D006949,Hyperlipidemias,22,4,18,has_african,0.75,0.7222222222222222,0.02777777777777779
+D006949,Hyperlipidemias,22,4,18,has_east_asian,0.75,0.7777777777777778,-0.02777777777777779
+D006949,Hyperlipidemias,22,4,18,has_south_asian,0.75,0.7222222222222222,0.02777777777777779
+D006973,Hypertension,19,8,11,n_ancestries_all,3.75,4.636363636363637,-0.8863636363636367
+D006973,Hypertension,19,8,11,n_ancestries_initial,3.75,4.636363636363637,-0.8863636363636367
+D006973,Hypertension,19,8,11,n_ancestries_replication,1.25,1.0,0.25
+D006973,Hypertension,19,8,11,has_replication,0.625,0.8181818181818182,-0.19318181818181823
+D006973,Hypertension,19,8,11,has_african,0.375,0.6363636363636364,-0.26136363636363635
+D006973,Hypertension,19,8,11,has_east_asian,0.5,0.5454545454545454,-0.045454545454545414
+D006973,Hypertension,19,8,11,has_south_asian,0.375,0.45454545454545453,-0.07954545454545453
+D007249,Inflammation,18,1,17,n_ancestries_all,1.0,2.5294117647058822,-1.5294117647058822
+D007249,Inflammation,18,1,17,n_ancestries_initial,1.0,2.5294117647058822,-1.5294117647058822
+D007249,Inflammation,18,1,17,n_ancestries_replication,0.0,0.29411764705882354,-0.29411764705882354
+D007249,Inflammation,18,1,17,has_replication,0.0,0.35294117647058826,-0.35294117647058826
+D007249,Inflammation,18,1,17,has_african,0.0,0.29411764705882354,-0.29411764705882354
+D007249,Inflammation,18,1,17,has_east_asian,0.0,0.23529411764705882,-0.23529411764705882
+D007249,Inflammation,18,1,17,has_south_asian,0.0,0.29411764705882354,-0.29411764705882354
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,n_ancestries_all,1.0,1.0,0.0
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,n_ancestries_initial,1.0,1.0,0.0
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,n_ancestries_replication,1.0,0.3333333333333333,0.6666666666666667
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,has_replication,1.0,0.3333333333333333,0.6666666666666667
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,has_african,0.0,0.0,0.0
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,has_east_asian,0.0,0.0,0.0
+D007319,Sleep Initiation and Maintenance Disorders,6,3,3,has_south_asian,0.0,0.0,0.0
+D007676,"Kidney Failure, Chronic",6,1,5,n_ancestries_all,1.0,2.8,-1.7999999999999998
+D007676,"Kidney Failure, Chronic",6,1,5,n_ancestries_initial,1.0,2.8,-1.7999999999999998
+D007676,"Kidney Failure, Chronic",6,1,5,n_ancestries_replication,0.0,0.0,0.0
+D007676,"Kidney Failure, Chronic",6,1,5,has_replication,0.0,0.0,0.0
+D007676,"Kidney Failure, Chronic",6,1,5,has_african,0.0,0.6,-0.6
+D007676,"Kidney Failure, Chronic",6,1,5,has_east_asian,0.0,0.2,-0.2
+D007676,"Kidney Failure, Chronic",6,1,5,has_south_asian,0.0,0.4,-0.4
+D008269,Macular Edema,4,1,3,n_ancestries_all,3.0,1.0,2.0
+D008269,Macular Edema,4,1,3,n_ancestries_initial,3.0,1.0,2.0
+D008269,Macular Edema,4,1,3,n_ancestries_replication,2.0,1.0,1.0
+D008269,Macular Edema,4,1,3,has_replication,1.0,1.0,0.0
+D008269,Macular Edema,4,1,3,has_african,0.0,0.0,0.0
+D008269,Macular Edema,4,1,3,has_east_asian,1.0,0.0,1.0
+D008269,Macular Edema,4,1,3,has_south_asian,1.0,0.0,1.0
+D008593,Menopause,2,1,1,n_ancestries_all,2.0,2.0,0.0
+D008593,Menopause,2,1,1,n_ancestries_initial,2.0,2.0,0.0
+D008593,Menopause,2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D008593,Menopause,2,1,1,has_replication,0.0,0.0,0.0
+D008593,Menopause,2,1,1,has_african,0.0,0.0,0.0
+D008593,Menopause,2,1,1,has_east_asian,1.0,1.0,0.0
+D008593,Menopause,2,1,1,has_south_asian,0.0,0.0,0.0
+D008881,Migraine Disorders,3,2,1,n_ancestries_all,1.0,1.0,0.0
+D008881,Migraine Disorders,3,2,1,n_ancestries_initial,1.0,1.0,0.0
+D008881,Migraine Disorders,3,2,1,n_ancestries_replication,0.0,1.0,-1.0
+D008881,Migraine Disorders,3,2,1,has_replication,0.0,1.0,-1.0
+D008881,Migraine Disorders,3,2,1,has_african,0.0,0.0,0.0
+D008881,Migraine Disorders,3,2,1,has_east_asian,0.0,0.0,0.0
+D008881,Migraine Disorders,3,2,1,has_south_asian,0.0,0.0,0.0
+D009203,Myocardial Infarction,2,1,1,n_ancestries_all,6.0,6.0,0.0
+D009203,Myocardial Infarction,2,1,1,n_ancestries_initial,6.0,6.0,0.0
+D009203,Myocardial Infarction,2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D009203,Myocardial Infarction,2,1,1,has_replication,0.0,0.0,0.0
+D009203,Myocardial Infarction,2,1,1,has_african,1.0,1.0,0.0
+D009203,Myocardial Infarction,2,1,1,has_east_asian,1.0,1.0,0.0
+D009203,Myocardial Infarction,2,1,1,has_south_asian,1.0,1.0,0.0
+D009290,Narcolepsy,2,1,1,n_ancestries_all,1.0,1.0,0.0
+D009290,Narcolepsy,2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D009290,Narcolepsy,2,1,1,n_ancestries_replication,0.0,1.0,-1.0
+D009290,Narcolepsy,2,1,1,has_replication,1.0,1.0,0.0
+D009290,Narcolepsy,2,1,1,has_african,0.0,0.0,0.0
+D009290,Narcolepsy,2,1,1,has_east_asian,0.0,0.0,0.0
+D009290,Narcolepsy,2,1,1,has_south_asian,0.0,0.0,0.0
+D009369,Neoplasms,11,1,10,n_ancestries_all,1.0,1.0,0.0
+D009369,Neoplasms,11,1,10,n_ancestries_initial,1.0,1.0,0.0
+D009369,Neoplasms,11,1,10,n_ancestries_replication,0.0,0.0,0.0
+D009369,Neoplasms,11,1,10,has_replication,0.0,0.0,0.0
+D009369,Neoplasms,11,1,10,has_african,0.0,0.0,0.0
+D009369,Neoplasms,11,1,10,has_east_asian,0.0,0.0,0.0
+D009369,Neoplasms,11,1,10,has_south_asian,0.0,0.0,0.0
+D009503,Neutropenia,4,2,2,n_ancestries_all,4.0,3.0,1.0
+D009503,Neutropenia,4,2,2,n_ancestries_initial,4.0,3.0,1.0
+D009503,Neutropenia,4,2,2,n_ancestries_replication,1.5,0.0,1.5
+D009503,Neutropenia,4,2,2,has_replication,1.0,0.0,1.0
+D009503,Neutropenia,4,2,2,has_african,1.0,1.0,0.0
+D009503,Neutropenia,4,2,2,has_east_asian,1.0,0.5,0.5
+D009503,Neutropenia,4,2,2,has_south_asian,0.5,0.5,0.0
+D009765,Obesity,31,4,27,n_ancestries_all,4.5,2.037037037037037,2.462962962962963
+D009765,Obesity,31,4,27,n_ancestries_initial,4.25,1.8518518518518519,2.398148148148148
+D009765,Obesity,31,4,27,n_ancestries_replication,2.5,0.8148148148148148,1.6851851851851851
+D009765,Obesity,31,4,27,has_replication,0.5,0.25925925925925924,0.24074074074074076
+D009765,Obesity,31,4,27,has_african,0.5,0.18518518518518517,0.3148148148148148
+D009765,Obesity,31,4,27,has_east_asian,1.0,0.3333333333333333,0.6666666666666667
+D009765,Obesity,31,4,27,has_south_asian,0.5,0.18518518518518517,0.3148148148148148
+D010003,Osteoarthritis,2,1,1,n_ancestries_all,0.0,1.0,-1.0
+D010003,Osteoarthritis,2,1,1,n_ancestries_initial,0.0,1.0,-1.0
+D010003,Osteoarthritis,2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D010003,Osteoarthritis,2,1,1,has_replication,0.0,0.0,0.0
+D010003,Osteoarthritis,2,1,1,has_african,0.0,0.0,0.0
+D010003,Osteoarthritis,2,1,1,has_east_asian,0.0,0.0,0.0
+D010003,Osteoarthritis,2,1,1,has_south_asian,0.0,0.0,0.0
+D010024,Osteoporosis,3,1,2,n_ancestries_all,4.0,1.0,3.0
+D010024,Osteoporosis,3,1,2,n_ancestries_initial,4.0,1.0,3.0
+D010024,Osteoporosis,3,1,2,n_ancestries_replication,2.0,1.0,1.0
+D010024,Osteoporosis,3,1,2,has_replication,1.0,0.5,0.5
+D010024,Osteoporosis,3,1,2,has_african,1.0,0.0,1.0
+D010024,Osteoporosis,3,1,2,has_east_asian,1.0,0.5,0.5
+D010024,Osteoporosis,3,1,2,has_south_asian,0.0,0.0,0.0
+D011471,Prostatic Neoplasms,16,1,15,n_ancestries_all,4.0,4.0,0.0
+D011471,Prostatic Neoplasms,16,1,15,n_ancestries_initial,4.0,3.6,0.3999999999999999
+D011471,Prostatic Neoplasms,16,1,15,n_ancestries_replication,0.0,2.533333333333333,-2.533333333333333
+D011471,Prostatic Neoplasms,16,1,15,has_replication,0.0,0.5333333333333333,-0.5333333333333333
+D011471,Prostatic Neoplasms,16,1,15,has_african,1.0,0.8666666666666667,0.1333333333333333
+D011471,Prostatic Neoplasms,16,1,15,has_east_asian,1.0,0.8666666666666667,0.1333333333333333
+D011471,Prostatic Neoplasms,16,1,15,has_south_asian,0.0,0.0,0.0
+D011565,Psoriasis,12,3,9,n_ancestries_all,2.0,1.2222222222222223,0.7777777777777777
+D011565,Psoriasis,12,3,9,n_ancestries_initial,2.0,1.2222222222222223,0.7777777777777777
+D011565,Psoriasis,12,3,9,n_ancestries_replication,1.6666666666666667,0.5555555555555556,1.1111111111111112
+D011565,Psoriasis,12,3,9,has_replication,1.0,0.3333333333333333,0.6666666666666667
+D011565,Psoriasis,12,3,9,has_african,0.0,0.0,0.0
+D011565,Psoriasis,12,3,9,has_east_asian,1.0,0.2222222222222222,0.7777777777777778
+D011565,Psoriasis,12,3,9,has_south_asian,0.0,0.0,0.0
+D011618,Psychotic Disorders,3,1,2,n_ancestries_all,4.0,4.0,0.0
+D011618,Psychotic Disorders,3,1,2,n_ancestries_initial,4.0,4.0,0.0
+D011618,Psychotic Disorders,3,1,2,n_ancestries_replication,2.0,2.0,0.0
+D011618,Psychotic Disorders,3,1,2,has_replication,1.0,1.0,0.0
+D011618,Psychotic Disorders,3,1,2,has_african,0.0,0.0,0.0
+D011618,Psychotic Disorders,3,1,2,has_east_asian,1.0,1.0,0.0
+D011618,Psychotic Disorders,3,1,2,has_south_asian,1.0,1.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,n_ancestries_all,1.0,1.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,n_ancestries_initial,1.0,1.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,n_ancestries_replication,0.0,0.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,has_replication,0.0,1.0,-1.0
+D012148,Restless Legs Syndrome,2,1,1,has_african,0.0,0.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,has_east_asian,0.0,0.0,0.0
+D012148,Restless Legs Syndrome,2,1,1,has_south_asian,0.0,0.0,0.0
+D012559,Schizophrenia,4,1,3,n_ancestries_all,4.0,4.0,0.0
+D012559,Schizophrenia,4,1,3,n_ancestries_initial,4.0,4.0,0.0
+D012559,Schizophrenia,4,1,3,n_ancestries_replication,2.0,2.0,0.0
+D012559,Schizophrenia,4,1,3,has_replication,1.0,1.0,0.0
+D012559,Schizophrenia,4,1,3,has_african,0.0,0.0,0.0
+D012559,Schizophrenia,4,1,3,has_east_asian,1.0,1.0,0.0
+D012559,Schizophrenia,4,1,3,has_south_asian,1.0,1.0,0.0
+D012859,Sjogren's Syndrome,6,1,5,n_ancestries_all,3.0,2.6,0.3999999999999999
+D012859,Sjogren's Syndrome,6,1,5,n_ancestries_initial,3.0,2.4,0.6000000000000001
+D012859,Sjogren's Syndrome,6,1,5,n_ancestries_replication,2.0,1.6,0.3999999999999999
+D012859,Sjogren's Syndrome,6,1,5,has_replication,1.0,0.8,0.19999999999999996
+D012859,Sjogren's Syndrome,6,1,5,has_african,1.0,0.6,0.4
+D012859,Sjogren's Syndrome,6,1,5,has_east_asian,1.0,0.8,0.19999999999999996
+D012859,Sjogren's Syndrome,6,1,5,has_south_asian,0.0,0.0,0.0
+D012893,Sleep Wake Disorders,5,1,4,n_ancestries_all,1.0,1.0,0.0
+D012893,Sleep Wake Disorders,5,1,4,n_ancestries_initial,1.0,1.0,0.0
+D012893,Sleep Wake Disorders,5,1,4,n_ancestries_replication,1.0,0.5,0.5
+D012893,Sleep Wake Disorders,5,1,4,has_replication,1.0,0.75,0.25
+D012893,Sleep Wake Disorders,5,1,4,has_african,0.0,0.0,0.0
+D012893,Sleep Wake Disorders,5,1,4,has_east_asian,0.0,0.0,0.0
+D012893,Sleep Wake Disorders,5,1,4,has_south_asian,0.0,0.0,0.0
+D013921,Thrombocytopenia,10,4,6,n_ancestries_all,3.75,1.8333333333333333,1.9166666666666667
+D013921,Thrombocytopenia,10,4,6,n_ancestries_initial,3.75,1.8333333333333333,1.9166666666666667
+D013921,Thrombocytopenia,10,4,6,n_ancestries_replication,0.75,0.16666666666666666,0.5833333333333334
+D013921,Thrombocytopenia,10,4,6,has_replication,0.25,0.16666666666666666,0.08333333333333334
+D013921,Thrombocytopenia,10,4,6,has_african,0.5,0.16666666666666666,0.33333333333333337
+D013921,Thrombocytopenia,10,4,6,has_east_asian,0.75,0.3333333333333333,0.4166666666666667
+D013921,Thrombocytopenia,10,4,6,has_south_asian,0.5,0.16666666666666666,0.33333333333333337
+D013922,Thrombocytosis,10,2,8,n_ancestries_all,1.5,2.75,-1.25
+D013922,Thrombocytosis,10,2,8,n_ancestries_initial,1.5,2.75,-1.25
+D013922,Thrombocytosis,10,2,8,n_ancestries_replication,0.5,0.25,0.25
+D013922,Thrombocytosis,10,2,8,has_replication,0.5,0.25,0.25
+D013922,Thrombocytosis,10,2,8,has_african,0.0,0.375,-0.375
+D013922,Thrombocytosis,10,2,8,has_east_asian,0.5,0.375,0.125
+D013922,Thrombocytosis,10,2,8,has_south_asian,0.0,0.375,-0.375
+D013927,Thrombosis,5,2,3,n_ancestries_all,1.0,1.0,0.0
+D013927,Thrombosis,5,2,3,n_ancestries_initial,1.0,0.6666666666666666,0.33333333333333337
+D013927,Thrombosis,5,2,3,n_ancestries_replication,0.0,0.6666666666666666,-0.6666666666666666
+D013927,Thrombosis,5,2,3,has_replication,0.0,0.3333333333333333,-0.3333333333333333
+D013927,Thrombosis,5,2,3,has_african,0.0,0.3333333333333333,-0.3333333333333333
+D013927,Thrombosis,5,2,3,has_east_asian,0.0,0.0,0.0
+D013927,Thrombosis,5,2,3,has_south_asian,0.0,0.0,0.0
+D014029,Tobacco Use Disorder,4,1,3,n_ancestries_all,2.0,1.3333333333333333,0.6666666666666667
+D014029,Tobacco Use Disorder,4,1,3,n_ancestries_initial,2.0,1.3333333333333333,0.6666666666666667
+D014029,Tobacco Use Disorder,4,1,3,n_ancestries_replication,1.0,0.6666666666666666,0.33333333333333337
+D014029,Tobacco Use Disorder,4,1,3,has_replication,1.0,0.6666666666666666,0.33333333333333337
+D014029,Tobacco Use Disorder,4,1,3,has_african,1.0,0.3333333333333333,0.6666666666666667
+D014029,Tobacco Use Disorder,4,1,3,has_east_asian,0.0,0.0,0.0
+D014029,Tobacco Use Disorder,4,1,3,has_south_asian,0.0,0.0,0.0
+D015228,Hypertriglyceridemia,14,3,11,n_ancestries_all,4.333333333333333,4.636363636363637,-0.30303030303030365
+D015228,Hypertriglyceridemia,14,3,11,n_ancestries_initial,4.333333333333333,4.545454545454546,-0.21212121212121282
+D015228,Hypertriglyceridemia,14,3,11,n_ancestries_replication,4.333333333333333,1.7272727272727273,2.6060606060606055
+D015228,Hypertriglyceridemia,14,3,11,has_replication,1.0,0.36363636363636365,0.6363636363636364
+D015228,Hypertriglyceridemia,14,3,11,has_african,0.6666666666666666,0.7272727272727273,-0.06060606060606066
+D015228,Hypertriglyceridemia,14,3,11,has_east_asian,0.6666666666666666,0.7272727272727273,-0.06060606060606066
+D015228,Hypertriglyceridemia,14,3,11,has_south_asian,0.6666666666666666,0.7272727272727273,-0.06060606060606066
+D015535,"Arthritis, Psoriatic",9,3,6,n_ancestries_all,2.0,1.6666666666666667,0.33333333333333326
+D015535,"Arthritis, Psoriatic",9,3,6,n_ancestries_initial,2.0,1.6666666666666667,0.33333333333333326
+D015535,"Arthritis, Psoriatic",9,3,6,n_ancestries_replication,1.3333333333333333,0.5,0.8333333333333333
+D015535,"Arthritis, Psoriatic",9,3,6,has_replication,0.6666666666666666,0.3333333333333333,0.3333333333333333
+D015535,"Arthritis, Psoriatic",9,3,6,has_african,0.0,0.0,0.0
+D015535,"Arthritis, Psoriatic",9,3,6,has_east_asian,1.0,0.6666666666666666,0.33333333333333337
+D015535,"Arthritis, Psoriatic",9,3,6,has_south_asian,0.0,0.0,0.0
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,n_ancestries_all,1.0,2.25,-1.25
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,n_ancestries_initial,1.0,2.25,-1.25
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,n_ancestries_replication,0.0,0.0,0.0
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,has_replication,0.0,0.0,0.0
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,has_african,0.0,0.25,-0.25
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,has_east_asian,0.0,0.5,-0.5
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,4,has_south_asian,0.0,0.25,-0.25
+D020246,Venous Thrombosis,4,2,2,n_ancestries_all,1.0,0.5,0.5
+D020246,Venous Thrombosis,4,2,2,n_ancestries_initial,1.0,0.5,0.5
+D020246,Venous Thrombosis,4,2,2,n_ancestries_replication,0.0,0.0,0.0
+D020246,Venous Thrombosis,4,2,2,has_replication,0.0,0.0,0.0
+D020246,Venous Thrombosis,4,2,2,has_african,0.0,0.0,0.0
+D020246,Venous Thrombosis,4,2,2,has_east_asian,0.0,0.0,0.0
+D020246,Venous Thrombosis,4,2,2,has_south_asian,0.0,0.0,0.0
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,n_ancestries_all,2.0,2.588235294117647,-0.5882352941176472
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,n_ancestries_initial,2.0,2.411764705882353,-0.4117647058823528
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,n_ancestries_replication,1.0,1.2941176470588236,-0.2941176470588236
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,has_replication,1.0,0.6470588235294118,0.3529411764705882
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,has_african,0.3333333333333333,0.47058823529411764,-0.13725490196078433
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,has_east_asian,0.3333333333333333,0.47058823529411764,-0.13725490196078433
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,17,has_south_asian,0.0,0.0,0.0
+D050171,Dyslipidemias,5,3,2,n_ancestries_all,4.666666666666667,7.0,-2.333333333333333
+D050171,Dyslipidemias,5,3,2,n_ancestries_initial,4.666666666666667,7.0,-2.333333333333333
+D050171,Dyslipidemias,5,3,2,n_ancestries_replication,2.0,6.0,-4.0
+D050171,Dyslipidemias,5,3,2,has_replication,1.0,1.0,0.0
+D050171,Dyslipidemias,5,3,2,has_african,0.6666666666666666,1.0,-0.33333333333333337
+D050171,Dyslipidemias,5,3,2,has_east_asian,0.6666666666666666,1.0,-0.33333333333333337
+D050171,Dyslipidemias,5,3,2,has_south_asian,0.6666666666666666,1.0,-0.33333333333333337
+D050197,Atherosclerosis,9,1,8,n_ancestries_all,6.0,3.625,2.375
+D050197,Atherosclerosis,9,1,8,n_ancestries_initial,6.0,3.5,2.5
+D050197,Atherosclerosis,9,1,8,n_ancestries_replication,0.0,0.875,-0.875
+D050197,Atherosclerosis,9,1,8,has_replication,1.0,0.875,0.125
+D050197,Atherosclerosis,9,1,8,has_african,1.0,0.5,0.5
+D050197,Atherosclerosis,9,1,8,has_east_asian,1.0,0.875,0.125
+D050197,Atherosclerosis,9,1,8,has_south_asian,1.0,0.375,0.625
+D057765,Eosinophilic Esophagitis,6,2,4,n_ancestries_all,5.0,3.75,1.25
+D057765,Eosinophilic Esophagitis,6,2,4,n_ancestries_initial,5.0,3.75,1.25
+D057765,Eosinophilic Esophagitis,6,2,4,n_ancestries_replication,0.5,0.75,-0.25
+D057765,Eosinophilic Esophagitis,6,2,4,has_replication,0.5,0.75,-0.25
+D057765,Eosinophilic Esophagitis,6,2,4,has_african,1.0,0.75,0.25
+D057765,Eosinophilic Esophagitis,6,2,4,has_east_asian,1.0,0.75,0.25
+D057765,Eosinophilic Esophagitis,6,2,4,has_south_asian,1.0,0.5,0.5
+D065631,"Rhinitis, Allergic",9,1,8,n_ancestries_all,1.0,3.375,-2.375
+D065631,"Rhinitis, Allergic",9,1,8,n_ancestries_initial,1.0,3.0,-2.0
+D065631,"Rhinitis, Allergic",9,1,8,n_ancestries_replication,1.0,1.75,-0.75
+D065631,"Rhinitis, Allergic",9,1,8,has_replication,1.0,1.0,0.0
+D065631,"Rhinitis, Allergic",9,1,8,has_african,0.0,0.75,-0.75
+D065631,"Rhinitis, Allergic",9,1,8,has_east_asian,0.0,0.625,-0.625
+D065631,"Rhinitis, Allergic",9,1,8,has_south_asian,0.0,0.0,0.0

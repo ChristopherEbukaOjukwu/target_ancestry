@@ -1,0 +1,25 @@
+gene	indication_mesh_id	indication_mesh_term	first_assoc_year	launch_year
+ACE	D006973	Hypertension	2010	2013
+ADRB2	D001249	Asthma	2019	2004
+ADRB2	D029424	Pulmonary Disease, Chronic Obstructive	2019	2009
+AR	D011471	Prostatic Neoplasms	2021	2022
+BCL2	D015451	Leukemia, Lymphocytic, Chronic, B-Cell	2013	2018
+CHRM3	D029424	Pulmonary Disease, Chronic Obstructive	2017	2012
+CHRM3	D029481	Bronchitis, Chronic	2019	2012
+CSF3	D009503	Neutropenia	2016	2021
+DRD2	D012559	Schizophrenia	2014	2020
+EPAS1	D007680	Kidney Neoplasms	2010	2021
+IFNAR2	D000086382	COVID-19	2020	2021
+IL4R	D001249	Asthma	2018	2021
+IL4R	D057765	Eosinophilic Esophagitis	2016	2022
+INSR	D003924	Diabetes Mellitus, Type 2	2018	2008
+MC4R	D009765	Obesity	2008	2022
+NR3C1	D001249	Asthma	2018	2001
+NR3C1	D029424	Pulmonary Disease, Chronic Obstructive	2018	2012
+PCSK9	D006937	Hypercholesterolemia	2008	2018
+PCSK9	D006949	Hyperlipidemias	2008	2019
+PLG	D009203	Myocardial Infarction	2015	2003
+PPARA	D006949	Hyperlipidemias	2020	2008
+SCN1A	D004828	Epilepsies, Partial	2018	2019
+SCN5A	D017180	Tachycardia, Ventricular	2013	2009
+VEGFA	D009216	Myopia	2018	2022

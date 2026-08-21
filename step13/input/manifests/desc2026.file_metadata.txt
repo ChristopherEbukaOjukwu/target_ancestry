@@ -1,0 +1,8 @@
+  File: desc2026.gz
+  Size: 16812636  	Blocks: 32840      IO Block: 4096   regular file
+Device: 0,82	Inode: 34621422135453160  Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/  ojukwu)   Gid: ( 1000/  ojukwu)
+Access: 2026-07-23 13:16:23.225216100 -0600
+Modify: 2026-07-23 13:16:23.225216100 -0600
+Change: 2026-07-23 13:16:23.225216100 -0600
+ Birth: -

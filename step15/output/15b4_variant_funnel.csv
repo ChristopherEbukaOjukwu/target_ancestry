@@ -1,0 +1,141 @@
+grouping,candidate_source,unit_analysis_role,comparison_population,stage_order,stage,metric_column,n_comparisons,total_variants,median_variants,minimum_variants,maximum_variants,n_comparisons_with_at_least_one
+ALL,ALL,ALL,ALL,1,raw_eur_variants,n_raw_eur_variants,1062,3160991,2456.0,1162,17363,1062
+ALL,ALL,ALL,ALL,2,raw_comparison_variants,n_raw_comparison_variants,1062,2797441,2322.0,157,17363,1062
+ALL,ALL,ALL,ALL,3,primary_harmonized,n_harmonized_primary,1062,2721128,2277.0,157,17363,1062
+ALL,ALL,ALL,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,1062,2535844,2136.0,157,16147,1062
+ALL,ALL,ALL,ALL,5,valid_beta_se,n_valid_beta_se,1062,1532198,1221.0,157,9629,1062
+ALL,ALL,ALL,ALL,6,maf_pass,n_maf_pass,1062,891759,708.5,149,5127,1062
+ALL,ALL,ALL,ALL,7,quality_pass,n_quality_pass,1062,1387243,1096.0,157,8507,1062
+ALL,ALL,ALL,ALL,8,qc_qualified,n_qc_qualified,1062,795174,626.5,149,4524,1062
+ALL,ALL,ALL,ALL,9,eur_gws_qc,n_eur_gws_qc,1062,49670,0.0,0,819,452
+ALL,ALL,ALL,ALL,10,comparison_gws_qc,n_comparison_gws_qc,1062,1240,0.0,0,186,23
+candidate_source,GBMI,ALL,ALL,1,raw_eur_variants,n_raw_eur_variants,206,699396,2330.0,1188,15677,206
+candidate_source,GBMI,ALL,ALL,2,raw_comparison_variants,n_raw_comparison_variants,206,335846,1079.5,157,11381,206
+candidate_source,GBMI,ALL,ALL,3,primary_harmonized,n_harmonized_primary,206,259533,885.5,157,7274,206
+candidate_source,GBMI,ALL,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,206,245804,842.0,157,6750,206
+candidate_source,GBMI,ALL,ALL,5,valid_beta_se,n_valid_beta_se,206,259666,885.5,157,7280,206
+candidate_source,GBMI,ALL,ALL,6,maf_pass,n_maf_pass,206,179966,622.5,149,4682,206
+candidate_source,GBMI,ALL,ALL,7,quality_pass,n_quality_pass,206,259016,884.0,157,7261,206
+candidate_source,GBMI,ALL,ALL,8,qc_qualified,n_qc_qualified,206,170170,582.0,149,4363,206
+candidate_source,GBMI,ALL,ALL,9,eur_gws_qc,n_eur_gws_qc,206,8307,0.0,0,398,77
+candidate_source,GBMI,ALL,ALL,10,comparison_gws_qc,n_comparison_gws_qc,206,523,0.0,0,105,8
+candidate_source,Pan-UKB,ALL,ALL,1,raw_eur_variants,n_raw_eur_variants,856,2461595,2493.0,1162,17363,856
+candidate_source,Pan-UKB,ALL,ALL,2,raw_comparison_variants,n_raw_comparison_variants,856,2461595,2493.0,1162,17363,856
+candidate_source,Pan-UKB,ALL,ALL,3,primary_harmonized,n_harmonized_primary,856,2461595,2493.0,1162,17363,856
+candidate_source,Pan-UKB,ALL,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,856,2290040,2297.0,1086,16147,856
+candidate_source,Pan-UKB,ALL,ALL,5,valid_beta_se,n_valid_beta_se,856,1272532,1295.0,278,9629,856
+candidate_source,Pan-UKB,ALL,ALL,6,maf_pass,n_maf_pass,856,711793,728.5,185,5127,856
+candidate_source,Pan-UKB,ALL,ALL,7,quality_pass,n_quality_pass,856,1128227,1136.5,255,8507,856
+candidate_source,Pan-UKB,ALL,ALL,8,qc_qualified,n_qc_qualified,856,625004,638.5,164,4524,856
+candidate_source,Pan-UKB,ALL,ALL,9,eur_gws_qc,n_eur_gws_qc,856,41363,0.0,0,819,375
+candidate_source,Pan-UKB,ALL,ALL,10,comparison_gws_qc,n_comparison_gws_qc,856,717,0.0,0,186,15
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,1,raw_eur_variants,n_raw_eur_variants,206,699396,2330.0,1188,15677,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,2,raw_comparison_variants,n_raw_comparison_variants,206,335846,1079.5,157,11381,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,3,primary_harmonized,n_harmonized_primary,206,259533,885.5,157,7274,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,206,245804,842.0,157,6750,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,5,valid_beta_se,n_valid_beta_se,206,259666,885.5,157,7280,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,6,maf_pass,n_maf_pass,206,179966,622.5,149,4682,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,7,quality_pass,n_quality_pass,206,259016,884.0,157,7261,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,8,qc_qualified,n_qc_qualified,206,170170,582.0,149,4363,206
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,9,eur_gws_qc,n_eur_gws_qc,206,8307,0.0,0,398,77
+candidate_source + unit_analysis_role,GBMI,PRIMARY,ALL,10,comparison_gws_qc,n_comparison_gws_qc,206,523,0.0,0,105,8
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,1,raw_eur_variants,n_raw_eur_variants,345,943539,2499.0,1162,8452,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,2,raw_comparison_variants,n_raw_comparison_variants,345,943539,2499.0,1162,8452,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,3,primary_harmonized,n_harmonized_primary,345,943539,2499.0,1162,8452,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,345,876616,2287.0,1086,7940,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,5,valid_beta_se,n_valid_beta_se,345,480324,1295.0,278,4804,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,6,maf_pass,n_maf_pass,345,276166,739.0,185,2859,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,7,quality_pass,n_quality_pass,345,429431,1147.0,255,4237,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,8,qc_qualified,n_qc_qualified,345,241686,652.0,164,2543,345
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,9,eur_gws_qc,n_eur_gws_qc,345,24396,4.0,0,819,188
+candidate_source + unit_analysis_role,Pan-UKB,PRIMARY,ALL,10,comparison_gws_qc,n_comparison_gws_qc,345,676,0.0,0,186,11
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,1,raw_eur_variants,n_raw_eur_variants,511,1518056,2493.0,1162,17363,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,2,raw_comparison_variants,n_raw_comparison_variants,511,1518056,2493.0,1162,17363,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,3,primary_harmonized,n_harmonized_primary,511,1518056,2493.0,1162,17363,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,4,valid_biallelic_snp,n_valid_biallelic_snp,511,1413424,2330.0,1098,16147,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,5,valid_beta_se,n_valid_beta_se,511,792208,1295.0,450,9629,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,6,maf_pass,n_maf_pass,511,435627,720.0,216,5127,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,7,quality_pass,n_quality_pass,511,698796,1132.0,401,8507,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,8,qc_qualified,n_qc_qualified,511,383318,632.0,172,4524,511
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,9,eur_gws_qc,n_eur_gws_qc,511,16967,0.0,0,603,187
+candidate_source + unit_analysis_role,Pan-UKB,SENSITIVITY,ALL,10,comparison_gws_qc,n_comparison_gws_qc,511,41,0.0,0,34,4
+candidate_source + comparison_population,GBMI,ALL,AFR,1,raw_eur_variants,n_raw_eur_variants,59,202272,2330.0,1188,15677,59
+candidate_source + comparison_population,GBMI,ALL,AFR,2,raw_comparison_variants,n_raw_comparison_variants,59,148713,1777.0,1131,11381,59
+candidate_source + comparison_population,GBMI,ALL,AFR,3,primary_harmonized,n_harmonized_primary,59,96386,1127.0,483,7274,59
+candidate_source + comparison_population,GBMI,ALL,AFR,4,valid_biallelic_snp,n_valid_biallelic_snp,59,90356,1050.0,444,6750,59
+candidate_source + comparison_population,GBMI,ALL,AFR,5,valid_beta_se,n_valid_beta_se,59,96460,1127.0,483,7280,59
+candidate_source + comparison_population,GBMI,ALL,AFR,6,maf_pass,n_maf_pass,59,53889,627.0,248,4095,59
+candidate_source + comparison_population,GBMI,ALL,AFR,7,quality_pass,n_quality_pass,59,96231,1124.0,482,7261,59
+candidate_source + comparison_population,GBMI,ALL,AFR,8,qc_qualified,n_qc_qualified,59,50392,602.0,227,3810,59
+candidate_source + comparison_population,GBMI,ALL,AFR,9,eur_gws_qc,n_eur_gws_qc,59,2249,0.0,0,398,21
+candidate_source + comparison_population,GBMI,ALL,AFR,10,comparison_gws_qc,n_comparison_gws_qc,59,0,0.0,0,0,0
+candidate_source + comparison_population,GBMI,ALL,AMR,1,raw_eur_variants,n_raw_eur_variants,59,202272,2330.0,1188,15677,59
+candidate_source + comparison_population,GBMI,ALL,AMR,2,raw_comparison_variants,n_raw_comparison_variants,59,76739,945.0,292,6493,59
+candidate_source + comparison_population,GBMI,ALL,AMR,3,primary_harmonized,n_harmonized_primary,59,76326,939.0,292,6439,59
+candidate_source + comparison_population,GBMI,ALL,AMR,4,valid_biallelic_snp,n_valid_biallelic_snp,59,72520,895.0,292,5998,59
+candidate_source + comparison_population,GBMI,ALL,AMR,5,valid_beta_se,n_valid_beta_se,59,76344,939.0,292,6439,59
+candidate_source + comparison_population,GBMI,ALL,AMR,6,maf_pass,n_maf_pass,59,57456,693.0,260,4682,59
+candidate_source + comparison_population,GBMI,ALL,AMR,7,quality_pass,n_quality_pass,59,76198,939.0,292,6427,59
+candidate_source + comparison_population,GBMI,ALL,AMR,8,qc_qualified,n_qc_qualified,59,54541,660.0,260,4363,59
+candidate_source + comparison_population,GBMI,ALL,AMR,9,eur_gws_qc,n_eur_gws_qc,59,2252,0.0,0,398,22
+candidate_source + comparison_population,GBMI,ALL,AMR,10,comparison_gws_qc,n_comparison_gws_qc,59,0,0.0,0,0,0
+candidate_source + comparison_population,GBMI,ALL,CSA,1,raw_eur_variants,n_raw_eur_variants,29,92580,2252.0,1807,15677,29
+candidate_source + comparison_population,GBMI,ALL,CSA,2,raw_comparison_variants,n_raw_comparison_variants,29,29545,739.0,436,5257,29
+candidate_source + comparison_population,GBMI,ALL,CSA,3,primary_harmonized,n_harmonized_primary,29,28215,713.0,425,5065,29
+candidate_source + comparison_population,GBMI,ALL,CSA,4,valid_biallelic_snp,n_valid_biallelic_snp,29,28215,713.0,425,5065,29
+candidate_source + comparison_population,GBMI,ALL,CSA,5,valid_beta_se,n_valid_beta_se,29,28215,713.0,425,5065,29
+candidate_source + comparison_population,GBMI,ALL,CSA,6,maf_pass,n_maf_pass,29,22410,540.0,286,4058,29
+candidate_source + comparison_population,GBMI,ALL,CSA,7,quality_pass,n_quality_pass,29,28178,713.0,424,5061,29
+candidate_source + comparison_population,GBMI,ALL,CSA,8,qc_qualified,n_qc_qualified,29,22373,539.0,285,4054,29
+candidate_source + comparison_population,GBMI,ALL,CSA,9,eur_gws_qc,n_eur_gws_qc,29,1763,0.0,0,397,14
+candidate_source + comparison_population,GBMI,ALL,CSA,10,comparison_gws_qc,n_comparison_gws_qc,29,21,0.0,0,21,1
+candidate_source + comparison_population,GBMI,ALL,EAS,1,raw_eur_variants,n_raw_eur_variants,59,202272,2330.0,1188,15677,59
+candidate_source + comparison_population,GBMI,ALL,EAS,2,raw_comparison_variants,n_raw_comparison_variants,59,80849,1010.0,157,6919,59
+candidate_source + comparison_population,GBMI,ALL,EAS,3,primary_harmonized,n_harmonized_primary,59,58606,689.0,157,4843,59
+candidate_source + comparison_population,GBMI,ALL,EAS,4,valid_biallelic_snp,n_valid_biallelic_snp,59,54713,653.0,157,4468,59
+candidate_source + comparison_population,GBMI,ALL,EAS,5,valid_beta_se,n_valid_beta_se,59,58647,691.0,157,4845,59
+candidate_source + comparison_population,GBMI,ALL,EAS,6,maf_pass,n_maf_pass,59,46211,546.0,149,3591,59
+candidate_source + comparison_population,GBMI,ALL,EAS,7,quality_pass,n_quality_pass,59,58409,690.0,157,4821,59
+candidate_source + comparison_population,GBMI,ALL,EAS,8,qc_qualified,n_qc_qualified,59,42864,506.0,149,3294,59
+candidate_source + comparison_population,GBMI,ALL,EAS,9,eur_gws_qc,n_eur_gws_qc,59,2043,0.0,0,392,20
+candidate_source + comparison_population,GBMI,ALL,EAS,10,comparison_gws_qc,n_comparison_gws_qc,59,502,0.0,0,105,7
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,1,raw_eur_variants,n_raw_eur_variants,166,488332,2513.5,1252,17363,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,2,raw_comparison_variants,n_raw_comparison_variants,166,488332,2513.5,1252,17363,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,3,primary_harmonized,n_harmonized_primary,166,488332,2513.5,1252,17363,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,4,valid_biallelic_snp,n_valid_biallelic_snp,166,454366,2313.5,1131,16147,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,5,valid_beta_se,n_valid_beta_se,166,283312,1454.5,601,9629,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,6,maf_pass,n_maf_pass,166,126256,660.0,224,4301,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,7,quality_pass,n_quality_pass,166,252030,1296.0,479,8507,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,8,qc_qualified,n_qc_qualified,166,110076,575.5,172,3757,166
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,9,eur_gws_qc,n_eur_gws_qc,166,5034,0.0,0,750,57
+candidate_source + comparison_population,Pan-UKB,ALL,AFR,10,comparison_gws_qc,n_comparison_gws_qc,166,6,0.0,0,4,3
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,1,raw_eur_variants,n_raw_eur_variants,445,1270223,2493.0,1162,17363,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,2,raw_comparison_variants,n_raw_comparison_variants,445,1270223,2493.0,1162,17363,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,3,primary_harmonized,n_harmonized_primary,445,1270223,2493.0,1162,17363,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,4,valid_biallelic_snp,n_valid_biallelic_snp,445,1181755,2297.0,1086,16147,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,5,valid_beta_se,n_valid_beta_se,445,673196,1299.0,464,8834,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,6,maf_pass,n_maf_pass,445,376737,736.0,216,4970,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,7,quality_pass,n_quality_pass,445,574467,1110.0,401,7496,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,8,qc_qualified,n_qc_qualified,445,331424,642.0,192,4379,445
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,9,eur_gws_qc,n_eur_gws_qc,445,26990,0.0,0,815,212
+candidate_source + comparison_population,Pan-UKB,ALL,CSA,10,comparison_gws_qc,n_comparison_gws_qc,445,711,0.0,0,186,12
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,1,raw_eur_variants,n_raw_eur_variants,39,103338,2453.0,1162,8452,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,2,raw_comparison_variants,n_raw_comparison_variants,39,103338,2453.0,1162,8452,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,3,primary_harmonized,n_harmonized_primary,39,103338,2453.0,1162,8452,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,4,valid_biallelic_snp,n_valid_biallelic_snp,39,96113,2272.0,1098,7940,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,5,valid_beta_se,n_valid_beta_se,39,36464,876.0,278,3090,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,6,maf_pass,n_maf_pass,39,26123,618.0,185,2096,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,7,quality_pass,n_quality_pass,39,34213,807.0,255,2891,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,8,qc_qualified,n_qc_qualified,39,22855,534.0,164,1872,39
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,9,eur_gws_qc,n_eur_gws_qc,39,1406,0.0,0,407,19
+candidate_source + comparison_population,Pan-UKB,ALL,EAS,10,comparison_gws_qc,n_comparison_gws_qc,39,0,0.0,0,0,0
+candidate_source + comparison_population,Pan-UKB,ALL,MID,1,raw_eur_variants,n_raw_eur_variants,206,599702,2520.0,1166,17363,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,2,raw_comparison_variants,n_raw_comparison_variants,206,599702,2520.0,1166,17363,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,3,primary_harmonized,n_harmonized_primary,206,599702,2520.0,1166,17363,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,4,valid_biallelic_snp,n_valid_biallelic_snp,206,557806,2313.5,1086,16147,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,5,valid_beta_se,n_valid_beta_se,206,279560,1192.0,450,7689,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,6,maf_pass,n_maf_pass,206,182677,776.0,269,5127,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,7,quality_pass,n_quality_pass,206,267517,1131.5,420,7311,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,8,qc_qualified,n_qc_qualified,206,160649,669.5,216,4524,206
+candidate_source + comparison_population,Pan-UKB,ALL,MID,9,eur_gws_qc,n_eur_gws_qc,206,7933,0.0,0,819,87
+candidate_source + comparison_population,Pan-UKB,ALL,MID,10,comparison_gws_qc,n_comparison_gws_qc,206,0,0.0,0,0,0

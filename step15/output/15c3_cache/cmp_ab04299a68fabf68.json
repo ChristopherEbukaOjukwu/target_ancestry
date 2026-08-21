@@ -1,0 +1,96 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9963539647550723,
+    "diagonal_minimum": 0.9961723413609763,
+    "maximum": 0.9963539647550723,
+    "minimum": 0.9385911717781297,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_ab04299a68fabf68",
+  "completed_at_utc": "2026-07-25T03:19:29.854228+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999078114464165,
+    "diagonal_minimum": 0.9998971313392901,
+    "maximum": 0.9999078114464165,
+    "minimum": 0.9472796230313393,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "REN",
+  "gene_trait_uid": "gt_b47ca6ecb9b21bb9",
+  "matrix_cache": "output/15c3_cache/cmp_ab04299a68fabf68.npz",
+  "n_reference_usable": 3,
+  "n_requested": 3,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 950653,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 1423638,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "1:204038145:G:A"
+    },
+    {
+      "comparison_panel_index": 950648,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 1423623,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "1:204036266:G:T"
+    },
+    {
+      "comparison_panel_index": 950672,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 1423671,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "1:204041876:G:A"
+    }
+  ],
+  "request_variant_ids": [
+    "1:204038145:G:A",
+    "1:204036266:G:T",
+    "1:204041876:G:A"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Systolic blood pressure, automated reading"
+}

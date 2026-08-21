@@ -1,0 +1,24 @@
+==============================================================================
+STEP 15E — CROSS-ANCESTRY COLOCALIZATION
+==============================================================================
+Primary comparisons: 538
+Powered in both ancestries: 17
+Pending caches: 538
+Priors: p1=0.0001, p2=0.0001, p12=1e-06, 1e-05, 0.0001
+Primary p12: 1e-05
+==============================================================================
+[1/3] cmp_90ebb269ca08e668 | ADORA1 | AFR
+[2/3] cmp_3ba52eabf3056c1c | ADORA1 | AMR
+[3/3] cmp_26e44c681a21da82 | ADORA1 | CSA
+
+==============================================================================
+STEP 15E — CROSS-ANCESTRY COLOCALIZATION
+==============================================================================
+Status: INCOMPLETE
+Valid comparison caches: 3 / 538
+Invalid or missing caches: 535
+Powered comparisons: 0
+Headline powered units: 0
+Headline units with median PP.H4 >= 0.8: 0
+Summary: output/15e_coloc_summary.json
+==============================================================================

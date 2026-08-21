@@ -1,0 +1,22 @@
+mesh_category_code,mesh_category_name,n_indications,n_pairs,n_A,n_B,n_genes,eligible_model4,eligibility_rule
+C18,Nutritional and Metabolic Diseases,29,155,36,119,91,True,n_pairs>=20; n_A>=5; n_B>=5
+C20,Immune System Diseases,23,135,16,119,79,True,n_pairs>=20; n_A>=5; n_B>=5
+C23,"Pathological Conditions, Signs and Symptoms",22,113,19,94,101,True,n_pairs>=20; n_A>=5; n_B>=5
+C04,Neoplasms,39,112,12,100,70,True,n_pairs>=20; n_A>=5; n_B>=5
+C17,Skin and Connective Tissue Diseases,22,102,16,86,68,True,n_pairs>=20; n_A>=5; n_B>=5
+C06,Digestive System Diseases,19,94,7,87,61,True,n_pairs>=20; n_A>=5; n_B>=5
+C15,Hemic and Lymphatic Diseases,27,77,24,53,53,True,n_pairs>=20; n_A>=5; n_B>=5
+C08,Respiratory Tract Diseases,14,75,13,62,41,True,n_pairs>=20; n_A>=5; n_B>=5
+C10,Nervous System Diseases,25,67,16,51,44,True,n_pairs>=20; n_A>=5; n_B>=5
+C14,Cardiovascular Diseases,21,67,19,48,55,True,n_pairs>=20; n_A>=5; n_B>=5
+F03,Mental Disorders,23,66,17,49,36,True,n_pairs>=20; n_A>=5; n_B>=5
+C12,Urogenital Diseases,18,60,8,52,46,True,n_pairs>=20; n_A>=5; n_B>=5
+C19,Endocrine System Diseases,15,56,16,40,42,True,n_pairs>=20; n_A>=5; n_B>=5
+C16,"Congenital, Hereditary, and Neonatal Diseases and Abnormalities",22,47,15,32,41,True,n_pairs>=20; n_A>=5; n_B>=5
+C05,Musculoskeletal Diseases,11,45,11,34,30,True,n_pairs>=20; n_A>=5; n_B>=5
+C11,Eye Diseases,10,25,4,21,23,False,n_pairs>=20; n_A>=5; n_B>=5
+C09,Otorhinolaryngologic Diseases,6,19,1,18,14,False,n_pairs>=20; n_A>=5; n_B>=5
+C01,Infections,6,10,2,8,10,False,n_pairs>=20; n_A>=5; n_B>=5
+C25,Chemically-Induced Disorders,5,9,2,7,6,False,n_pairs>=20; n_A>=5; n_B>=5
+C07,Stomatognathic Diseases,2,7,1,6,7,False,n_pairs>=20; n_A>=5; n_B>=5
+C24,Occupational Diseases,1,1,1,0,1,False,n_pairs>=20; n_A>=5; n_B>=5

@@ -1,0 +1,19 @@
+{
+  "step": "15B2",
+  "status": "PASS",
+  "panukb_status": "PASS",
+  "gbmi_status": "PASS",
+  "selected_rows": "output/15b2_selected_validation_rows.csv",
+  "panukb_validation": "output/15b2_panukb_schema_validation.json",
+  "gbmi_validation": "output/15b2_gbmi_schema_validation.json",
+  "index_directory": "input/tabix_indexes/15b2",
+  "scientific_decisions_frozen": {
+    "panukb_p_value_field": "neglog10_pval_{population}",
+    "gbmi_primary_variant_match": "normalized chromosome + position + REF + ALT",
+    "gbmi_swapped_alleles": "retain for explicit sign-flip review; do not merge silently",
+    "builds": {
+      "Pan-UKB": "GRCh37",
+      "GBMI": "GRCh38"
+    }
+  }
+}

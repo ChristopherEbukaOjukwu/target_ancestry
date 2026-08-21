@@ -1,0 +1,89 @@
+==============================================================================
+STEP 15E0 — COLOCALIZATION INPUT PREFLIGHT
+==============================================================================
+Status: PASS
+Manifest: output/15_coloc_comparisons_primary_locked.parquet
+Comparisons: 538
+Gene-trait-source units: 213
+Sources: {'GBMI': 206, 'Pan-UKB': 332}
+Populations: {'AFR': 123, 'AMR': 59, 'CSA': 183, 'EAS': 95, 'MID': 78}
+
+Eligibility/power-related fields:
+  unit_analysis_role {'PRIMARY': 538}
+  mixed_pool {'False': 538}
+  primary_approval_eligible {'True': 538}
+  min_coloc_variants {'50': 538}
+  n_harmonized_primary <many values>
+  eur_coloc_type {'quant': 332, 'cc': 206}
+  comparison_coloc_type {'quant': 332, 'cc': 206}
+  portability_pre_ld_eligible {'False': 303, 'True': 235}
+  coloc_input_eligible {'True': 538}
+  coloc_failure_reason {'<MISSING>': 538}
+  coloc_powered_both_ancestries {'False': 521, 'True': 17}
+  is_primary_mapping {'True': 538}
+  is_nonmixed {'True': 538}
+  primary_mechanistic_universe {'True': 538}
+  portability_primary_locked {'False': 303, 'True': 235}
+  portability_sensitivity_locked {'False': 303, 'True': 235}
+  coloc_primary_locked {'True': 538}
+  coloc_powered_primary_locked {'False': 521, 'True': 17}
+  coloc_sensitivity_locked {'True': 538}
+  coloc_powered_sensitivity_locked {'False': 521, 'True': 17}
+  approval_analysis_eligible {'True': 538}
+
+Trait-type candidates:
+  eur_trait_type => ['binary', 'biomarkers', 'continuous']
+  comparison_trait_type => ['binary', 'biomarkers', 'continuous']
+
+Sample-size candidates:
+  n_raw_eur_variants
+  n_raw_comparison_variants
+  n_raw_shared_rows
+  n_duplicate_key_rows_excluded
+  n_harmonized_exact
+  n_harmonized_swapped
+  n_harmonized_primary
+  n_harmonized_sensitivity
+  n_valid_biallelic_snp
+  n_valid_beta_se
+  n_valid_p
+  n_valid_af
+  n_maf_pass
+  n_quality_pass
+  n_qc_qualified
+  n_qc_qualified_sensitivity
+  n_eur_gws_qc
+  n_comparison_gws_qc
+  n_eur_gws_qc_sensitivity
+  n_comparison_gws_qc_sensitivity
+  sample_metadata_usable
+  n_eur_strand_flip_flagged
+  n_comparison_strand_flip_flagged
+  n_eur_diff_af_gnomad_flagged
+  n_comparison_diff_af_gnomad_flagged
+  eur_n_cases_median
+  eur_n_controls_median
+  eur_n_total_median
+  eur_case_fraction_median
+  comparison_n_cases_median
+  comparison_n_controls_median
+  comparison_n_total_median
+  comparison_case_fraction_median
+  eur_n_cases
+  eur_n_controls
+  eur_n_total
+  eur_case_fraction
+  comparison_n_cases
+  comparison_n_controls
+  comparison_n_total
+  comparison_case_fraction
+
+Representative harmonized file: GBMI | cmp_90ebb269ca08e668
+  rows: 1133
+  resolved fields: {'variant_id': 'variant_id', 'eur_beta': 'eur_beta', 'eur_se': 'eur_se', 'comparison_beta': 'comparison_beta', 'comparison_se': 'comparison_se', 'eur_p': 'eur_p', 'comparison_p': 'comparison_p', 'eur_af': 'eur_af', 'comparison_af': 'comparison_af', 'eur_maf': 'eur_maf', 'comparison_maf': 'comparison_maf', 'eur_n': None, 'comparison_n': None, 'eur_n_case': 'eur_n_cases', 'eur_n_control': 'eur_n_controls', 'comparison_n_case': 'comparison_n_cases', 'comparison_n_control': 'comparison_n_controls'}
+Representative harmonized file: Pan-UKB | cmp_9d8c13f3b6460d45
+  rows: 2102
+  resolved fields: {'variant_id': 'variant_id', 'eur_beta': 'eur_beta', 'eur_se': 'eur_se', 'comparison_beta': 'comparison_beta', 'comparison_se': 'comparison_se', 'eur_p': 'eur_p', 'comparison_p': 'comparison_p', 'eur_af': 'eur_af', 'comparison_af': 'comparison_af', 'eur_maf': 'eur_maf', 'comparison_maf': 'comparison_maf', 'eur_n': None, 'comparison_n': None, 'eur_n_case': None, 'eur_n_control': None, 'comparison_n_case': None, 'comparison_n_control': None}
+
+Summary: output/15e0_coloc_input_preflight.json
+==============================================================================

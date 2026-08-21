@@ -1,0 +1,129 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9972168321463754,
+    "diagonal_minimum": 0.9954817701678369,
+    "maximum": 0.9972168321463754,
+    "minimum": 0.29552693841586397,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_bab5bd13549c5f36",
+  "completed_at_utc": "2026-07-25T02:50:01.172959+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999419958074779,
+    "diagonal_minimum": 0.999898654011874,
+    "maximum": 0.9999419958074779,
+    "minimum": 0.40539775916837917,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "FBP1",
+  "gene_trait_uid": "gt_58d110934e76bc52",
+  "matrix_cache": "output/15c3_cache/cmp_bab5bd13549c5f36.npz",
+  "n_reference_usable": 6,
+  "n_requested": 6,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 9085196,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567130,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "9:97271019:A:G"
+    },
+    {
+      "comparison_panel_index": 9085162,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567088,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "9:97267274:T:C"
+    },
+    {
+      "comparison_panel_index": 9085179,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567109,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "9:97269199:A:C"
+    },
+    {
+      "comparison_panel_index": 9085199,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567133,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "9:97271155:C:G"
+    },
+    {
+      "comparison_panel_index": 9085182,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567112,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "9:97269437:T:C"
+    },
+    {
+      "comparison_panel_index": 9085154,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 13567080,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "9:97265947:A:G"
+    }
+  ],
+  "request_variant_ids": [
+    "9:97271019:A:G",
+    "9:97267274:T:C",
+    "9:97269199:A:C",
+    "9:97271155:C:G",
+    "9:97269437:T:C",
+    "9:97265947:A:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Glycated haemoglobin (HbA1c)"
+}

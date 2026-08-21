@@ -1,0 +1,70 @@
+{
+  "all_comparisons": {
+    "n_coloc_input_eligible": 1062,
+    "n_coloc_powered_both": 23,
+    "n_portability_pre_ld_eligible": 410
+  },
+  "by_source": {
+    "GBMI": {
+      "median_eur_gws_variants": 0.0,
+      "median_qc_qualified_variants": 582.0,
+      "n_coloc_input_eligible": 206,
+      "n_coloc_powered_both": 8,
+      "n_comparisons": 206,
+      "n_portability_pre_ld_eligible": 66
+    },
+    "Pan-UKB": {
+      "median_eur_gws_variants": 0.0,
+      "median_qc_qualified_variants": 638.5,
+      "n_coloc_input_eligible": 856,
+      "n_coloc_powered_both": 15,
+      "n_comparisons": 856,
+      "n_portability_pre_ld_eligible": 344
+    }
+  },
+  "cache_actions": {
+    "PROCESSED_NOW": 1062
+  },
+  "completed_at_utc": "2026-07-24T21:09:27.544077+00:00",
+  "n_expected_comparisons": 1062,
+  "n_failures": 0,
+  "n_feasibility_rows": 1062,
+  "n_processed_in_this_run": 1062,
+  "outputs": {
+    "failures_csv": "output/15b4_failures.csv",
+    "feasibility_csv": "output/15b4_qc_feasibility.csv",
+    "feasibility_parquet": "output/15b4_qc_feasibility.parquet",
+    "variant_funnel_csv": "output/15b4_variant_funnel.csv",
+    "variant_funnel_parquet": "output/15b4_variant_funnel.parquet"
+  },
+  "primary_comparisons": {
+    "n": 551,
+    "n_coloc_input_eligible": 551,
+    "n_coloc_powered_both": 19,
+    "n_portability_pre_ld_eligible": 247
+  },
+  "primary_nonmixed_comparisons": {
+    "n": 538,
+    "n_coloc_input_eligible": 538,
+    "n_coloc_powered_both": 17,
+    "n_portability_pre_ld_eligible": 235
+  },
+  "primary_rules": {
+    "duplicate_variant_keys": "exclude all duplicates",
+    "gbmi_complement_matching": "not performed",
+    "gbmi_primary_match": "exact normalized CHR/POS/REF/ALT",
+    "gbmi_quality": "is_diff_AF_gnomAD false in both files",
+    "gbmi_swapped_match": "sensitivity only; non-EUR beta sign reversed and AF replaced by 1-AF",
+    "panukb_quality": "low_confidence false in both ancestries",
+    "variant_type": "biallelic SNP"
+  },
+  "script_version": "15B4.1",
+  "status": "PASS",
+  "step": "15B4",
+  "thresholds": {
+    "coloc_min_shared_qc_variants": 50,
+    "gws_p": 5e-08,
+    "maf": 0.01,
+    "portability_pre_ld_min_eur_gws": 3
+  }
+}

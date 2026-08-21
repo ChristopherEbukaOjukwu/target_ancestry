@@ -1,0 +1,47 @@
+{
+  "cache_actions": {
+    "EXTRACTED_NOW": 68,
+    "REUSED": 642
+  },
+  "completed_at_utc": "2026-07-24T20:47:04.152676+00:00",
+  "directories": {
+    "extract_dir": "intermediate/15b3",
+    "index_dir": "input/tabix_indexes/15b3"
+  },
+  "n_comparison_rows": 1062,
+  "n_comparisons_with_both_extractions": 1062,
+  "n_empty_regions": 0,
+  "n_expected_extraction_tasks": 710,
+  "n_failures": 0,
+  "n_inventory_rows": 710,
+  "n_processed_remote_file_groups": 56,
+  "n_total_remote_file_groups": 56,
+  "native_builds": {
+    "GBMI": "GRCh38",
+    "Pan-UKB": "GRCh37"
+  },
+  "outputs": {
+    "comparison_map_csv": "output/15b3_comparison_extraction_map.csv",
+    "comparison_map_parquet": "output/15b3_comparison_extraction_map.parquet",
+    "failures_csv": "output/15b3_extraction_failures.csv",
+    "inventory_csv": "output/15b3_extraction_inventory.csv",
+    "inventory_parquet": "output/15b3_extraction_inventory.parquet"
+  },
+  "region_definition": "locked GENCODE gene body \u00b1100 kb",
+  "scientific_scope": "Source-native regional extraction only; no QC or harmonization.",
+  "script_version": "15B3.2",
+  "status": "PASS",
+  "status_counts": {
+    "EXTRACTED": 710
+  },
+  "status_counts_by_source": {
+    "GBMI": {
+      "EXTRACTED": 265
+    },
+    "Pan-UKB": {
+      "EXTRACTED": 445
+    }
+  },
+  "step": "15B3",
+  "total_raw_records": 1808341
+}

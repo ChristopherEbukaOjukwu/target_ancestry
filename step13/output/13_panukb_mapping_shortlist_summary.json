@@ -1,0 +1,14 @@
+{
+  "n_indications": 203,
+  "n_with_exact_candidate": 4,
+  "n_exact_candidate_rows": 4,
+  "binary_candidates_shown_per_indication": 3,
+  "quantitative_candidates_shown_per_indication": 2,
+  "automatic_mapping_decisions": false,
+  "allowed_mapping_tiers": [
+    "Direct",
+    "Closely-related",
+    "Proxy",
+    "Exclude"
+  ]
+}

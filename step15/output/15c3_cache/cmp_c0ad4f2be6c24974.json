@@ -1,0 +1,96 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "CSA",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9982213793935808,
+    "diagonal_minimum": 0.9976035639879316,
+    "maximum": 0.9982213793935808,
+    "minimum": 0.8716661638874329,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 8876,
+      "pop": "CSA"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.CSA.ldadj.bm",
+    "n_requested_unique": 9806,
+    "n_resolved_unique": 9806
+  },
+  "comparison_reference_population": "CSA",
+  "comparison_uid": "cmp_c0ad4f2be6c24974",
+  "completed_at_utc": "2026-07-25T02:43:11.349930+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9999391938753834,
+    "diagonal_minimum": 0.9999293518819357,
+    "maximum": 0.9999391938753834,
+    "minimum": 0.8505787737316544,
+    "shape": [
+      3,
+      3
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "PPARG",
+  "gene_trait_uid": "gt_00419bc476176825",
+  "matrix_cache": "output/15c3_cache/cmp_c0ad4f2be6c24974.npz",
+  "n_reference_usable": 3,
+  "n_requested": 3,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 2633119,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3938653,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "3:12329452:C:T"
+    },
+    {
+      "comparison_panel_index": 2633117,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3938650,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "3:12329195:G:C"
+    },
+    {
+      "comparison_panel_index": 2633101,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3938614,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "3:12324230:C:T"
+    }
+  ],
+  "request_variant_ids": [
+    "3:12329452:C:T",
+    "3:12329195:G:C",
+    "3:12324230:C:T"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Body mass index (BMI)"
+}

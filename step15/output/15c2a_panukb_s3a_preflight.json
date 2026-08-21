@@ -1,0 +1,46 @@
+{
+  "branches": {
+    "AFR": {
+      "block_size": 4096,
+      "diagonal_ld_value": 0.9986356109370031,
+      "index_globals": {
+        "n_samples": 6637,
+        "pop": "AFR"
+      },
+      "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.variant.ht",
+      "matrix_index": 3607195,
+      "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.bm",
+      "matrix_shape": [
+        22082831,
+        22082831
+      ],
+      "status": "PASS"
+    },
+    "EUR": {
+      "block_size": 4096,
+      "diagonal_ld_value": 0.9999646753170512,
+      "index_globals": {
+        "n_samples": 420542,
+        "pop": "EUR"
+      },
+      "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+      "matrix_index": 3938653,
+      "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+      "matrix_shape": [
+        23960350,
+        23960350
+      ],
+      "status": "PASS"
+    }
+  },
+  "comparison_population": "AFR",
+  "comparison_uid": "cmp_0c1699071ec567b1",
+  "gene": "PPARG",
+  "gene_trait_uid": "gt_00419bc476176825",
+  "n_candidate_variants": 3,
+  "scope": "S3A access, variant-index lookup, and single BlockMatrix diagonal only",
+  "status": "PASS",
+  "step": "15C2A",
+  "test_variant": "3:12329452:C:T",
+  "trait": "Body mass index (BMI)"
+}

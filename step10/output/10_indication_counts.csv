@@ -1,0 +1,204 @@
+indication_mesh_id,indication_mesh_term,n_pairs,n_A,n_genes,n_B,mixed_pool
+D000072861,"Phobia, Social",1,0,1,1,False
+D000086382,COVID-19,1,1,1,0,False
+D000417,Albinism,1,0,1,1,False
+D000437,Alcoholism,2,0,2,2,False
+D000505,Alopecia,1,1,1,0,False
+D000544,Alzheimer Disease,11,1,11,10,True
+D000690,Amyotrophic Lateral Sclerosis,1,0,1,1,False
+D000740,Anemia,11,4,11,7,True
+D000755,"Anemia, Sickle Cell",2,0,2,2,False
+D001008,Anxiety Disorders,7,1,7,6,True
+D001145,"Arrhythmias, Cardiac",1,0,1,1,False
+D001171,"Arthritis, Juvenile",1,1,1,0,False
+D001172,"Arthritis, Rheumatoid",15,3,15,12,True
+D001249,Asthma,29,4,29,25,True
+D001281,Atrial Fibrillation,6,2,6,4,True
+D001327,Autoimmune Diseases,10,0,10,10,False
+D001714,Bipolar Disorder,5,3,5,2,True
+D001749,Urinary Bladder Neoplasms,1,1,1,0,False
+D001778,Blood Coagulation Disorders,3,0,3,3,False
+D001850,"Bone Diseases, Infectious",1,0,1,1,False
+D001851,"Bone Diseases, Metabolic",1,0,1,1,False
+D001943,Breast Neoplasms,16,2,16,14,True
+D002289,"Carcinoma, Non-Small-Cell Lung",2,1,2,1,True
+D002318,Cardiovascular Diseases,4,0,4,4,False
+D002446,Celiac Disease,1,0,1,1,False
+D002761,Cholangitis,1,0,1,1,False
+D003093,"Colitis, Ulcerative",26,2,26,24,True
+D003414,Crigler-Najjar Syndrome,1,0,1,1,False
+D003424,Crohn Disease,19,1,19,18,True
+D003704,Dementia,1,0,1,1,False
+D003863,Depression,2,1,2,1,True
+D003865,"Depressive Disorder, Major",2,1,2,1,True
+D003876,"Dermatitis, Atopic",12,2,12,10,True
+D003920,Diabetes Mellitus,13,2,13,11,True
+D003922,"Diabetes Mellitus, Type 1",4,0,4,4,False
+D003924,"Diabetes Mellitus, Type 2",18,9,18,9,True
+D003928,Diabetic Nephropathies,1,0,1,1,False
+D003929,Diabetic Neuropathies,1,0,1,1,False
+D004381,Duodenal Ulcer,1,0,1,1,False
+D004485,Eczema,1,0,1,1,False
+D004700,Endocrine System Diseases,2,0,2,2,False
+D004715,Endometriosis,1,1,1,0,False
+D004827,Epilepsy,2,2,2,0,False
+D004828,"Epilepsies, Partial",1,1,1,0,False
+D004829,"Epilepsy, Generalized",2,2,2,0,False
+D004938,Esophageal Neoplasms,1,0,1,1,False
+D005168,Factor VII Deficiency,1,0,1,1,False
+D005173,Factor XI Deficiency,1,1,1,0,False
+D005764,Gastroesophageal Reflux,2,1,2,1,True
+D005770,Gastrointestinal Neoplasms,2,0,2,2,False
+D005901,Glaucoma,3,0,3,3,False
+D005909,Glioblastoma,1,0,1,1,False
+D005922,"Glomerulonephritis, IGA",2,0,2,2,False
+D005923,"Glomerulosclerosis, Focal Segmental",3,0,3,3,False
+D006073,Gout,2,1,2,1,True
+D006177,Gynecomastia,1,0,1,1,False
+D006255,"Rhinitis, Allergic, Seasonal",2,0,2,2,False
+D006258,Head and Neck Neoplasms,2,0,2,2,False
+D006333,Heart Failure,1,0,1,1,False
+D006432,Hemochromatosis,1,0,1,1,False
+D006467,Hemophilia A,3,3,3,0,False
+D006689,Hodgkin Disease,2,0,2,2,False
+D006712,Homocystinuria,1,0,1,1,False
+D006934,Hypercalcemia,1,1,1,0,False
+D006937,Hypercholesterolemia,14,3,14,11,True
+D006938,Hyperlipoproteinemia Type II,8,3,8,5,True
+D006949,Hyperlipidemias,22,4,22,18,True
+D006962,"Hyperparathyroidism, Secondary",1,1,1,0,False
+D006967,Hypersensitivity,4,0,4,4,False
+D006973,Hypertension,19,8,19,11,True
+D006980,Hyperthyroidism,1,0,1,1,False
+D006996,Hypocalcemia,1,0,1,1,False
+D007014,Hypophosphatasia,1,1,1,0,False
+D007037,Hypothyroidism,1,1,1,0,False
+D007249,Inflammation,18,1,18,17,True
+D007319,Sleep Initiation and Maintenance Disorders,6,3,6,3,True
+D007676,"Kidney Failure, Chronic",6,1,6,5,True
+D007680,Kidney Neoplasms,2,2,2,0,False
+D007863,Lecithin Cholesterol Acyltransferase Deficiency,1,0,1,1,False
+D007889,Leiomyoma,1,1,1,0,False
+D007890,Leiomyosarcoma,1,0,1,1,False
+D007970,Leukopenia,1,1,1,0,False
+D008072,Hyperlipoproteinemia Type I,1,1,1,0,False
+D008103,Liver Cirrhosis,1,0,1,1,False
+D008105,"Liver Cirrhosis, Biliary",1,0,1,1,False
+D008107,Liver Diseases,3,0,3,3,False
+D008175,Lung Neoplasms,1,0,1,1,False
+D008180,"Lupus Erythematosus, Systemic",10,0,10,10,False
+D008181,Lupus Nephritis,4,0,4,4,False
+D008223,Lymphoma,1,0,1,1,False
+D008224,"Lymphoma, Follicular",1,0,1,1,False
+D008269,Macular Edema,4,1,4,3,True
+D008527,Medulloblastoma,1,0,1,1,False
+D008545,Melanoma,4,0,4,4,False
+D008593,Menopause,2,1,2,1,True
+D008659,Metabolic Diseases,1,0,1,1,False
+D008881,Migraine Disorders,3,2,3,1,True
+D009101,Multiple Myeloma,2,0,2,2,False
+D009103,Multiple Sclerosis,7,0,7,7,False
+D009196,Myeloproliferative Disorders,1,0,1,1,False
+D009203,Myocardial Infarction,2,1,2,1,True
+D009216,Myopia,2,2,2,0,False
+D009223,Myotonic Dystrophy,1,0,1,1,False
+D009290,Narcolepsy,2,1,2,1,True
+D009293,Opioid-Related Disorders,1,1,1,0,False
+D009298,Nasal Polyps,3,0,3,3,False
+D009303,Nasopharyngeal Neoplasms,1,0,1,1,False
+D009369,Neoplasms,11,1,11,10,True
+D009437,Neuralgia,1,0,1,1,False
+D009503,Neutropenia,4,2,4,2,True
+D009765,Obesity,31,4,31,27,True
+D009771,Obsessive-Compulsive Disorder,2,0,2,2,False
+D010003,Osteoarthritis,2,1,2,1,True
+D010024,Osteoporosis,3,1,3,2,True
+D010051,Ovarian Neoplasms,7,0,7,7,False
+D010300,Parkinson Disease,6,0,6,6,False
+D010493,Pericarditis,1,0,1,1,False
+D010787,Photosensitivity Disorders,1,0,1,1,False
+D010916,Pityriasis Rubra Pilaris,1,0,1,1,False
+D011085,Polycystic Ovary Syndrome,1,1,1,0,False
+D011087,Polycythemia Vera,1,1,1,0,False
+D011470,Prostatic Hyperplasia,1,1,1,0,False
+D011471,Prostatic Neoplasms,16,1,16,15,True
+D011565,Psoriasis,12,3,12,9,True
+D011618,Psychotic Disorders,3,1,3,2,True
+D011628,"Puberty, Delayed",1,1,1,0,False
+D011655,Pulmonary Embolism,1,1,1,0,False
+D012148,Restless Legs Syndrome,2,1,2,1,True
+D012164,Retinal Diseases,1,0,1,1,False
+D012170,Retinal Vein Occlusion,1,0,1,1,False
+D012174,Retinitis Pigmentosa,2,0,2,2,False
+D012208,Rhabdomyosarcoma,1,0,1,1,False
+D012220,Rhinitis,1,0,1,1,False
+D012507,Sarcoidosis,1,0,1,1,False
+D012559,Schizophrenia,4,1,4,3,True
+D012852,Sinusitis,3,0,3,3,False
+D012859,Sjogren's Syndrome,6,1,6,5,True
+D012893,Sleep Wake Disorders,5,1,5,4,True
+D013167,"Spondylitis, Ankylosing",4,0,4,4,False
+D013274,Stomach Neoplasms,3,0,3,3,False
+D013276,Stomach Ulcer,1,0,1,1,False
+D013494,"Supranuclear Palsy, Progressive",3,0,3,3,False
+D013625,Takayasu Arteritis,1,0,1,1,False
+D013736,Testicular Neoplasms,2,0,2,2,False
+D013789,Thalassemia,3,0,3,3,False
+D013921,Thrombocytopenia,10,4,10,6,True
+D013922,Thrombocytosis,10,2,10,8,True
+D013924,Thrombophlebitis,1,1,1,0,False
+D013927,Thrombosis,5,2,5,3,True
+D014029,Tobacco Use Disorder,4,1,4,3,True
+D014523,Urethral Neoplasms,2,0,2,2,False
+D014565,Urogenital Neoplasms,2,0,2,2,False
+D014647,Varicose Ulcer,1,0,1,1,False
+D014657,Vasculitis,1,0,1,1,False
+D014842,von Willebrand Diseases,1,1,1,0,False
+D014983,Xeroderma Pigmentosum,1,0,1,1,False
+D015179,Colorectal Neoplasms,14,0,14,14,False
+D015212,Inflammatory Bowel Diseases,9,0,9,9,False
+D015228,Hypertriglyceridemia,14,3,14,11,True
+D015451,"Leukemia, Lymphocytic, Chronic, B-Cell",1,1,1,0,False
+D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive",1,0,1,1,False
+D015535,"Arthritis, Psoriatic",9,3,9,6,True
+D016491,Peripheral Vascular Diseases,1,0,1,1,False
+D016553,"Purpura, Thrombocytopenic, Idiopathic",5,1,5,4,True
+D016584,Panic Disorder,1,0,1,1,False
+D016889,Endometrial Neoplasms,1,0,1,1,False
+D017180,"Tachycardia, Ventricular",1,1,1,0,False
+D017674,Hypophosphatemia,1,0,1,1,False
+D017681,Hypereosinophilic Syndrome,2,0,2,2,False
+D017719,Diabetic Foot,2,0,2,2,False
+D018242,"Neuroectodermal Tumors, Primitive",1,0,1,1,False
+D018307,"Neoplasms, Squamous Cell",1,0,1,1,False
+D018805,Sepsis,3,0,3,3,False
+D019337,Hematologic Neoplasms,1,0,1,1,False
+D019578,Multiple System Atrophy,2,0,2,2,False
+D019896,alpha 1-Antitrypsin Deficiency,1,1,1,0,False
+D019966,Substance-Related Disorders,1,0,1,1,False
+D019973,Alcohol-Related Disorders,1,0,1,1,False
+D020177,Idiopathic Hypersomnia,1,0,1,1,False
+D020178,"Sleep Disorders, Circadian Rhythm",1,1,1,0,False
+D020246,Venous Thrombosis,4,2,4,2,True
+D020521,Stroke,3,0,3,3,False
+D020920,Dyssomnias,1,0,1,1,False
+D024821,Metabolic Syndrome,3,0,3,3,False
+D029424,"Pulmonary Disease, Chronic Obstructive",20,3,20,17,True
+D029481,"Bronchitis, Chronic",1,1,1,0,False
+D042882,Gallstones,1,0,1,1,False
+D049950,"Hyperparathyroidism, Primary",1,1,1,0,False
+D050171,Dyslipidemias,5,3,5,2,True
+D050197,Atherosclerosis,9,1,9,8,True
+D051437,Renal Insufficiency,5,0,5,5,False
+D052456,Hypoalphalipoproteinemias,1,0,1,1,False
+D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,1,0,1,1,False
+D055623,"Keratosis, Actinic",1,0,1,1,False
+D055728,Primary Myelofibrosis,1,1,1,0,False
+D055752,Small Cell Lung Carcinoma,1,0,1,1,False
+D057135,Wet Macular Degeneration,2,0,2,2,False
+D057180,Frontotemporal Dementia,2,0,2,2,False
+D057765,Eosinophilic Esophagitis,6,2,6,4,True
+D058186,Acute Kidney Injury,3,0,3,3,False
+D058496,Smith-Magenis Syndrome,1,1,1,0,False
+D065626,Non-alcoholic Fatty Liver Disease,1,0,1,1,False
+D065631,"Rhinitis, Allergic",9,1,9,8,True

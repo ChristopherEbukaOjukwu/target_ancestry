@@ -1,0 +1,63 @@
+{
+  "n_locked_indications": 11,
+  "n_locked_phenotypes": 11,
+  "n_pairs": 140,
+  "n_genes": 102,
+  "n_pool_A": 34,
+  "n_pool_B": 106,
+  "fraction_of_790_pairs": 0.17721518987341772,
+  "pool_A_fraction_of_157": 0.21656050955414013,
+  "pool_B_fraction_of_633": 0.1674565560821485,
+  "population_coverage": [
+    {
+      "population": "AFR",
+      "n_pairs": 1,
+      "n_indications": 1,
+      "n_genes": 1,
+      "n_A": 0,
+      "n_B": 1
+    },
+    {
+      "population": "AMR",
+      "n_pairs": 0,
+      "n_indications": 0,
+      "n_genes": 0,
+      "n_A": 0,
+      "n_B": 0
+    },
+    {
+      "population": "CSA",
+      "n_pairs": 100,
+      "n_indications": 6,
+      "n_genes": 74,
+      "n_A": 27,
+      "n_B": 73
+    },
+    {
+      "population": "EAS",
+      "n_pairs": 4,
+      "n_indications": 1,
+      "n_genes": 4,
+      "n_A": 1,
+      "n_B": 3
+    },
+    {
+      "population": "EUR",
+      "n_pairs": 140,
+      "n_indications": 11,
+      "n_genes": 102,
+      "n_A": 34,
+      "n_B": 106
+    },
+    {
+      "population": "MID",
+      "n_pairs": 64,
+      "n_indications": 4,
+      "n_genes": 63,
+      "n_A": 10,
+      "n_B": 54
+    }
+  ],
+  "primary_scope": "Direct disease mappings only; ancestry comparisons retained separately according to Pan-UKB pops_pass_qc.",
+  "excluded_scope": "No proxy biomarkers, closely related phenotypes, categorical self-report fields, or failed-QC ancestry strata."
+}

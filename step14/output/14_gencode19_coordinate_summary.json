@@ -1,0 +1,29 @@
+{
+  "annotation": {
+    "resource": "GENCODE",
+    "release": 19,
+    "assembly": "GRCh37.p13",
+    "filename": "gencode.v19.annotation.gtf.gz",
+    "size_bytes": 37991892,
+    "md5": "bd83e28270e595d3bde6bfcb21c9748f",
+    "sha256": "9909e8123a40eca090c3f8e501633f7cc65cd6c4adb83b95009745eca3564d70"
+  },
+  "gtf_gene_records": 57783,
+  "gtf_unique_symbols": 55728,
+  "gtf_unambiguous_collapsed_symbols": 55558,
+  "locked_unique_genes": 102,
+  "locked_genes_matched": 102,
+  "locked_genes_unmatched": 0,
+  "locked_multichromosome_symbols": [],
+  "coordinate_conventions": {
+    "gtf_start_end": "1-based inclusive",
+    "start_0based": "start_1based - 1",
+    "planned_window": "Not applied in this step"
+  },
+  "outputs": {
+    "all_coordinates": "output/14_gencode19_all_gene_coordinates.parquet",
+    "locked_coordinates_parquet": "output/14_locked_gene_coordinates_grch37.parquet",
+    "locked_coordinates_csv": "output/14_locked_gene_coordinates_grch37.csv",
+    "unmatched": "output/14_locked_genes_unmatched.csv"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "by_pool": {
+    "A": {
+      "n_units": 5,
+      "primary_category_counts": {
+        "DISTINCT_H3_GE_0P8": 1,
+        "MODERATE_SHARED_H4_GE_0P5": 1,
+        "SHARED_H4_GE_0P8": 3
+      },
+      "prior_stability_counts": {
+        "PRIOR_SENSITIVE": 3,
+        "ROBUST_DISTINCT": 1,
+        "ROBUST_SHARED": 1
+      }
+    },
+    "B": {
+      "n_units": 9,
+      "primary_category_counts": {
+        "DISTINCT_H3_GE_0P8": 3,
+        "INCONCLUSIVE": 1,
+        "SHARED_H4_GE_0P8": 5
+      },
+      "prior_stability_counts": {
+        "PRIOR_SENSITIVE": 3,
+        "ROBUST_DISTINCT": 2,
+        "ROBUST_SHARED": 4
+      }
+    }
+  },
+  "completed_at_utc": "2026-07-26T12:18:51.889806+00:00",
+  "n_powered_units": 14,
+  "outputs": {
+    "csv": "output/15e1_coloc_prior_stability_units.csv",
+    "parquet": "output/15e1_coloc_prior_stability_units.parquet"
+  },
+  "p12_values": [
+    1e-06,
+    1e-05,
+    0.0001
+  ],
+  "primary_category_counts": {
+    "DISTINCT_H3_GE_0P8": 4,
+    "INCONCLUSIVE": 1,
+    "MODERATE_SHARED_H4_GE_0P5": 1,
+    "SHARED_H4_GE_0P8": 8
+  },
+  "primary_p12": 1e-05,
+  "prior_stability_counts": {
+    "PRIOR_SENSITIVE": 6,
+    "ROBUST_DISTINCT": 3,
+    "ROBUST_SHARED": 5
+  },
+  "script_version": "15E1.1",
+  "status": "PASS",
+  "step": "15E1"
+}

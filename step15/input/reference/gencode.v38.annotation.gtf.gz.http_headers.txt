@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2026 18:43:26 GMT
+Server: Apache
+Last-Modified: Fri, 12 Mar 2021 15:41:07 GMT
+ETag: "2c665cd-5bd58ba7eee4f"
+Accept-Ranges: bytes
+Content-Length: 46556621
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET,OPTIONS
+Access-Control-Allow-Headers: Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept
+Content-Type: application/x-gzip
+

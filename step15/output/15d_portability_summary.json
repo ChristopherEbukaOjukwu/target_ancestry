@@ -1,0 +1,602 @@
+{
+  "comparison_bootstrap_replicates": 1000,
+  "completed_at_utc": "2026-07-25T13:49:33.810511+00:00",
+  "completed_comparisons_any_threshold": 127,
+  "estimator_definitions": {
+    "deming": "Weighted through-origin errors-in-variables fit using both EUR and comparison standard errors.",
+    "fiqt": "Through-origin slope after FIQT correction of EUR beta only; selection was on EUR significance.",
+    "naive": "Through-origin OLS slope of comparison beta on EUR beta."
+  },
+  "expected_comparisons_any_threshold": 127,
+  "invalid_or_missing_comparison_caches": [],
+  "outputs": {
+    "comparison_estimates": "output/15d_comparison_portability_estimates.parquet",
+    "primary_comparison_estimates": "output/15d_primary_comparison_portability.parquet",
+    "primary_unit_estimates": "output/15d_primary_unit_portability.parquet",
+    "unit_estimates": "output/15d_unit_portability_estimates.parquet",
+    "variant_effects_primary": "output/15d_variant_effects_primary.parquet"
+  },
+  "primary_estimator_agreement": {
+    "fiqt_vs_deming": {
+      "median_difference": 0.013919096621898108,
+      "n_units": 50,
+      "pearson_r": 0.5943436947006612
+    },
+    "naive_vs_deming": {
+      "median_difference": 0.017457151418027894,
+      "n_units": 50,
+      "pearson_r": 0.5982994547683063
+    },
+    "naive_vs_fiqt": {
+      "median_difference": 0.003191050229145939,
+      "n_units": 50,
+      "pearson_r": 0.9993073624426956
+    }
+  },
+  "primary_threshold": 0.1,
+  "processing_errors": [],
+  "script_version": "15D.2",
+  "status": "PASS",
+  "step": "15D",
+  "threshold_results": {
+    "0.01": {
+      "estimators": {
+        "deming": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.6094378234297168,
+              "median": 0.6259281810778402,
+              "n": 7
+            },
+            "AMR": {
+              "mean": 0.6699544503050054,
+              "median": 0.6699544503050054,
+              "n": 1
+            },
+            "CSA": {
+              "mean": 0.591537465113501,
+              "median": 0.5070940805563987,
+              "n": 15
+            },
+            "EAS": {
+              "mean": 0.3782120982615095,
+              "median": 0.3782120982615095,
+              "n": 2
+            },
+            "MID": {
+              "mean": 1.096589943323797,
+              "median": 0.7506404753792655,
+              "n": 5
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.5082235606942008,
+              "median": 0.5120424650308413,
+              "n": 6
+            },
+            "B": {
+              "mean": 0.6949089076422168,
+              "median": 0.6432482736220261,
+              "n": 12
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.7369700216067472,
+              "median": 0.7369700216067472,
+              "n": 2
+            },
+            "Pan-UKB": {
+              "mean": 0.6196442632911443,
+              "median": 0.5364321404954839,
+              "n": 16
+            }
+          },
+          "ci_lower": 0.4228951775409914,
+          "ci_upper": 0.8092345202594577,
+          "median": 0.5819175710791069,
+          "n_comparisons": 30,
+          "n_units": 18
+        },
+        "fiqt": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.7312146995005089,
+              "median": 0.6569994090185856,
+              "n": 7
+            },
+            "AMR": {
+              "mean": 1.1201864811941733,
+              "median": 1.1201864811941733,
+              "n": 1
+            },
+            "CSA": {
+              "mean": 0.6003613985970891,
+              "median": 0.5581695345259244,
+              "n": 15
+            },
+            "EAS": {
+              "mean": -0.05901783527026422,
+              "median": -0.05901783527026422,
+              "n": 2
+            },
+            "MID": {
+              "mean": 1.3123543837290128,
+              "median": 1.3374949850912456,
+              "n": 5
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.6220260280198479,
+              "median": 0.5766669135511424,
+              "n": 6
+            },
+            "B": {
+              "mean": 0.7715981452181696,
+              "median": 0.6494124675169501,
+              "n": 12
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.8529148216009821,
+              "median": 0.8529148216009821,
+              "n": 2
+            },
+            "Pan-UKB": {
+              "mean": 0.7053440167209474,
+              "median": 0.6291728129078316,
+              "n": 16
+            }
+          },
+          "ci_lower": 0.41403535582887785,
+          "ci_upper": 1.0018520377236162,
+          "median": 0.6395499983497857,
+          "n_comparisons": 30,
+          "n_units": 18
+        },
+        "naive": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.7000006913117139,
+              "median": 0.6550021887516547,
+              "n": 7
+            },
+            "AMR": {
+              "mean": 1.1161147562591154,
+              "median": 1.1161147562591154,
+              "n": 1
+            },
+            "CSA": {
+              "mean": 0.5670225185563921,
+              "median": 0.5148187715624355,
+              "n": 15
+            },
+            "EAS": {
+              "mean": -0.0599961589154252,
+              "median": -0.0599961589154252,
+              "n": 2
+            },
+            "MID": {
+              "mean": 1.2366093253422756,
+              "median": 1.3330267468514854,
+              "n": 5
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.5607681470151316,
+              "median": 0.5750806692456899,
+              "n": 6
+            },
+            "B": {
+              "mean": 0.7590289747639413,
+              "median": 0.6411455989886956,
+              "n": 12
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.8505126182080802,
+              "median": 0.8505126182080802,
+              "n": 2
+            },
+            "Pan-UKB": {
+              "mean": 0.67324570892762,
+              "median": 0.5960996754586365,
+              "n": 16
+            }
+          },
+          "ci_lower": 0.4123196675681434,
+          "ci_upper": 0.9558038498120858,
+          "median": 0.6383914989339707,
+          "n_comparisons": 30,
+          "n_units": 18
+        }
+      },
+      "n_comparisons": 30,
+      "n_retained_variants": 152,
+      "n_units": 18
+    },
+    "0.1": {
+      "estimators": {
+        "deming": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.3432516574013833,
+              "median": 0.43064068160423064,
+              "n": 22
+            },
+            "AMR": {
+              "mean": 0.4521425656237712,
+              "median": 0.43550228693488957,
+              "n": 7
+            },
+            "CSA": {
+              "mean": 0.7781373924962253,
+              "median": 0.7361931551766516,
+              "n": 44
+            },
+            "EAS": {
+              "mean": 1.047004451792336,
+              "median": 0.6993180474608843,
+              "n": 11
+            },
+            "MID": {
+              "mean": 0.7535086469482998,
+              "median": 0.6275096514543703,
+              "n": 20
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.6480222046248493,
+              "median": 0.6287996296385714,
+              "n": 18
+            },
+            "B": {
+              "mean": 0.6674915216017525,
+              "median": 0.600766554756641,
+              "n": 32
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.447369657228723,
+              "median": 0.6059038227904421,
+              "n": 8
+            },
+            "Pan-UKB": {
+              "mean": 0.7010755027779424,
+              "median": 0.600766554756641,
+              "n": 42
+            }
+          },
+          "ci_lower": 0.513010046168282,
+          "ci_upper": 0.7273753598600068,
+          "median": 0.600766554756641,
+          "n_comparisons": 104,
+          "n_units": 50
+        },
+        "fiqt": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.44742007855797045,
+              "median": 0.48621513653732873,
+              "n": 22
+            },
+            "AMR": {
+              "mean": 0.6922574836848894,
+              "median": 0.6398725263606757,
+              "n": 7
+            },
+            "CSA": {
+              "mean": 0.7682037415126828,
+              "median": 0.7418671974341087,
+              "n": 44
+            },
+            "EAS": {
+              "mean": 0.864517779921504,
+              "median": 0.9825509718727523,
+              "n": 11
+            },
+            "MID": {
+              "mean": 0.6538791460414115,
+              "median": 0.593206732125585,
+              "n": 20
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.6006488071238443,
+              "median": 0.6053809748492391,
+              "n": 18
+            },
+            "B": {
+              "mean": 0.5148615963313279,
+              "median": 0.6212128995751967,
+              "n": 32
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.46749739072775603,
+              "median": 0.6212128995751967,
+              "n": 8
+            },
+            "Pan-UKB": {
+              "mean": 0.5606492972621344,
+              "median": 0.6053809748492391,
+              "n": 42
+            }
+          },
+          "ci_lower": 0.5049272261680045,
+          "ci_upper": 0.742016030146132,
+          "median": 0.6127540707822228,
+          "n_comparisons": 104,
+          "n_units": 50
+        },
+        "naive": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.4389260196788637,
+              "median": 0.4798892747130532,
+              "n": 22
+            },
+            "AMR": {
+              "mean": 0.6878489818585821,
+              "median": 0.6336901541444936,
+              "n": 7
+            },
+            "CSA": {
+              "mean": 0.7566107004262971,
+              "median": 0.736845782490522,
+              "n": 44
+            },
+            "EAS": {
+              "mean": 0.8603220509755118,
+              "median": 0.9753742614418915,
+              "n": 11
+            },
+            "MID": {
+              "mean": 0.641663241504499,
+              "median": 0.586751678268447,
+              "n": 20
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.5853317196419229,
+              "median": 0.602034410194882,
+              "n": 18
+            },
+            "B": {
+              "mean": 0.5106657495883489,
+              "median": 0.6184368436653904,
+              "n": 32
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.4649220533125042,
+              "median": 0.6184368436653904,
+              "n": 8
+            },
+            "Pan-UKB": {
+              "mean": 0.5513785360448036,
+              "median": 0.602034410194882,
+              "n": 42
+            }
+          },
+          "ci_lower": 0.4832267051125924,
+          "ci_upper": 0.6788543999417398,
+          "median": 0.6098863047188374,
+          "n_comparisons": 104,
+          "n_units": 50
+        }
+      },
+      "n_comparisons": 104,
+      "n_retained_variants": 714,
+      "n_units": 50
+    },
+    "0.2": {
+      "estimators": {
+        "deming": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.3198974989147548,
+              "median": 0.30234778649271465,
+              "n": 25
+            },
+            "AMR": {
+              "mean": 0.2667184567334909,
+              "median": 0.39256056161936254,
+              "n": 8
+            },
+            "CSA": {
+              "mean": 0.687551176653371,
+              "median": 0.7306244074923358,
+              "n": 54
+            },
+            "EAS": {
+              "mean": 1.0056258050810671,
+              "median": 0.7482308335900985,
+              "n": 13
+            },
+            "MID": {
+              "mean": 0.8208062580869259,
+              "median": 0.7375886728361623,
+              "n": 27
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.645082368805228,
+              "median": 0.6557183787818341,
+              "n": 21
+            },
+            "B": {
+              "mean": 0.6949837809083441,
+              "median": 0.6102434525604358,
+              "n": 40
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.5295860630109983,
+              "median": 0.6603914212653224,
+              "n": 9
+            },
+            "Pan-UKB": {
+              "mean": 0.7034578156566264,
+              "median": 0.6102434525604358,
+              "n": 52
+            }
+          },
+          "ci_lower": 0.528904922808482,
+          "ci_upper": 0.7235589143131753,
+          "median": 0.6223687241403304,
+          "n_comparisons": 127,
+          "n_units": 61
+        },
+        "fiqt": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.5160873786234103,
+              "median": 0.41686503391839813,
+              "n": 25
+            },
+            "AMR": {
+              "mean": 0.34911770258125596,
+              "median": 0.6213034003488513,
+              "n": 8
+            },
+            "CSA": {
+              "mean": 0.7388932430953921,
+              "median": 0.7540029023790352,
+              "n": 54
+            },
+            "EAS": {
+              "mean": 0.8646588899155245,
+              "median": 1.0099329547937757,
+              "n": 13
+            },
+            "MID": {
+              "mean": 0.9025600334170546,
+              "median": 0.89502494971664,
+              "n": 27
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.6541371889018274,
+              "median": 0.6175540343121129,
+              "n": 21
+            },
+            "B": {
+              "mean": 0.7267245727229825,
+              "median": 0.7540029023790352,
+              "n": 40
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.5725686575352582,
+              "median": 0.6910913811994092,
+              "n": 9
+            },
+            "Pan-UKB": {
+              "mean": 0.7240912684238529,
+              "median": 0.730744898183943,
+              "n": 52
+            }
+          },
+          "ci_lower": 0.5436926498045276,
+          "ci_upper": 0.7998089076593666,
+          "median": 0.7035885403297695,
+          "n_comparisons": 127,
+          "n_units": 61
+        },
+        "naive": {
+          "bootstrap_replicates": 5000,
+          "by_comparison_ancestry": {
+            "AFR": {
+              "mean": 0.5114316457728737,
+              "median": 0.4153225424881026,
+              "n": 25
+            },
+            "AMR": {
+              "mean": 0.3490585297399358,
+              "median": 0.6162781648090419,
+              "n": 8
+            },
+            "CSA": {
+              "mean": 0.7295053540295338,
+              "median": 0.7488251271062825,
+              "n": 54
+            },
+            "EAS": {
+              "mean": 0.8597341794427742,
+              "median": 1.006931235552715,
+              "n": 13
+            },
+            "MID": {
+              "mean": 0.8944253953902701,
+              "median": 0.8876894176172708,
+              "n": 27
+            }
+          },
+          "by_pool": {
+            "A": {
+              "mean": 0.6460722937228957,
+              "median": 0.616800028011021,
+              "n": 21
+            },
+            "B": {
+              "mean": 0.7193934425716504,
+              "median": 0.7488251271062825,
+              "n": 40
+            }
+          },
+          "by_source": {
+            "GBMI": {
+              "mean": 0.5705464615864447,
+              "median": 0.6877441547198836,
+              "n": 9
+            },
+            "Pan-UKB": {
+              "mean": 0.7155449560917083,
+              "median": 0.7104231845081951,
+              "n": 52
+            }
+          },
+          "ci_lower": 0.5396998352624686,
+          "ci_upper": 0.7963368493345722,
+          "median": 0.6950851594245411,
+          "n_comparisons": 127,
+          "n_units": 61
+        }
+      },
+      "n_comparisons": 127,
+      "n_retained_variants": 1073,
+      "n_units": 61
+    }
+  },
+  "uncertainty": {
+    "comparison_level": "Seeded percentile bootstrap over variants retained after ancestry-paired LD pruning; primary r2 < 0.10 comparisons only.",
+    "headline_level": "Seeded percentile bootstrap over gene-trait-source units.",
+    "ld_limitation": "Signed LD covariance is not modeled after pruning; uncertainty is LD-controlled by the ancestry-paired pruning design rather than by a full covariance likelihood."
+  },
+  "unit_bootstrap_replicates": 5000,
+  "valid_comparison_caches": 127
+}

@@ -1,0 +1,87 @@
+{
+  "frozen_at_utc": "2026-07-24T21:33:39.793928+00:00",
+  "frozen_pruning_policy": {
+    "candidate_set": "Step 15B4 qc_qualified and EUR GWS primary-exact variants",
+    "minimum_retained_variants": 3,
+    "no_proxy_rule": "unsupported source populations are excluded; no continental proxy is substituted",
+    "presence_requirement": "variant present in both EUR and comparison LD references",
+    "primary_r2_threshold": 0.1,
+    "primary_rule": "reject candidate when r^2 >= 0.10 with any retained variant in either ancestry",
+    "ranking": "ascending EUR p-value, then position, REF, ALT",
+    "sensitivity_r2_thresholds": [
+      0.01,
+      0.2
+    ]
+  },
+  "input_counts": {
+    "primary_pre_ld_comparisons": 235,
+    "sensitivity_pre_ld_comparisons": 410
+  },
+  "ld_ready_counts": {
+    "primary": 235,
+    "primary_unsupported": 0,
+    "sensitivity": 410,
+    "sensitivity_unsupported": 0
+  },
+  "outputs": {
+    "comparison_manifest": {
+      "csv": "output/15c1_portability_comparison_manifest.csv",
+      "csv_sha256": "a65a864345f8adcceb1a050dd04cfd9d6b7f80e8bc9908dc5d99b056e01242cb",
+      "n_rows": 235,
+      "parquet": "output/15c1_portability_comparison_manifest.parquet",
+      "parquet_sha256": "18ca54bf33ea145212e706665a8039e817614d5461a725fe0f6fa1af41de3308"
+    },
+    "panel_policy": {
+      "csv": "output/15c1_ld_panel_policy.csv",
+      "csv_sha256": "909a2cad90be6e5aef64b094658e3300da530935f900cb8af3f5d665def8fe4b",
+      "n_rows": 48,
+      "parquet": "output/15c1_ld_panel_policy.parquet",
+      "parquet_sha256": "4e560bfc6af49eaedc6b7371031c7f6cfd5e3ae6020685efae3b1ff141140e0f"
+    },
+    "primary_variant_requests": {
+      "csv": "output/15c1_portability_variant_requests_primary.csv",
+      "csv_sha256": "9f825bb479bee0addc96a2c5fa70cfebf21df3a31556729290fa19c8dd4acaca",
+      "n_rows": 29860,
+      "parquet": "output/15c1_portability_variant_requests_primary.parquet",
+      "parquet_sha256": "cf2c0fe04994ef6edcff78258fbee2a4b0b56bfa32fd070258022b7ef2883f39"
+    },
+    "sensitivity_variant_requests": {
+      "csv": "output/15c1_portability_variant_requests_sensitivity.csv",
+      "csv_sha256": "6854d0f8b5f5031dc31b59aba8860e96f5c7c0bd8a460662cc3f8cc8479d59a4",
+      "n_rows": 49611,
+      "parquet": "output/15c1_portability_variant_requests_sensitivity.parquet",
+      "parquet_sha256": "f4e150bf099ca600ef364a705cf5e09d989825452200a568e4110a886c022890"
+    },
+    "unique_ld_variant_requests": {
+      "csv": "output/15c1_unique_ld_variant_requests.csv",
+      "csv_sha256": "a5c903338de499c8c5cb09b1cf8ea4576748c93178be85c942d7b0913f376bf8",
+      "n_rows": 40437,
+      "parquet": "output/15c1_unique_ld_variant_requests.parquet",
+      "parquet_sha256": "88c3fee8d3c709bf47689ec0461c4f156b3390b357143a99f0da07c4f106d743"
+    }
+  },
+  "primary_ready_by_source_population": {
+    "GBMI:AFR": 18,
+    "GBMI:AMR": 18,
+    "GBMI:CSA": 13,
+    "GBMI:EAS": 17,
+    "Pan-UKB:AFR": 31,
+    "Pan-UKB:CSA": 80,
+    "Pan-UKB:EAS": 16,
+    "Pan-UKB:MID": 42
+  },
+  "reference_policy": {
+    "GBMI": "1000 Genomes phased unrelated-sample GRCh38 call set, subset by original source population label",
+    "Pan-UKB": "source-matched Pan-UKB covariate-adjusted in-sample LD BlockMatrix, GRCh37"
+  },
+  "script_version": "15C1.2",
+  "status": "PASS",
+  "step": "15C1",
+  "unsupported_primary_comparisons": [],
+  "variant_request_counts": {
+    "primary_comparison_variant_rows": 29860,
+    "primary_unique_panel_variant_requests": 40437,
+    "primary_unique_variants": 12130,
+    "sensitivity_comparison_variant_rows": 49611
+  }
+}

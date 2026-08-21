@@ -1,0 +1,8 @@
+  File: input/reference/gencode.v38.annotation.gtf.gz
+  Size: 46556621  	Blocks: 90936      IO Block: 4096   regular file
+Device: 0,82	Inode: 7881299348169531  Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/  ojukwu)   Gid: ( 1000/  ojukwu)
+Access: 2026-07-24 12:42:39.807744800 -0600
+Modify: 2026-07-24 12:42:39.807744800 -0600
+Change: 2026-07-24 12:42:39.807744800 -0600
+ Birth: -

@@ -1,0 +1,18 @@
+{
+  "interpretation": {
+    "effective_n": "For case-control traits, 4/(1/Ncase+1/Ncontrol); for quantitative traits, total N. Used only for precision sensitivity.",
+    "sample_size_sensitivity": "Exploratory robustness analysis; does not replace the original bootstrap portability estimates.",
+    "total_n": "Descriptive ancestry-specific cohort sample size."
+  },
+  "n_portability_comparisons": 104,
+  "n_with_effective_sample_sizes": 104,
+  "n_with_total_sample_sizes": 104,
+  "outputs": {
+    "audit": "15g2_sample_size_audit.csv",
+    "sensitivity": "15g2_portability_sample_size_sensitivity.csv",
+    "summary": "15g2_sample_size_summary.csv"
+  },
+  "primary_r2": 0.1,
+  "status": "PASS",
+  "step": "15G2"
+}

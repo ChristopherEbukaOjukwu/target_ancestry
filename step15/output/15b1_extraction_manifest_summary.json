@@ -1,0 +1,65 @@
+{
+  "step": "15B1",
+  "window_definition": "GENCODE gene body \u00b1100 kb",
+  "window_bp": 100000,
+  "gene_symbol_aliases": {
+    "GRCh37.p13": {
+      "ANGPTL8": "C19orf80"
+    },
+    "GRCh38.p13": {}
+  },
+  "coordinate_sources": {
+    "Pan-UKB": {
+      "annotation": "GENCODE v19",
+      "assembly": "GRCh37.p13",
+      "native_summary_stat_build": "GRCh37"
+    },
+    "GBMI": {
+      "annotation": "GENCODE v38",
+      "assembly": "GRCh38.p13",
+      "native_summary_stat_build": "GRCh38"
+    }
+  },
+  "n_locked_gene_trait_units": 504,
+  "n_unique_genes": 182,
+  "n_panukb_units": 445,
+  "n_gbmi_units": 59,
+  "coordinates": {
+    "panukb_required_genes": 174,
+    "panukb_matched_genes": 174,
+    "panukb_unresolved_genes": 0,
+    "gbmi_required_genes": 43,
+    "gbmi_matched_genes": 43,
+    "gbmi_unresolved_genes": 0
+  },
+  "comparisons": {
+    "all_rows": 1062,
+    "primary_rows": 551,
+    "all_extraction_ready": 1062,
+    "primary_extraction_ready": 551,
+    "unresolved_rows": 0,
+    "by_source": {
+      "Pan-UKB": 856,
+      "GBMI": 206
+    },
+    "by_non_eur_population": {
+      "CSA": 474,
+      "AFR": 225,
+      "MID": 206,
+      "EAS": 98,
+      "AMR": 59
+    }
+  },
+  "outputs": {
+    "coord37_csv": "output/15b1_gene_coordinates_grch37.csv",
+    "coord37_parquet": "output/15b1_gene_coordinates_grch37.parquet",
+    "coord38_csv": "output/15b1_gene_coordinates_grch38.csv",
+    "coord38_parquet": "output/15b1_gene_coordinates_grch38.parquet",
+    "coordinate_audit": "output/15b1_gene_coordinate_audit.csv",
+    "manifest_csv": "output/15b1_extraction_manifest.csv",
+    "manifest_parquet": "output/15b1_extraction_manifest.parquet",
+    "primary_csv": "output/15b1_extraction_manifest_primary.csv",
+    "primary_parquet": "output/15b1_extraction_manifest_primary.parquet",
+    "unresolved": "output/15b1_extraction_manifest_unresolved.csv"
+  }
+}

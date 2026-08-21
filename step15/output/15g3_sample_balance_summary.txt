@@ -1,0 +1,36 @@
+========================================================================================
+STEP 15G3 — SAMPLE-SIZE BALANCE VS PORTABILITY
+========================================================================================
+
+Interpretation of beta_log10_ratio:
+  Change in portability slope for a 10-fold increase in the non-EUR/EUR effective-N ratio.
+  Positive beta: more sample-size-balanced comparisons tend to have larger portability slopes.
+  The ancestry-adjusted model asks whether that pattern remains within ancestry groups.
+
+Ancestry-specific effective-N-ratio variation:
+comparison_population  n_comparisons  n_units  median_effective_n_ratio  min_effective_n_ratio  max_effective_n_ratio  sd_log10_effective_n_ratio
+                  AFR             22       22                  0.015503               0.015395               0.057242                    0.206357
+                  AMR              7        7                  0.029108               0.028415               0.039150                    0.050509
+                  CSA             44       44                  0.020990               0.010844               0.032634                    0.091123
+                  EAS             11       11                  0.157833               0.006451               0.163698                    0.718584
+                  MID             20       20                  0.003747               0.003738               0.003796                    0.001859
+
+Model results:
+estimator                model               weighting  n_comparisons  n_units  beta_log10_ratio  ci_lower  ci_upper  p_value  r_squared
+     fiqt        M0_unadjusted              unweighted            104       50          0.092030 -0.456991  0.641050 0.737664   0.002010
+     fiqt        M0_unadjusted inverse_variance_approx            104       50          0.332104 -0.119753  0.783961 0.146077   0.054011
+     fiqt M1_ancestry_adjusted              unweighted            104       50          0.104843 -0.387759  0.597445 0.670737   0.026995
+     fiqt M1_ancestry_adjusted inverse_variance_approx            104       50          0.141406 -0.564269  0.847081 0.688931   0.265240
+   deming        M0_unadjusted              unweighted            104       50         -0.051595 -0.421686  0.318495 0.780534   0.001102
+   deming        M0_unadjusted inverse_variance_approx            104       50          0.274869 -0.023175  0.572912 0.069863   0.041843
+   deming M1_ancestry_adjusted              unweighted            104       50         -0.096696 -0.639579  0.446188 0.721929   0.116471
+   deming M1_ancestry_adjusted inverse_variance_approx            104       50          0.152398 -0.390271  0.695067 0.575090   0.370956
+    naive        M0_unadjusted              unweighted            104       50          0.096438 -0.447875  0.640751 0.723335   0.002244
+    naive        M0_unadjusted inverse_variance_approx            104       50          0.347576 -0.081437  0.776589 0.109915   0.061012
+    naive M1_ancestry_adjusted              unweighted            104       50          0.107905 -0.381684  0.597495 0.659780   0.027489
+    naive M1_ancestry_adjusted inverse_variance_approx            104       50          0.160025 -0.554655  0.874705 0.654718   0.255812
+
+Primary result to inspect:
+  FIQT + M1_ancestry_adjusted + inverse_variance_approx.
+  Deming and naive are sensitivity analyses.
+========================================================================================

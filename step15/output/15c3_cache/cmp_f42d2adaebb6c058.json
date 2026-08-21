@@ -1,0 +1,129 @@
+{
+  "candidate_source": "Pan-UKB",
+  "comparison_population": "MID",
+  "comparison_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.9892064602160926,
+    "diagonal_minimum": 0.979571372556054,
+    "maximum": 0.9892064602160926,
+    "minimum": 0.0009597160557971914,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "comparison_reference": {
+    "index_globals": {
+      "n_samples": 1599,
+      "pop": "MID"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.MID.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.MID.ldadj.bm",
+    "n_requested_unique": 5265,
+    "n_resolved_unique": 5265
+  },
+  "comparison_reference_population": "MID",
+  "comparison_uid": "cmp_f42d2adaebb6c058",
+  "completed_at_utc": "2026-07-25T03:06:22.086281+00:00",
+  "eur_r2_diagnostics": {
+    "all_entries_finite": true,
+    "diagonal_maximum": 0.999926288141626,
+    "diagonal_minimum": 0.9998967086018792,
+    "maximum": 0.999926288141626,
+    "minimum": 0.003048341670024745,
+    "shape": [
+      6,
+      6
+    ],
+    "symmetric": true
+  },
+  "eur_reference": {
+    "index_globals": {
+      "n_samples": 420542,
+      "pop": "EUR"
+    },
+    "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+    "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+    "n_requested_unique": 9954,
+    "n_resolved_unique": 9954
+  },
+  "gene": "FAP",
+  "gene_trait_uid": "gt_7139353b566f0bd6",
+  "matrix_cache": "output/15c3_cache/cmp_f42d2adaebb6c058.npz",
+  "n_reference_usable": 6,
+  "n_requested": 6,
+  "processing_status": "COMPLETE",
+  "reference_resolution": [
+    {
+      "comparison_panel_index": 1823029,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147540,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 0,
+      "variant_id": "2:163124051:C:T"
+    },
+    {
+      "comparison_panel_index": 1822887,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147229,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 1,
+      "variant_id": "2:163076146:T:C"
+    },
+    {
+      "comparison_panel_index": 1822897,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147257,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 2,
+      "variant_id": "2:163082395:C:A"
+    },
+    {
+      "comparison_panel_index": 1822967,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147434,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 3,
+      "variant_id": "2:163110536:A:G"
+    },
+    {
+      "comparison_panel_index": 1822587,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3146623,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 4,
+      "variant_id": "2:162964301:G:A"
+    },
+    {
+      "comparison_panel_index": 1823193,
+      "comparison_reference_polymorphic": null,
+      "eur_panel_index": 3147844,
+      "eur_reference_polymorphic": null,
+      "reference_exclusion_reason": "USABLE",
+      "reference_usable": true,
+      "request_order": 5,
+      "variant_id": "2:163167746:C:G"
+    }
+  ],
+  "request_variant_ids": [
+    "2:163124051:C:T",
+    "2:163076146:T:C",
+    "2:163082395:C:A",
+    "2:163110536:A:G",
+    "2:162964301:G:A",
+    "2:163167746:C:G"
+  ],
+  "script_version": "15C3.1",
+  "trait": "Neutrophill count"
+}

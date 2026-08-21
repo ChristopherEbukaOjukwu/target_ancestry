@@ -1,0 +1,9 @@
+window_type,comparison_population,n_target_indication_units,n_genes,n_indications,n_pool_A_units,n_pool_B_units,units_with_at_least_1_eur_gws_snp,units_passing_raw_10_snp_gate,median_eur_gws_cross_usable,q25_eur_gws_cross_usable,q75_eur_gws_cross_usable,maximum_eur_gws_cross_usable
+gene_body,AFR,1,1,1,0,1,0,0,0.0,0.0,0.0,0
+gene_body,CSA,100,74,6,27,73,16,7,0.0,0.0,0.0,43
+gene_body,EAS,4,4,1,1,3,2,1,1.0,0.0,4.75,13
+gene_body,MID,64,63,4,10,54,6,3,0.0,0.0,0.0,43
+gene_body_plus_10kb,AFR,1,1,1,0,1,0,0,0.0,0.0,0.0,0
+gene_body_plus_10kb,CSA,100,74,6,27,73,19,15,0.0,0.0,0.0,113
+gene_body_plus_10kb,EAS,4,4,1,1,3,2,1,1.0,0.0,4.75,13
+gene_body_plus_10kb,MID,64,63,4,10,54,7,5,0.0,0.0,0.0,113

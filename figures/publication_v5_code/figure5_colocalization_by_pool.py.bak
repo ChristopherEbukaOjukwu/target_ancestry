@@ -1,0 +1,1102 @@
+#!/usr/bin/env python3
+"""
+Main Figure 5: cross-ancestry colocalization by launch pool.
+
+Panel a
+-------
+Alluvial-style comparison map. Curves begin and end inside bounded
+source/outcome boxes. Only Shared, Sensitive, and Distinct are shown.
+
+Panel b
+-------
+Per-ancestry classification matrices shown separately for launched
+and Phase I–III units. Separate axes remove the need for a pool strip,
+floating group labels, or a divider line.
+"""
+
+from __future__ import annotations
+
+from collections import defaultdict
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
+from matplotlib.patches import (
+    FancyBboxPatch,
+    PathPatch,
+    Patch,
+    Rectangle,
+)
+from matplotlib.path import Path as MplPath
+
+from loaders import normalize_coloc_category
+from style import (
+    ROOT,
+    MAIN_DIR,
+    normalize_pool,
+    panel_label,
+    pick_column,
+    read_table,
+    save_figure,
+    set_style,
+)
+
+
+COMPARISON_CATEGORY_ORDER = [
+    "robust shared",
+    "prior-sensitive",
+    "robust distinct",
+]
+
+COMPARISON_CATEGORY_LABELS = {
+    "robust shared": "Shared",
+    "prior-sensitive": "Sensitive",
+    "robust distinct": "Distinct",
+}
+
+PREFERRED_POPULATION_ORDER = [
+    "AFR",
+    "CSA",
+    "EAS",
+    "AMR",
+    "SAS",
+]
+
+
+def abbreviate_trait(value: object) -> str:
+    text = str(value).strip()
+    lowered = text.casefold()
+
+    replacements = {
+        "triglycerides": "triglycerides",
+        "triglyceride": "triglycerides",
+        "low density lipoprotein cholesterol": "LDL",
+        "ldl cholesterol": "LDL",
+        "neutrophil count": "neutrophils",
+        "platelet count": "platelets",
+    }
+
+    for source, replacement in replacements.items():
+        if source in lowered:
+            return replacement
+
+    return text
+
+
+def compact_unit_label(
+    gene: object,
+    trait: object,
+) -> str:
+    return (
+        f"{str(gene).strip()}–"
+        f"{abbreviate_trait(trait)}"
+    )
+
+
+def comparison_colors() -> dict[str, str]:
+    cycle = plt.rcParams[
+        "axes.prop_cycle"
+    ].by_key()["color"]
+
+    return {
+        "robust shared": cycle[0],
+        "prior-sensitive": cycle[1],
+        "robust distinct": cycle[2],
+    }
+
+
+def load_mechanistic_units() -> pd.DataFrame:
+    path = (
+        ROOT
+        / "step15/output/15f_mechanistic_units.parquet"
+    )
+
+    frame = read_table(path).copy()
+
+    if "approval_pool" not in frame.columns:
+        raise KeyError(
+            "15f_mechanistic_units.parquet does not contain "
+            "'approval_pool'. "
+            f"Available columns: {list(frame.columns)}"
+        )
+
+    frame["approval_pool"] = normalize_pool(
+        frame["approval_pool"]
+    )
+
+    return frame
+
+
+def load_unit_pool_lookup(
+    mechanistic_units: pd.DataFrame,
+) -> pd.DataFrame:
+    path = (
+        ROOT
+        / "step15/output/"
+        "15e2_coloc_unit_stability_final.parquet"
+    )
+
+    frame = read_table(path).copy()
+
+    gene_col = pick_column(
+        frame,
+        [
+            "gene",
+            "target_symbol",
+        ],
+        label="unit-level gene",
+    )
+
+    trait_col = pick_column(
+        frame,
+        [
+            "candidate_trait_name",
+            "trait_name",
+            "trait",
+        ],
+        label="unit-level trait",
+    )
+
+    if "approval_pool" not in frame.columns:
+        if (
+            "gene_trait_uid" in frame.columns
+            and "gene_trait_uid" in mechanistic_units.columns
+        ):
+            frame = frame.merge(
+                mechanistic_units[
+                    [
+                        "gene_trait_uid",
+                        "approval_pool",
+                    ]
+                ].drop_duplicates(
+                    subset=["gene_trait_uid"]
+                ),
+                on="gene_trait_uid",
+                how="left",
+            )
+
+        elif {
+            "gene",
+            "candidate_trait_name",
+        }.issubset(mechanistic_units.columns):
+            frame = frame.merge(
+                mechanistic_units[
+                    [
+                        "gene",
+                        "candidate_trait_name",
+                        "approval_pool",
+                    ]
+                ].drop_duplicates(
+                    subset=[
+                        "gene",
+                        "candidate_trait_name",
+                    ]
+                ),
+                left_on=[
+                    gene_col,
+                    trait_col,
+                ],
+                right_on=[
+                    "gene",
+                    "candidate_trait_name",
+                ],
+                how="left",
+            )
+
+        else:
+            raise KeyError(
+                "Could not attach approval_pool to the "
+                "unit-stability table. "
+                f"Unit-stability columns: {list(frame.columns)}; "
+                f"mechanistic-unit columns: "
+                f"{list(mechanistic_units.columns)}"
+            )
+
+    frame["approval_pool"] = normalize_pool(
+        frame["approval_pool"]
+    )
+
+    frame["unit_label"] = [
+        compact_unit_label(gene, trait)
+        for gene, trait in zip(
+            frame[gene_col],
+            frame[trait_col],
+        )
+    ]
+
+    frame = frame[
+        frame["approval_pool"].isin(["A", "B"])
+    ].copy()
+
+    return (
+        frame[
+            [
+                "unit_label",
+                "approval_pool",
+            ]
+        ]
+        .drop_duplicates(
+            subset=["unit_label"]
+        )
+        .reset_index(drop=True)
+    )
+
+
+def load_comparison_stability(
+    unit_pool_lookup: pd.DataFrame,
+) -> pd.DataFrame:
+    path = (
+        ROOT
+        / "step15/output/"
+        "15e2_coloc_comparison_stability.parquet"
+    )
+
+    frame = read_table(path).copy()
+
+    gene_col = pick_column(
+        frame,
+        [
+            "gene",
+            "target_symbol",
+        ],
+        label="comparison-level gene",
+    )
+
+    trait_col = pick_column(
+        frame,
+        [
+            "candidate_trait_name",
+            "trait_name",
+            "trait",
+        ],
+        label="comparison-level trait",
+    )
+
+    population_col = pick_column(
+        frame,
+        [
+            "comparison_population",
+            "comparison_ancestry",
+            "ancestry",
+        ],
+        label="comparison ancestry",
+    )
+
+    category_col = pick_column(
+        frame,
+        [
+            "comparison_prior_stability",
+            "prior_stability",
+            "stability_category",
+        ],
+        label="comparison-level stability category",
+    )
+
+    frame["unit_label"] = [
+        compact_unit_label(gene, trait)
+        for gene, trait in zip(
+            frame[gene_col],
+            frame[trait_col],
+        )
+    ]
+
+    frame["population"] = (
+        frame[population_col]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+
+    frame["comparison_category"] = frame[
+        category_col
+    ].map(normalize_coloc_category)
+
+    frame = frame.merge(
+        unit_pool_lookup,
+        on="unit_label",
+        how="left",
+    )
+
+    frame = frame[
+        frame["approval_pool"].isin(["A", "B"])
+        & frame["comparison_category"].isin(
+            COMPARISON_CATEGORY_ORDER
+        )
+    ].copy()
+
+    return frame
+
+
+def ordered_populations(
+    values: pd.Series,
+) -> list[str]:
+    available = sorted(
+        values.dropna().astype(str).unique()
+    )
+
+    preferred = [
+        value
+        for value in PREFERRED_POPULATION_ORDER
+        if value in available
+    ]
+
+    additional = [
+        value
+        for value in available
+        if value not in preferred
+    ]
+
+    return preferred + additional
+
+
+def evenly_spaced_slots(
+    center: float,
+    count: int,
+    *,
+    height: float,
+) -> np.ndarray:
+    if count <= 1:
+        return np.array([center])
+
+    return np.linspace(
+        center - height / 2,
+        center + height / 2,
+        count,
+    )
+
+
+def draw_bezier(
+    ax: plt.Axes,
+    *,
+    x0: float,
+    y0: float,
+    x1: float,
+    y1: float,
+    color: str,
+    linewidth: float = 2.7,
+    alpha: float = 0.76,
+) -> None:
+    control_1 = (
+        x0 + 0.34 * (x1 - x0),
+        y0,
+    )
+
+    control_2 = (
+        x0 + 0.66 * (x1 - x0),
+        y1,
+    )
+
+    vertices = [
+        (x0, y0),
+        control_1,
+        control_2,
+        (x1, y1),
+    ]
+
+    codes = [
+        MplPath.MOVETO,
+        MplPath.CURVE4,
+        MplPath.CURVE4,
+        MplPath.CURVE4,
+    ]
+
+    patch = PathPatch(
+        MplPath(
+            vertices,
+            codes,
+        ),
+        fill=False,
+        color=color,
+        linewidth=linewidth,
+        alpha=alpha,
+        capstyle="round",
+        zorder=1,
+    )
+
+    ax.add_patch(patch)
+
+
+def draw_pool_comparison_alluvial(
+    ax: plt.Axes,
+    comparisons: pd.DataFrame,
+) -> None:
+    """
+    Panel a.
+
+    Source and destination slots are constrained to fall inside their
+    respective boxes. Because the boxes are drawn above the curves, the
+    lines appear to enter and leave cleanly at the box boundaries.
+    """
+    colors = comparison_colors()
+
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+
+    panel_label(
+        ax,
+        "a",
+        x=-0.04,
+        y=1.05,
+    )
+
+    ax.text(
+    0.00,
+    0.985,
+    (
+        "Shared, sensitive, and distinct signals "
+        "occur in both launch pools"
+    ),
+    transform=ax.transAxes,
+    ha="left",
+    va="top",
+    fontsize=13.5,
+    fontweight="bold",
+    )
+
+    source_centers = {
+        "A": 0.70,
+        "B": 0.27,
+    }
+
+    category_centers = {
+        "robust shared": 0.78,
+        "prior-sensitive": 0.50,
+        "robust distinct": 0.22,
+    }
+
+    source_box_x = 0.035
+    source_box_width = 0.20
+    source_box_height = 0.24
+
+    category_box_x = 0.73
+    category_box_width = 0.22
+    category_box_height = 0.17
+
+    source_x_right = (
+        source_box_x
+        + source_box_width
+    )
+
+    category_x_left = category_box_x
+
+    source_slots: dict[
+        tuple[str, str, str],
+        list[float],
+    ] = {}
+
+    category_slots: dict[
+        tuple[str, str, str],
+        list[float],
+    ] = {}
+
+    # Keep source points inside the source boxes.
+    for pool in ["A", "B"]:
+        subset = (
+            comparisons[
+                comparisons["approval_pool"].eq(pool)
+            ]
+            .sort_values(
+                [
+                    "comparison_category",
+                    "unit_label",
+                    "population",
+                ]
+            )
+            .reset_index(drop=True)
+        )
+
+        slots = evenly_spaced_slots(
+            source_centers[pool],
+            len(subset),
+            height=source_box_height * 0.72,
+        )
+
+        for row, slot in zip(
+            subset.itertuples(index=False),
+            slots,
+        ):
+            key = (
+                row.unit_label,
+                row.population,
+                row.comparison_category,
+            )
+
+            source_slots.setdefault(
+                key,
+                [],
+            ).append(float(slot))
+
+    # Keep destination points inside the outcome boxes.
+    for category in COMPARISON_CATEGORY_ORDER:
+        subset = (
+            comparisons[
+                comparisons[
+                    "comparison_category"
+                ].eq(category)
+            ]
+            .sort_values(
+                [
+                    "approval_pool",
+                    "unit_label",
+                    "population",
+                ]
+            )
+            .reset_index(drop=True)
+        )
+
+        slots = evenly_spaced_slots(
+            category_centers[category],
+            len(subset),
+            height=category_box_height * 0.70,
+        )
+
+        for row, slot in zip(
+            subset.itertuples(index=False),
+            slots,
+        ):
+            key = (
+                row.unit_label,
+                row.population,
+                row.comparison_category,
+            )
+
+            category_slots.setdefault(
+                key,
+                [],
+            ).append(float(slot))
+
+    used_source_slots = defaultdict(int)
+    used_category_slots = defaultdict(int)
+
+    # Draw curves first so boxes mask their interior portions.
+    for row in (
+        comparisons.sort_values(
+            [
+                "approval_pool",
+                "comparison_category",
+                "unit_label",
+                "population",
+            ]
+        )
+        .itertuples(index=False)
+    ):
+        key = (
+            row.unit_label,
+            row.population,
+            row.comparison_category,
+        )
+
+        source_index = used_source_slots[key]
+        destination_index = used_category_slots[key]
+
+        y0 = source_slots[key][source_index]
+        y1 = category_slots[key][destination_index]
+
+        used_source_slots[key] += 1
+        used_category_slots[key] += 1
+
+        draw_bezier(
+            ax,
+            x0=source_x_right,
+            y0=y0,
+            x1=category_x_left,
+            y1=y1,
+            color=colors[
+                row.comparison_category
+            ],
+        )
+
+        ax.scatter(
+            source_x_right,
+            y0,
+            s=18,
+            color=colors[
+                row.comparison_category
+            ],
+            edgecolor="white",
+            linewidth=0.4,
+            zorder=3,
+        )
+
+        ax.scatter(
+            category_x_left,
+            y1,
+            s=18,
+            color=colors[
+                row.comparison_category
+            ],
+            edgecolor="white",
+            linewidth=0.4,
+            zorder=3,
+        )
+
+    # Draw source boxes after curves.
+    source_labels = {
+        "A": "Launched",
+        "B": "Phase I–III",
+    }
+
+    for pool in ["A", "B"]:
+        patch = FancyBboxPatch(
+            (
+                source_box_x,
+                source_centers[pool]
+                - source_box_height / 2,
+            ),
+            source_box_width,
+            source_box_height,
+            boxstyle=(
+                "round,pad=0.012,"
+                "rounding_size=0.016"
+            ),
+            facecolor="white",
+            edgecolor="black",
+            linewidth=1.2,
+            zorder=4,
+        )
+
+        ax.add_patch(patch)
+
+        ax.text(
+            source_box_x
+            + source_box_width / 2,
+            source_centers[pool],
+            source_labels[pool],
+            ha="center",
+            va="center",
+            fontsize=10.0,
+            fontweight="bold",
+            zorder=5,
+        )
+
+    # Draw outcome boxes after curves.
+    for category in COMPARISON_CATEGORY_ORDER:
+        patch = FancyBboxPatch(
+            (
+                category_box_x,
+                category_centers[category]
+                - category_box_height / 2,
+            ),
+            category_box_width,
+            category_box_height,
+            boxstyle=(
+                "round,pad=0.012,"
+                "rounding_size=0.016"
+            ),
+            facecolor=colors[category],
+            edgecolor="white",
+            linewidth=1.0,
+            alpha=0.92,
+            zorder=4,
+        )
+
+        ax.add_patch(patch)
+
+        ax.text(
+            category_box_x
+            + category_box_width / 2,
+            category_centers[category],
+            COMPARISON_CATEGORY_LABELS[
+                category
+            ],
+            ha="center",
+            va="center",
+            fontsize=10.0,
+            fontweight="bold",
+            color="white",
+            zorder=5,
+        )
+
+
+def build_group_order(
+    group: pd.DataFrame,
+) -> list[str]:
+    category_rank = {
+        category: index
+        for index, category in enumerate(
+            COMPARISON_CATEGORY_ORDER
+        )
+    }
+
+    return (
+        group[
+            [
+                "unit_label",
+                "comparison_category",
+            ]
+        ]
+        .drop_duplicates()
+        .assign(
+            category_order=lambda frame: frame[
+                "comparison_category"
+            ].map(category_rank)
+        )
+        .groupby(
+            "unit_label",
+            as_index=False,
+        )
+        .agg(
+            category_order=(
+                "category_order",
+                "min",
+            )
+        )
+        .sort_values(
+            [
+                "category_order",
+                "unit_label",
+            ]
+        )["unit_label"]
+        .tolist()
+    )
+
+
+def draw_group_matrix(
+    ax: plt.Axes,
+    group: pd.DataFrame,
+    *,
+    populations: list[str],
+    group_label: str,
+    show_column_labels: bool,
+) -> None:
+    colors = comparison_colors()
+
+    row_order = build_group_order(
+        group
+    )
+
+    category_to_code = {
+        category: index
+        for index, category in enumerate(
+            COMPARISON_CATEGORY_ORDER
+        )
+    }
+
+    matrix = np.full(
+        (
+            len(row_order),
+            len(populations),
+        ),
+        np.nan,
+    )
+
+    for row in group.itertuples(
+        index=False
+    ):
+        matrix[
+            row_order.index(row.unit_label),
+            populations.index(row.population),
+        ] = category_to_code[
+            row.comparison_category
+        ]
+
+    cmap = ListedColormap(
+        [
+            colors[category]
+            for category in COMPARISON_CATEGORY_ORDER
+        ]
+    )
+
+    ax.imshow(
+        np.ma.masked_invalid(matrix),
+        aspect="auto",
+        interpolation="nearest",
+        cmap=cmap,
+        vmin=0,
+        vmax=2,
+    )
+
+    ax.set_yticks(
+        range(len(row_order)),
+        row_order,
+    )
+
+    if show_column_labels:
+        ax.set_xticks(
+            range(len(populations)),
+            [
+                f"{population} vs EUR"
+                for population in populations
+            ],
+        )
+        ax.xaxis.tick_top()
+        ax.tick_params(
+            axis="x",
+            labeltop=True,
+            top=True,
+            bottom=False,
+            labelbottom=False,
+            pad=6,
+        )
+    else:
+        ax.set_xticks(
+            range(len(populations)),
+            [],
+        )
+        ax.tick_params(
+            axis="x",
+            top=False,
+            bottom=False,
+            labeltop=False,
+            labelbottom=False,
+        )
+
+    ax.text(
+        0.0,
+        1.03,
+        group_label,
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=10.5,
+        fontweight="bold",
+    )
+
+    for row_index in range(
+        len(row_order)
+    ):
+        for column_index in range(
+            len(populations)
+        ):
+            value = matrix[
+                row_index,
+                column_index,
+            ]
+
+            if np.isnan(value):
+                ax.add_patch(
+                    Rectangle(
+                        (
+                            column_index - 0.5,
+                            row_index - 0.5,
+                        ),
+                        1,
+                        1,
+                        facecolor="0.95",
+                        edgecolor="0.82",
+                        linewidth=0.7,
+                        hatch="///",
+                        zorder=0,
+                    )
+                )
+                continue
+
+            category = COMPARISON_CATEGORY_ORDER[
+                int(value)
+            ]
+
+            ax.text(
+                column_index,
+                row_index,
+                COMPARISON_CATEGORY_LABELS[
+                    category
+                ],
+                ha="center",
+                va="center",
+                fontsize=8.1,
+                color="white",
+                fontweight="bold",
+            )
+
+    ax.set_xticks(
+        np.arange(
+            -0.5,
+            len(populations),
+            1,
+        ),
+        minor=True,
+    )
+
+    ax.set_yticks(
+        np.arange(
+            -0.5,
+            len(row_order),
+            1,
+        ),
+        minor=True,
+    )
+
+    ax.grid(
+        which="minor",
+        color="white",
+        linewidth=1.0,
+    )
+
+    ax.tick_params(
+        which="minor",
+        bottom=False,
+        left=False,
+    )
+
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+
+
+def main() -> None:
+    set_style()
+
+    mechanistic_units = (
+        load_mechanistic_units()
+    )
+
+    unit_pool_lookup = (
+        load_unit_pool_lookup(
+            mechanistic_units
+        )
+    )
+
+    comparisons = (
+        load_comparison_stability(
+            unit_pool_lookup
+        )
+    )
+
+    populations = ordered_populations(
+        comparisons["population"]
+    )
+
+    launched = comparisons[
+        comparisons["approval_pool"].eq("A")
+    ].copy()
+
+    phase = comparisons[
+        comparisons["approval_pool"].eq("B")
+    ].copy()
+
+    launched_rows = len(
+        build_group_order(
+            launched
+        )
+    )
+
+    phase_rows = len(
+        build_group_order(
+            phase
+        )
+    )
+
+    fig = plt.figure(
+        figsize=(12.6, 8.2),
+        constrained_layout=True,
+    )
+
+    outer = fig.add_gridspec(
+        1,
+        2,
+        width_ratios=[
+            1.00,
+            1.15,
+        ],
+        wspace=0.20,
+    )
+
+    ax_a = fig.add_subplot(
+        outer[0, 0]
+    )
+
+    right = outer[
+        0,
+        1,
+    ].subgridspec(
+        2,
+        1,
+        height_ratios=[
+            max(launched_rows, 1),
+            max(phase_rows, 1),
+        ],
+        hspace=0.18,
+    )
+
+    ax_b_top = fig.add_subplot(
+        right[0, 0]
+    )
+
+    ax_b_bottom = fig.add_subplot(
+        right[1, 0]
+    )
+
+    draw_pool_comparison_alluvial(
+        ax_a,
+        comparisons,
+    )
+
+    draw_group_matrix(
+        ax_b_top,
+        launched,
+        populations=populations,
+        group_label="Launched",
+        show_column_labels=True,
+    )
+
+    draw_group_matrix(
+        ax_b_bottom,
+        phase,
+        populations=populations,
+        group_label="Phase I–III",
+        show_column_labels=False,
+    )
+
+    ax_b_top.set_title(
+        (
+            "Per-ancestry results are heterogeneous "
+            "within both launch pools"
+        ),
+        loc="left",
+        pad=34,
+    )
+
+    panel_label(
+        ax_b_top,
+        "b",
+        x=-0.10,
+        y=1.20,
+    )
+
+    legend_handles = [
+        Patch(
+            facecolor=comparison_colors()[
+                category
+            ],
+            label=COMPARISON_CATEGORY_LABELS[
+                category
+            ],
+        )
+        for category in COMPARISON_CATEGORY_ORDER
+    ] + [
+        Patch(
+            facecolor="0.95",
+            edgecolor="0.75",
+            hatch="///",
+            label="Not evaluated",
+        )
+    ]
+
+    ax_b_bottom.legend(
+        handles=legend_handles,
+        frameon=False,
+        ncol=4,
+        loc="upper center",
+        bbox_to_anchor=(
+            0.5,
+            -0.13,
+        ),
+    )
+
+    save_figure(
+        fig,
+        "Figure5_colocalization_by_pool",
+        MAIN_DIR,
+    )
+
+    plt.close(fig)
+
+    print(
+        "Wrote cleaned Figure 5: "
+        "colocalization by launch pool."
+    )
+
+
+if __name__ == "__main__":
+    main()

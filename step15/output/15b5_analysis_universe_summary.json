@@ -1,0 +1,120 @@
+{
+  "coloc_failure_reasons_all_comparisons": {},
+  "comparison_counts": {
+    "all": 1062,
+    "coloc_powered_primary": 17,
+    "coloc_powered_sensitivity": 23,
+    "coloc_primary": 538,
+    "coloc_sensitivity": 1062,
+    "portability_primary_pre_ld": 235,
+    "portability_sensitivity_pre_ld": 410,
+    "primary_nonmixed": 538
+  },
+  "definitions": {
+    "coloc_powered_primary": "primary coloc comparison with at least one QC-qualified genome-wide-significant variant in both ancestries",
+    "coloc_primary": "primary mechanistic comparison and Step 15B4 coloc_input_eligible == true",
+    "coloc_sensitivity": "all Step 15B4 coloc-input-eligible comparisons, including sensitivity mappings and mixed-pool units",
+    "mixed_pool_rule": "Mixed-pool units are excluded from primary analyses and retained only in sensitivity analyses.",
+    "portability_primary": "primary mechanistic comparison and Step 15B4 portability_pre_ld_eligible == true",
+    "portability_sensitivity": "all Step 15B4 portability-pre-LD-eligible comparisons, including sensitivity mappings and mixed-pool units",
+    "primary_mechanistic_universe": "unit_analysis_role == PRIMARY and mixed_pool == false",
+    "prior_sensitivity_rule": "All Step 15D prior settings must be applied to the same locked primary colocalization comparison universe."
+  },
+  "frozen_at_utc": "2026-07-24T21:16:21.366514+00:00",
+  "input_checks": {
+    "approval_flag_matches_primary_nonmixed": true,
+    "n_locked_gene_trait_units": 504,
+    "n_step15b4_comparisons": 1062,
+    "step15b4_status": "PASS"
+  },
+  "outputs": {
+    "coloc_powered_comparisons": {
+      "csv": "output/15_coloc_comparisons_powered_locked.csv",
+      "csv_sha256": "868b6ca9130f50de1a93c8d086e9fe18f32a4874ea636b4ca1ae5212d1cc508a",
+      "n_rows": 17,
+      "parquet": "output/15_coloc_comparisons_powered_locked.parquet",
+      "parquet_sha256": "21e05b4b7ae501c31c617abdf883d5f952800a2efac851462507ca79973617be"
+    },
+    "coloc_primary_comparisons": {
+      "csv": "output/15_coloc_comparisons_primary_locked.csv",
+      "csv_sha256": "5f2b566437fa331fbbd98d97e85991733108ca79898a790053712ec9744ceb81",
+      "n_rows": 538,
+      "parquet": "output/15_coloc_comparisons_primary_locked.parquet",
+      "parquet_sha256": "e084d1e5a196cbe43881ed45fd27d8f5c28b290eb0b51505168c49480baad879"
+    },
+    "coloc_primary_units": {
+      "csv": "output/15_coloc_units_primary_locked.csv",
+      "csv_sha256": "226d00bc342407c03615130347d7e6c315c55a9b3fcbcb05d42e4431437896e9",
+      "n_rows": 213,
+      "parquet": "output/15_coloc_units_primary_locked.parquet",
+      "parquet_sha256": "25e4f8787dea40b7af6e2977f726237d4e8bd2add291022f2bb56cbf989ca46f"
+    },
+    "coloc_sensitivity_comparisons": {
+      "csv": "output/15_coloc_comparisons_sensitivity_locked.csv",
+      "csv_sha256": "267e351328f1e87d95f6e040af1d287cd7dd31afcfd2dfe4590db080f6903d5e",
+      "n_rows": 1062,
+      "parquet": "output/15_coloc_comparisons_sensitivity_locked.parquet",
+      "parquet_sha256": "401ab1094814e9ea386170f26214bf13e242a62b734c97217791da4febee9ddf"
+    },
+    "comparison_universe": {
+      "csv": "output/15b5_comparison_analysis_universe.csv",
+      "csv_sha256": "267e351328f1e87d95f6e040af1d287cd7dd31afcfd2dfe4590db080f6903d5e",
+      "n_rows": 1062,
+      "parquet": "output/15b5_comparison_analysis_universe.parquet",
+      "parquet_sha256": "401ab1094814e9ea386170f26214bf13e242a62b734c97217791da4febee9ddf"
+    },
+    "portability_primary_comparisons": {
+      "csv": "output/15_portability_comparisons_primary_locked.csv",
+      "csv_sha256": "b601c2ade2083b00616712f61b5d0f8b4cfcd8c031b36465159bc28fc377fa0e",
+      "n_rows": 235,
+      "parquet": "output/15_portability_comparisons_primary_locked.parquet",
+      "parquet_sha256": "3c5f72ddf35c1610c407cd3a8752ad45a085f0954092f15c35e625696901c4fa"
+    },
+    "portability_primary_units": {
+      "csv": "output/15_portability_units_primary_locked.csv",
+      "csv_sha256": "46f1d8cb946474b605341e50f1a0b5d0dcd5a93e1f55aa0607a54a73f49cf63b",
+      "n_rows": 98,
+      "parquet": "output/15_portability_units_primary_locked.parquet",
+      "parquet_sha256": "6665e68a2ada74edc6ebef1ff6af4ff58655f386e90eda12cd431ef985cdd057"
+    },
+    "portability_sensitivity_comparisons": {
+      "csv": "output/15_portability_comparisons_sensitivity_locked.csv",
+      "csv_sha256": "f12f0ffbd55b4fa5f64b4a94ba4bc0bb58d6b285811290e75bf72bc88573cf06",
+      "n_rows": 410,
+      "parquet": "output/15_portability_comparisons_sensitivity_locked.parquet",
+      "parquet_sha256": "4ac4f177db33df1164be97278dfe865f56cd181fbcc284435a1a8e304a277756"
+    },
+    "unit_universe": {
+      "csv": "output/15b5_unit_analysis_universe.csv",
+      "csv_sha256": "d7c082a38163d667c1cdc3370a760ec045f7e4c3552494186e81108743dee916",
+      "n_rows": 504,
+      "parquet": "output/15b5_unit_analysis_universe.parquet",
+      "parquet_sha256": "f37fbd53c23dd6b81a865fa3424f22c86f9ad50f825be14d3e21e1f91356a6d4"
+    }
+  },
+  "portability_failure_reasons_all_comparisons": {
+    "fewer_than_3_qualified_EUR_GWS_variants": 652
+  },
+  "primary_coloc_by_source": {
+    "GBMI": 206,
+    "Pan-UKB": 332
+  },
+  "primary_portability_by_source": {
+    "GBMI": 66,
+    "Pan-UKB": 169
+  },
+  "primary_powered_coloc_by_source": {
+    "GBMI": 8,
+    "Pan-UKB": 9
+  },
+  "script_version": "15B5.1",
+  "status": "PASS",
+  "step": "15B5",
+  "unit_counts": {
+    "all": 504,
+    "coloc_powered_primary": 14,
+    "coloc_primary": 213,
+    "portability_primary_pre_ld": 98,
+    "primary_nonmixed": 213
+  }
+}

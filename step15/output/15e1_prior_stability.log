@@ -1,0 +1,33 @@
+==============================================================================
+STEP 15E1 — COLOCALIZATION PRIOR STABILITY
+==============================================================================
+Status: PASS
+Powered units: 14
+Prior-stability counts:
+  PRIOR_SENSITIVE: 6
+  ROBUST_SHARED: 5
+  ROBUST_DISTINCT: 3
+Primary-prior categories:
+  SHARED_H4_GE_0P8: 8
+  DISTINCT_H3_GE_0P8: 4
+  MODERATE_SHARED_H4_GE_0P5: 1
+  INCONCLUSIVE: 1
+
+    gene candidate_trait_name candidate_source comparison_ancestries sensitivity_pool_assignment prior_stability_class          primary_category  minimum_pp_h4  primary_pp_h4  maximum_pp_h4
+ ANGPTL3        Triglycerides          Pan-UKB                   CSA                           B       PRIOR_SENSITIVE          SHARED_H4_GE_0P8   4.596201e-01   8.947977e-01   9.883795e-01
+    CSF3    Neutrophill count          Pan-UKB                   CSA                           A       PRIOR_SENSITIVE          SHARED_H4_GE_0P8   4.022577e-01   8.706275e-01   9.853579e-01
+    IL4R               Asthma             GBMI                   EAS                           A       PRIOR_SENSITIVE          SHARED_H4_GE_0P8   3.323852e-01   8.327395e-01   9.803099e-01
+   APOC3        Triglycerides          Pan-UKB            AFR || CSA                           A       PRIOR_SENSITIVE MODERATE_SHARED_H4_GE_0P5   5.000000e-01   5.000000e-01   5.000000e-01
+    THPO       Platelet count          Pan-UKB                   AFR                           B       PRIOR_SENSITIVE              INCONCLUSIVE   4.133444e-02   3.012692e-01   8.117351e-01
+     LPL        Triglycerides          Pan-UKB            AFR || CSA                           B       PRIOR_SENSITIVE        DISTINCT_H3_GE_0P8   2.089684e-02   1.550466e-01   4.657218e-01
+  IL1RL1               Asthma             GBMI            CSA || EAS                           B       ROBUST_DISTINCT        DISTINCT_H3_GE_0P8   1.922518e-04   1.915889e-03   1.852026e-02
+     IL5               Asthma             GBMI                   EAS                           B       ROBUST_DISTINCT        DISTINCT_H3_GE_0P8   3.783447e-05   3.782160e-04   3.769329e-03
+SLC22A12                 Gout             GBMI                   EAS                           A       ROBUST_DISTINCT        DISTINCT_H3_GE_0P8   6.585851e-11   6.585851e-10   6.585850e-09
+    TSLP               Asthma             GBMI                   EAS                           A         ROBUST_SHARED          SHARED_H4_GE_0P8   1.000000e+00   1.000000e+00   1.000000e+00
+    APOE           LDL direct          Pan-UKB                   CSA                           B         ROBUST_SHARED          SHARED_H4_GE_0P8   9.672291e-01   9.966233e-01   9.996613e-01
+   GATA3               Asthma             GBMI                   EAS                           B         ROBUST_SHARED          SHARED_H4_GE_0P8   9.616068e-01   9.960233e-01   9.996009e-01
+    APOB        Triglycerides          Pan-UKB                   CSA                           B         ROBUST_SHARED          SHARED_H4_GE_0P8   8.798818e-01   9.865322e-01   9.986367e-01
+    IL13               Asthma             GBMI                   EAS                           B         ROBUST_SHARED          SHARED_H4_GE_0P8   8.195174e-01   9.784515e-01   9.978025e-01
+
+Summary: output/15e1_coloc_prior_stability_summary.json
+==============================================================================

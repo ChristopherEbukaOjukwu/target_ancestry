@@ -1,0 +1,19 @@
+variable	area	n_ti
+OTG GWAS source	cardiovascular	68
+OTG GWAS source	congenital	50
+OTG GWAS source	dermatology	68
+OTG GWAS source	digestive	69
+OTG GWAS source	endocrine	40
+OTG GWAS source	hematology	61
+OTG GWAS source	immune	112
+OTG GWAS source	infection	8
+OTG GWAS source	metabolic	166
+OTG GWAS source	musculoskeletal	37
+OTG GWAS source	neurology	74
+OTG GWAS source	oncology	75
+OTG GWAS source	ophthalmology	21
+OTG GWAS source	other	13
+OTG GWAS source	psychiatry	77
+OTG GWAS source	respiratory	75
+OTG GWAS source	signs/symptoms	75
+OTG GWAS source	Total	1089

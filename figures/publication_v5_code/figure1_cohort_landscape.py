@@ -1,0 +1,288 @@
+#!/usr/bin/env python3
+"""Main Figure 1: study design, cohort construction, and ancestry landscape."""
+
+from __future__ import annotations
+
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch
+
+from loaders import load_ancestry_rows, load_trails
+from style import (
+    MAIN_DIR,
+    clean_axis,
+    export_table,
+    panel_label,
+    raincloud,
+    save_figure,
+    set_style,
+)
+
+
+def draw_box(ax, x, y, width, height, title, detail):
+    patch = FancyBboxPatch(
+        (x, y),
+        width,
+        height,
+        boxstyle="round,pad=0.018,rounding_size=0.02",
+        fill=False,
+        linewidth=1.1,
+        transform=ax.transAxes,
+    )
+    ax.add_patch(patch)
+
+    ax.text(
+        x + width / 2,
+        y + height * 0.63,
+        title,
+        transform=ax.transAxes,
+        ha="center",
+        va="center",
+        fontsize=10.2,
+        fontweight="bold",
+    )
+
+    ax.text(
+        x + width / 2,
+        y + height * 0.28,
+        detail,
+        transform=ax.transAxes,
+        ha="center",
+        va="center",
+        fontsize=9.3,
+    )
+
+
+def main():
+    set_style()
+
+    ancestry_rows = load_ancestry_rows()
+    trails = load_trails()
+
+    ancestry_summary = (
+        ancestry_rows.groupby("ancestry")
+        .size()
+        .rename("records")
+        .reset_index()
+    )
+
+    ancestry_summary["percent"] = (
+        100
+        * ancestry_summary["records"]
+        / ancestry_summary["records"].sum()
+    )
+
+    ancestry_summary = ancestry_summary.sort_values(
+        "percent",
+        ascending=True,
+    )
+
+    fig = plt.figure(figsize=(11.2, 7.2), constrained_layout=True)
+
+    gs = fig.add_gridspec(
+        2,
+        2,
+        height_ratios=[0.90, 1.10],
+        width_ratios=[1.14, 1.0],
+    )
+
+    ax_a = fig.add_subplot(gs[0, :])
+    ax_b = fig.add_subplot(gs[1, 0])
+    ax_c = fig.add_subplot(gs[1, 1])
+
+    ax_a.axis("off")
+    
+        # Panel-A label and title use the same baseline.
+    ax_a.text(
+        -0.045,
+        1.035,
+        "a",
+        transform=ax_a.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=15,
+        fontweight="bold",
+        clip_on=False,
+    )
+
+    ax_a.text(
+        0.015,
+        1.035,
+        "Construction of the ancestry-analysis cohort",
+        transform=ax_a.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=15,
+        fontweight="bold",
+        clip_on=False,
+    )
+
+    positions = [0.02, 0.275, 0.53, 0.785]
+    width = 0.19
+
+    draw_box(
+        ax_a,
+        positions[0],
+        0.47,
+        width,
+        0.30,
+        "Genetically supported",
+        "2,166 target–indication pairs",
+    )
+
+    draw_box(
+        ax_a,
+        positions[1],
+        0.47,
+        width,
+        0.30,
+        "Clinical stage",
+        "1,354 pairs\nA = 278; B = 1,076",
+    )
+
+    draw_box(
+        ax_a,
+        positions[2],
+        0.47,
+        width,
+        0.30,
+        "GWAS linked",
+        "797 pairs\nA = 158; B = 639",
+    )
+
+    draw_box(
+        ax_a,
+        positions[3],
+        0.47,
+        width,
+        0.30,
+        "Complete ancestry trails",
+        "790 pairs\nA = 157; B = 633",
+    )
+
+    exclusions = [
+        ("812 preclinical-only", 0.242),
+        ("557 without parseable GWAS", 0.498),
+        ("7 without ancestry data", 0.752),
+    ]
+
+    for index in range(3):
+        ax_a.annotate(
+            "",
+            xy=(positions[index + 1] - 0.01, 0.62),
+            xytext=(positions[index] + width + 0.01, 0.62),
+            xycoords=ax_a.transAxes,
+            textcoords=ax_a.transAxes,
+            arrowprops={"arrowstyle": "-|>", "linewidth": 1.1},
+        )
+
+    for text, x in exclusions:
+        ax_a.plot(
+            [x, x],
+            [0.46, 0.35],
+            transform=ax_a.transAxes,
+            linewidth=0.8,
+        )
+
+        ax_a.text(
+            x,
+            0.27,
+            text,
+            transform=ax_a.transAxes,
+            ha="center",
+            va="center",
+            fontsize=8.8,
+        )
+
+    ax_b.barh(
+        ancestry_summary["ancestry"],
+        ancestry_summary["percent"],
+    )
+
+    clean_axis(ax_b, "x")
+    panel_label(ax_b, "b")
+
+    ax_b.set_title(
+        "Ancestry composition of supporting GWAS evidence",
+        loc="left",
+    )
+
+    ax_b.set_xlabel("Share of ancestry records (%)")
+    ax_b.set_ylabel("")
+    ax_b.margins(x=0.12)
+
+    for y, value in enumerate(ancestry_summary["percent"]):
+        ax_b.text(
+            value + 0.45,
+            y,
+            f"{value:.1f}",
+            va="center",
+            fontsize=8.8,
+        )
+
+    raincloud(
+        ax_c,
+        {
+            "A": trails.loc[
+                trails["pool"].eq("A"),
+                "n_ancestries_all",
+            ].dropna().to_numpy(),
+            "B": trails.loc[
+                trails["pool"].eq("B"),
+                "n_ancestries_all",
+            ].dropna().to_numpy(),
+        },
+        positions={"A": 0, "B": 1},
+        width=0.50,
+    )
+
+    clean_axis(ax_c, "y")
+    panel_label(ax_c, "c")
+
+    ax_c.set_title(
+        "Pair-level ancestry breadth",
+        loc="left",
+    )
+
+    ax_c.set_xticks(
+        [0, 1],
+        ["Launched\nPool A", "Phase I–III\nPool B"],
+    )
+
+    ax_c.set_ylabel(
+        "Number of represented ancestries"
+    )
+
+    means = trails.groupby("pool")["n_ancestries_all"].mean()
+
+    ax_c.text(
+        0.03,
+        0.97,
+        f"Mean A = {means['A']:.2f}; B = {means['B']:.2f}",
+        transform=ax_c.transAxes,
+        va="top",
+        fontweight="bold",
+    )
+
+    save_figure(
+        fig,
+        "Figure1_cohort_and_ancestry_landscape",
+        MAIN_DIR,
+    )
+
+    plt.close(fig)
+
+    export_table(
+        ancestry_summary.sort_values("percent", ascending=False),
+        "TableS1_ancestry_distribution",
+        caption=(
+            "Distribution of consolidated ancestry records in the "
+            "supporting GWAS evidence."
+        ),
+        label="tab:s1_ancestry_distribution",
+    )
+
+    print("Wrote Figure 1.")
+
+
+if __name__ == "__main__":
+    main()

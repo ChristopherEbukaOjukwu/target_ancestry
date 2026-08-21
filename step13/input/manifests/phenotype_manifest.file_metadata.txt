@@ -1,0 +1,8 @@
+  File: phenotype_manifest.tsv.bgz
+  Size: 1420758   	Blocks: 2776       IO Block: 4096   regular file
+Device: 0,82	Inode: 18295873486227504  Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/  ojukwu)   Gid: ( 1000/  ojukwu)
+Access: 2026-07-23 12:39:12.680740000 -0600
+Modify: 2026-07-23 12:39:12.680740000 -0600
+Change: 2026-07-23 12:39:12.680740000 -0600
+ Birth: -

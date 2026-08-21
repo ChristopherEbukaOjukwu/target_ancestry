@@ -1,0 +1,145 @@
+{
+  "branches": {
+    "AFR": {
+      "globals": {
+        "n_samples": 6637,
+        "pop": "AFR"
+      },
+      "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.variant.ht",
+      "indices_in_variant_order": [
+        3607195,
+        3607192,
+        3607165
+      ],
+      "indices_sorted_for_hail": [
+        3607165,
+        3607192,
+        3607195
+      ],
+      "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.AFR.ldadj.bm",
+      "n_requested": 3,
+      "n_resolved": 3,
+      "outputs": {
+        "r2": "output/15c2b_panukb_ld_r2_AFR.csv",
+        "raw": "output/15c2b_panukb_ld_raw_AFR.csv",
+        "symmetric": "output/15c2b_panukb_ld_symmetric_AFR.csv"
+      },
+      "raw_matrix_shape": [
+        3,
+        3
+      ],
+      "reconstruction": {
+        "maximum_asymmetry_raw": 0.9181575880700523,
+        "maximum_asymmetry_symmetric": 0.0,
+        "method": "raw_plus_transpose_minus_diagonal"
+      },
+      "restore_positions": [
+        2,
+        1,
+        0
+      ],
+      "sorted_positions": [
+        2,
+        1,
+        0
+      ],
+      "symmetric_diagnostics": {
+        "all_entries_finite": true,
+        "diagonal_maximum": 0.9991381937709811,
+        "diagonal_minimum": 0.9986311818949121,
+        "matrix_maximum": 0.9991381937709811,
+        "matrix_minimum": 0.6734748696714984,
+        "n_finite_entries": 9,
+        "n_total_entries": 9,
+        "shape": [
+          3,
+          3
+        ],
+        "symmetric": true
+      }
+    },
+    "EUR": {
+      "globals": {
+        "n_samples": 420542,
+        "pop": "EUR"
+      },
+      "index_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.variant.ht",
+      "indices_in_variant_order": [
+        3938653,
+        3938650,
+        3938614
+      ],
+      "indices_sorted_for_hail": [
+        3938614,
+        3938650,
+        3938653
+      ],
+      "matrix_path": "s3a://pan-ukb-us-east-1/ld_release/UKBB.EUR.ldadj.bm",
+      "n_requested": 3,
+      "n_resolved": 3,
+      "outputs": {
+        "r2": "output/15c2b_panukb_ld_r2_EUR.csv",
+        "raw": "output/15c2b_panukb_ld_raw_EUR.csv",
+        "symmetric": "output/15c2b_panukb_ld_symmetric_EUR.csv"
+      },
+      "raw_matrix_shape": [
+        3,
+        3
+      ],
+      "reconstruction": {
+        "maximum_asymmetry_raw": 0.9697705194270205,
+        "maximum_asymmetry_symmetric": 0.0,
+        "method": "raw_plus_transpose_minus_diagonal"
+      },
+      "restore_positions": [
+        2,
+        1,
+        0
+      ],
+      "sorted_positions": [
+        2,
+        1,
+        0
+      ],
+      "symmetric_diagnostics": {
+        "all_entries_finite": true,
+        "diagonal_maximum": 0.9999695964755045,
+        "diagonal_minimum": 0.9999646753170512,
+        "matrix_maximum": 0.9999695964755045,
+        "matrix_minimum": 0.9222682764421936,
+        "n_finite_entries": 9,
+        "n_total_entries": 9,
+        "shape": [
+          3,
+          3
+        ],
+        "symmetric": true
+      }
+    }
+  },
+  "comparison_population": "AFR",
+  "comparison_uid": "cmp_0c1699071ec567b1",
+  "gene": "PPARG",
+  "gene_trait_uid": "gt_00419bc476176825",
+  "n_requested_variants": 3,
+  "n_resolved_in_both": 3,
+  "outputs": {
+    "AFR_r2": "output/15c2b_panukb_ld_r2_AFR.csv",
+    "AFR_raw": "output/15c2b_panukb_ld_raw_AFR.csv",
+    "AFR_symmetric": "output/15c2b_panukb_ld_symmetric_AFR.csv",
+    "EUR_r2": "output/15c2b_panukb_ld_r2_EUR.csv",
+    "EUR_raw": "output/15c2b_panukb_ld_raw_EUR.csv",
+    "EUR_symmetric": "output/15c2b_panukb_ld_symmetric_EUR.csv",
+    "variant_resolution": "output/15c2b_panukb_variant_resolution.csv"
+  },
+  "scientific_scope": "Subset-LD extraction and triangular reconstruction only; no pruning or portability slope.",
+  "script_version": "15C2B.2",
+  "status": "PASS",
+  "step": "15C2B",
+  "trait": "Body mass index (BMI)",
+  "variant_order": [
+    "3:12329452:C:T",
+    "3:12329195:G:C",
+    "3:12324230:C:T"
+  ]
+}
