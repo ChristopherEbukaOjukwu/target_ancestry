@@ -20,12 +20,12 @@ Logic:
 from pathlib import Path
 import pandas as pd
 
-# --- paths -----------------------------------------------------------------
+# paths 
 STUDIES_IN  = Path("../step2/output/02_pair_studies.parquet")
 ANCESTRY_IN = Path("../genetic_support/data/gwas_catalog-ancestry_r2022-02-02.tsv")
 OUTPUT      = Path("output/03_study_ancestry.parquet")
 
-# --- ancestry consolidation map ------------------------------------------
+# ancestry consolidation map 
 ANCESTRY_MAP = {
     # European
     "European": "European",
@@ -79,7 +79,7 @@ def consolidate(raw_ancestry):
             consolidated.add(f"UNMAPPED: {p}")
     return consolidated
 
-# --- load Step 2 output ---------------------------------------------------
+# load Step 2 output 
 print(f"Loading studies: {STUDIES_IN}")
 studies = pd.read_parquet(STUDIES_IN)
 unique_studies = studies[["study_id", "study_source"]].drop_duplicates()
@@ -87,7 +87,7 @@ print(f"  {len(unique_studies):,} unique studies")
 print(f"  by source:")
 print(unique_studies["study_source"].value_counts().to_string())
 
-# --- load ancestry file ---------------------------------------------------
+# load ancestry file 
 print(f"\nLoading ancestry: {ANCESTRY_IN}")
 anc = pd.read_csv(ANCESTRY_IN, sep="\t", low_memory=False)
 print(f"  {len(anc):,} ancestry rows")
@@ -100,7 +100,7 @@ anc = anc.rename(columns={
     "NUMBER OF INDIVDUALS":     "n_individuals",
 })
 
-# --- handle GWAS Catalog studies -----------------------------------------
+# handle GWAS Catalog studies 
 gc_studies = unique_studies[unique_studies["study_source"] == "GWAS_CATALOG"]
 gc_anc = anc[anc["study_id"].isin(gc_studies["study_id"])].copy()
 print(f"\nGWAS Catalog ancestry rows matched: {len(gc_anc):,}")
@@ -126,7 +126,7 @@ for _, row in gc_anc.iterrows():
         })
 gc_out = pd.DataFrame(gc_rows)
 
-# --- handle biobank-recovered studies -------------------------------------
+# handle biobank-recovered studies -
 bb_studies = unique_studies[
     unique_studies["study_source"].isin({"NEALE_UKBB", "FINNGEN", "SAIGE"})
 ]
@@ -137,13 +137,13 @@ bb_out = bb_studies.assign(
 )[["study_id", "study_source", "stage", "ancestry", "n_individuals"]]
 print(f"\nBiobank studies assigned European: {len(bb_out):,}")
 
-# --- combine and save -----------------------------------------------------
+# combine and save
 result = pd.concat([gc_out, bb_out], ignore_index=True)
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 result.to_parquet(OUTPUT, index=False)
 
-# --- report ---------------------------------------------------------------
+# report
 print()
 print("=" * 50)
 print(f"Output: {OUTPUT}")
