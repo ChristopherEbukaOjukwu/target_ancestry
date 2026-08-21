@@ -1,9 +1,9 @@
 Loading: ../step4/output/04_trails.parquet
   790 pairs
 
-============================================================
+
 CHECK 1: Drop known-diverse pharmacogenomic targets
-============================================================
+
 
 Known-diverse targets present in data: ['PCSK9', 'UGT1A1']
 Pairs they account for, by pool:
@@ -30,9 +30,9 @@ study_bin
 Pool A pairs removed: 4
 Pool B pairs removed: 1
 
-============================================================
+
 CHECK 2: Stage decomposition (initial vs. replication)
-============================================================
+
 
 Mean n_ancestries_initial by bin and pool:
 pool          A     B  A - B
@@ -58,9 +58,9 @@ study_bin
 6-10       0.57  0.82  -0.26
 11+        0.95  0.95   0.00
 
-============================================================
+
 CHECK 3: Collapse to one row per (gene, pool)
-============================================================
+
 
 Unique (gene, pool) rows: 440
   Pool A: 97
@@ -87,6 +87,6 @@ study_bin
 6-10       3.50  3.61  -0.11
 11+        5.76  5.14   0.62
 
-============================================================
+
 END OF ROBUSTNESS CHECKS
-============================================================
+
