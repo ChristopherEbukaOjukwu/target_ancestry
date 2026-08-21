@@ -17,7 +17,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-# --- paths -----------------------------------------------------------------
+# paths
 TRAILS_IN = Path("../step4/output/04_trails.parquet")
 OUTPUT    = Path("output/05_volume_control.parquet")
 
@@ -30,12 +30,12 @@ ANCESTRIES_TO_REPORT = [
     "Native American", "Oceanian", "Other",
 ]  # NR intentionally excluded
 
-# --- load ------------------------------------------------------------------
+# load-
 print(f"Loading: {TRAILS_IN}")
 df = pd.read_parquet(TRAILS_IN)
 print(f"  {len(df):,} pairs")
 
-# --- bin -------------------------------------------------------------------
+# bin--
 df["study_bin"] = pd.cut(
     df["n_studies_total"],
     bins=BIN_EDGES,
@@ -43,14 +43,14 @@ df["study_bin"] = pd.cut(
     include_lowest=True,
 )
 
-# --- summary 1: bin sizes -------------------------------------------------
+# summary 1: bin sizes
 print()
 print("=" * 60)
 print("BIN SIZES")
 print("=" * 60)
 print(pd.crosstab(df["study_bin"], df["pool"], margins=True).to_string())
 
-# --- summary 2: mean n_ancestries within each bin ------------------------
+# summary 2: mean n_ancestries within each bin
 print()
 print("=" * 60)
 print("MEAN n_ancestries BY BIN AND POOL")
@@ -73,7 +73,7 @@ pivot = (
 pivot["A - B"] = (pivot["A"] - pivot["B"]).round(2)
 print(pivot.round(2).to_string())
 
-# --- summary 3: per-ancestry presence rate per bin ------------------------
+# summary 3: per-ancestry presence rate per bin
 print()
 print("=" * 60)
 print("PER-ANCESTRY PRESENCE RATES, BY BIN AND POOL")
@@ -106,7 +106,7 @@ for bin_label in BIN_LABELS:
     print(f"\n  Study bin: {bin_label}")
     print(table.to_string())
 
-# --- save -----------------------------------------------------------------
+# save
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 df_out = df[["ti_uid", "gene", "indication_mesh_term", "pool",
              "n_studies_total", "study_bin", "n_ancestries_all", "all_set"]]
