@@ -4,8 +4,6 @@ This repository contains the full analysis pipeline for the study **“How and W
 
 The repository is organized as a sequential workflow (`step1` through `step15`). The early steps construct the genetically supported drug-target cohort and ancestry representation variables; the middle steps fit the launch/approval analyses and robustness models; and the final steps evaluate direct-disease feasibility, cross-ancestry effect portability, and colocalization.
 
-The goal of this README is to allow another researcher to clone the repository, install the required software, identify the required input files, and rerun the analysis in the same order.
-
 ---
 
 ## 1. Repository structure
