@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-# --- paths ----------------------------------------------------------------
+# paths
 TRAILS_IN = Path("../step4/output/04_trails.parquet")
 
 # Famously diverse approved targets (known from literature/clinical PGx)
@@ -34,7 +34,7 @@ KNOWN_DIVERSE_TARGETS = {
 BIN_EDGES  = [0, 2, 5, 10, 10_000]
 BIN_LABELS = ["1-2", "3-5", "6-10", "11+"]
 
-# --- load ------------------------------------------------------------------
+# load--
 print(f"Loading: {TRAILS_IN}")
 df = pd.read_parquet(TRAILS_IN)
 df["study_bin"] = pd.cut(
@@ -42,7 +42,7 @@ df["study_bin"] = pd.cut(
 )
 print(f"  {len(df):,} pairs")
 
-# --- CHECK 1: drop famously diverse targets -------------------------------
+# CHECK 1: drop famously diverse targets
 print()
 print("=" * 60)
 print("CHECK 1: Drop known-diverse pharmacogenomic targets")
@@ -74,7 +74,7 @@ print(after.round(2).to_string())
 print(f"\nPool A pairs removed: {len(df[(df['pool']=='A') & (df['gene'].isin(KNOWN_DIVERSE_TARGETS))])}")
 print(f"Pool B pairs removed: {len(df[(df['pool']=='B') & (df['gene'].isin(KNOWN_DIVERSE_TARGETS))])}")
 
-# --- CHECK 2: stage decomposition ----------------------------------------
+# CHECK 2: stage decomposition
 print()
 print("=" * 60)
 print("CHECK 2: Stage decomposition (initial vs. replication)")
@@ -104,7 +104,7 @@ repl_presence = (
 repl_presence["A - B"] = (repl_presence["A"] - repl_presence["B"]).round(2)
 print(repl_presence.round(2).to_string())
 
-# --- CHECK 3: one row per gene -------------------------------------------
+# CHECK 3: one row per gene
 print()
 print("=" * 60)
 print("CHECK 3: Collapse to one row per (gene, pool)")
