@@ -189,9 +189,9 @@ def json_safe(value: Any) -> Any:
     return value
 
 
-# ---------------------------------------------------------------------------
+
 # Official MeSH category mapping (same rule as Steps 8A and 9)
-# ---------------------------------------------------------------------------
+
 def normalize_mesh_id(value: object) -> str | None:
     if pd.isna(value):
         return None
@@ -288,9 +288,9 @@ def add_mesh_indicators(
     return cohort, mesh_cols
 
 
-# ---------------------------------------------------------------------------
+
 # Selection model and weights
-# ---------------------------------------------------------------------------
+
 def prepare_selection_features(
     cohort: pd.DataFrame, mesh_cols: list[str]
 ) -> tuple[pd.DataFrame, list[str], list[str], dict[str, Any]]:
@@ -505,9 +505,9 @@ def construct_weights(
     return result, diagnostics
 
 
-# ---------------------------------------------------------------------------
+
 # Balance diagnostics
-# ---------------------------------------------------------------------------
+
 def weighted_mean(values: np.ndarray, weights: np.ndarray) -> float:
     return float(np.average(values, weights=weights))
 
@@ -587,9 +587,9 @@ def build_balance_table(
     return pd.DataFrame(rows).sort_values("abs_smd_before", ascending=False)
 
 
-# ---------------------------------------------------------------------------
+
 # Weighted outcome models with manual gene-clustered sandwich covariance
-# ---------------------------------------------------------------------------
+
 def model_predictors(model_id: str, exposure: str, mesh_cols: list[str]) -> list[str]:
     if model_id == "SW1":
         return [exposure]
