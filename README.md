@@ -66,21 +66,6 @@ The analysis uses:
 - `hail`
 - `pyspark`
 
-Python standard-library modules are also used extensively for XML parsing, gzip handling, hashing, JSON, HTTP access, and file management.
-
-`hail`/`pyspark` are only needed for the Pan-UK Biobank LD portion of Step 15C. The colocalization analysis itself is implemented in Python; R is not required.
-
-### Freeze the exact environment
-
-The original analysis environment can be recorded with:
-
-```bash
-source .venv/bin/activate
-pip freeze > requirements.txt
-```
-
-Commit `requirements.txt` with the repository so that subsequent users install the same package versions.
-
 ---
 
 ## 3. Required input data
