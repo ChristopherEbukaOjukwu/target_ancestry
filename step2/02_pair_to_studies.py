@@ -24,7 +24,7 @@ from pathlib import Path
 import re
 import pandas as pd
 
-# --- paths -----------------------------------------------------------------
+# paths
 PAIRS_IN  = Path("../step1/output/01_pairs.parquet")
 MERGE_IN  = Path("../genetic_support/data/merge2.tsv.gz")
 OUTPUT    = Path("output/02_pair_studies.parquet")
@@ -32,7 +32,7 @@ OUTPUT    = Path("output/02_pair_studies.parquet")
 SIMILARITY_THRESHOLD = 0.8
 KEEP_SOURCES = {"OTG"}
 
-# --- study ID extraction --------------------------------------------------
+# study ID extraction
 # Returns (study_id, study_source) or (None, None) if unparseable.
 def extract_study_id(link):
     if not isinstance(link, str):
@@ -55,7 +55,7 @@ def extract_study_id(link):
 
     return None, None
 
-# --- load ------------------------------------------------------------------
+# load-
 print(f"Loading pairs: {PAIRS_IN}")
 pairs = pd.read_parquet(PAIRS_IN)
 pool_uids = set(pairs["ti_uid"])
@@ -65,7 +65,7 @@ print(f"Loading associations: {MERGE_IN}")
 merge = pd.read_csv(MERGE_IN, sep="\t", low_memory=False)
 print(f"  {len(merge):,} association-level rows")
 
-# --- filter to qualifying associations ------------------------------------
+# filter to qualifying associations
 m = merge[
     (merge["comb_norm"] >= SIMILARITY_THRESHOLD)
     & (merge["assoc_source"].isin(KEEP_SOURCES))
@@ -73,12 +73,12 @@ m = merge[
 ].copy()
 print(f"  {len(m):,} rows after support + source + pool filters")
 
-# --- extract study IDs (now multi-pattern) -------------------------------
+# extract study IDs (now multi-pattern)
 extracted = m["original_link"].apply(extract_study_id)
 m["study_id"]     = extracted.apply(lambda x: x[0])
 m["study_source"] = extracted.apply(lambda x: x[1])
 
-# --- report extraction quality -------------------------------------------
+# report extraction quality
 n_with_id = m["study_id"].notna().sum()
 print(f"  {n_with_id:,} rows have a parseable study ID "
       f"({n_with_id / len(m):.1%})")
@@ -86,7 +86,7 @@ print()
 print("Study sources:")
 print(m["study_source"].value_counts(dropna=False).to_string())
 
-# --- finalize -------------------------------------------------------------
+# finalize
 result = (
     m.loc[m["study_id"].notna(),
           ["ti_uid", "gene", "indication_mesh_id", "indication_mesh_term",
@@ -100,7 +100,7 @@ result = (
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 result.to_parquet(OUTPUT, index=False)
 
-# --- report ---------------------------------------------------------------
+# report
 result_with_pool = result.merge(pairs[["ti_uid", "pool"]], on="ti_uid")
 
 print()
