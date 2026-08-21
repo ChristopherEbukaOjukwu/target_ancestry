@@ -26,7 +26,7 @@ Logic:
 from pathlib import Path
 import pandas as pd
 
-# --- paths -----------------------------------------------------------------
+# paths
 PAIRS_IN     = Path("../step1/output/01_pairs.parquet")
 STUDIES_IN   = Path("../step2/output/02_pair_studies.parquet")
 ANCESTRY_IN  = Path("../step3/output/03_study_ancestry.parquet")
@@ -34,7 +34,7 @@ OUTPUT       = Path("output/04_trails.parquet")
 
 EXCLUDE_FROM_COUNTS = {"NR"}  # logged in decisions.md
 
-# --- load ------------------------------------------------------------------
+# load-
 print(f"Loading pairs:     {PAIRS_IN}")
 pairs = pd.read_parquet(PAIRS_IN)
 print(f"  {len(pairs):,} pairs in Pool A/B")
@@ -47,7 +47,7 @@ print(f"Loading ancestry:  {ANCESTRY_IN}")
 study_anc = pd.read_parquet(ANCESTRY_IN)
 print(f"  {len(study_anc):,} (study, stage, ancestry) rows")
 
-# --- join to get (pair, study, stage, ancestry) ---------------------------
+# join to get (pair, study, stage, ancestry)
 joined = pair_studies.merge(
     study_anc[["study_id", "stage", "ancestry"]],
     on="study_id",
@@ -63,7 +63,7 @@ if lost_pairs:
     print(f"  {len(lost_pairs):,} pairs lost (no studies with ancestry data):")
     print(lost_by_pool.to_string())
 
-# --- build ancestry sets per pair -----------------------------------------
+# build ancestry sets per pair
 def to_set(series):
     return set(series.dropna())
 
@@ -79,7 +79,7 @@ agg = joined.groupby("ti_uid").apply(
     include_groups=False,
 ).reset_index()
 
-# --- set sizes (excluding NR) --------------------------------------------
+# set sizes (excluding NR)
 def count_excluding_nr(s):
     return len(s - EXCLUDE_FROM_COUNTS)
 
@@ -88,17 +88,17 @@ agg["n_ancestries_replication"] = agg["replication_set"].apply(count_excluding_n
 agg["n_ancestries_all"]         = agg["all_set"].apply(count_excluding_nr)
 agg["has_replication"]          = agg["n_studies_replication"] > 0
 
-# --- attach pair metadata + pool -----------------------------------------
+# attach pair metadata + pool
 result = pairs.merge(agg, on="ti_uid", how="inner")
 
-# --- save (convert sets to sorted lists for parquet safety) --------------
+# save (convert sets to sorted lists for parquet safety)
 for col in ["initial_set", "replication_set", "all_set"]:
     result[col] = result[col].apply(lambda s: sorted(s))
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 result.to_parquet(OUTPUT, index=False)
 
-# --- report ---------------------------------------------------------------
+# report
 print()
 print("=" * 50)
 print(f"Output: {OUTPUT}")
