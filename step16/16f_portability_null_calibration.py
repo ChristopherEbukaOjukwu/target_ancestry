@@ -13,9 +13,9 @@ OUT = ROOT / "step16/output"
 N_SIM = 1000
 SEED = 42
 
-# ============================================================
+
 # Import exact Step 15D estimators
-# ============================================================
+
 
 spec = importlib.util.spec_from_file_location("step15d", STEP15D)
 step15d = importlib.util.module_from_spec(spec)
@@ -23,9 +23,9 @@ spec.loader.exec_module(step15d)
 
 estimate_all = step15d.estimate_all
 
-# ============================================================
+
 # Locked primary comparison universe
-# ============================================================
+
 
 port = pd.read_parquet(PORT_TABLE)
 
@@ -43,9 +43,9 @@ print("Primary comparisons:", len(comparison_ids))
 print("Simulation replicates:", N_SIM)
 print("Seed:", SEED)
 
-# ============================================================
+
 # Exact LD-pruned retained variants
-# ============================================================
+
 
 ret = pd.read_parquet(RETAINED)
 
@@ -82,9 +82,9 @@ if ret["comparison_uid"].nunique() != 104:
         "Expected 104 primary ancestry comparisons."
     )
 
-# ============================================================
+
 # Recover beta/SE only for the exact retained variants
-# ============================================================
+
 
 comparison_data = {}
 
@@ -134,13 +134,13 @@ for uid in comparison_ids:
             f"usable beta/SE rows={len(q)}"
         )
 
-    # --------------------------------------------------------
+    
     # Shared latent effect under perfect portability.
     #
     # Neither ancestry is treated as truth.
     # theta is the inverse-variance estimate of a common
     # underlying effect under H0: beta_EUR = beta_other.
-    # --------------------------------------------------------
+    
 
     bx = q["eur_beta"].to_numpy(dtype=float)
     by = q["comparison_beta"].to_numpy(dtype=float)
@@ -175,9 +175,9 @@ if total_variants != 714:
         f"found {total_variants}"
     )
 
-# ============================================================
+
 # Observed slopes
-# ============================================================
+
 
 obs = (
     primary.groupby("estimator")["slope"]
@@ -187,9 +187,9 @@ obs = (
 print("\nObserved comparison-level slopes:")
 print(obs.to_string())
 
-# ============================================================
+
 # Perfect-portability simulations
-# ============================================================
+
 
 rng = np.random.default_rng(SEED)
 
@@ -253,9 +253,9 @@ for rep in range(N_SIM):
 
 sim = pd.DataFrame(simulation_rows)
 
-# ============================================================
+
 # Compare observed median with null distribution
-# ============================================================
+
 
 summary_rows = []
 
@@ -299,9 +299,9 @@ summary = pd.DataFrame(summary_rows)
 print("\nPerfect-portability calibration:")
 print(summary.to_string(index=False))
 
-# ============================================================
+
 # Save
-# ============================================================
+
 
 sim.to_csv(
     OUT / "16f_null_calibration_replicates.csv",
