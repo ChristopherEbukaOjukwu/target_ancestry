@@ -12,9 +12,9 @@ ESTIMATORS = ["fiqt", "deming", "naive"]
 
 rng = np.random.default_rng(SEED)
 
-# ------------------------------------------------------------
+
 # Locked primary portability estimates
-# ------------------------------------------------------------
+
 p = pd.read_parquet(PORT)
 
 p = p[
@@ -22,9 +22,9 @@ p = p[
     & p["is_primary_threshold"].eq(True)
 ].copy()
 
-# ------------------------------------------------------------
+
 # Corrected sample-size metadata from Step 15G2
-# ------------------------------------------------------------
+
 s = pd.read_parquet(SAMPLE)
 
 print("=" * 78)
@@ -74,9 +74,9 @@ for c in [
     if c in p.columns:
         p[c] = pd.to_numeric(p[c], errors="coerce")
 
-# ------------------------------------------------------------
+
 # One comparison-level metadata row
-# ------------------------------------------------------------
+
 meta = (
     p[
         [
@@ -116,12 +116,12 @@ print(
     .to_string()
 )
 
-# ------------------------------------------------------------
+
 # Restrictions
 #
 # These are sensitivity restrictions, not a new primary
 # analysis universe.
-# ------------------------------------------------------------
+
 restrictions = {
     "all_primary":
         pd.Series(True, index=meta.index),
@@ -252,9 +252,9 @@ for restriction_name, mask in restrictions.items():
 
 results = pd.DataFrame(rows)
 
-# ------------------------------------------------------------
+
 # Population composition under restrictions
-# ------------------------------------------------------------
+
 population_rows = []
 
 for restriction_name, mask in restrictions.items():
@@ -293,9 +293,9 @@ print(
     ].to_string(index=False)
 )
 
-# ------------------------------------------------------------
+
 # Save
-# ------------------------------------------------------------
+
 results.to_csv(
     OUT / "16g_precision_restriction_results.csv",
     index=False
