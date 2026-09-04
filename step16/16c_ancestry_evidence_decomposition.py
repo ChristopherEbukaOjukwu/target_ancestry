@@ -21,9 +21,9 @@ print("STEP 16C — ANCESTRY BREADTH VS EVIDENCE VOLUME")
 print("=" * 72)
 print("Pairs:", len(d))
 
-# ------------------------------------------------------------
+
 # 1. Correlations
-# ------------------------------------------------------------
+
 rho_study, p_study = spearmanr(
     d["n_ancestries_all"], d["n_studies_total"]
 )
@@ -42,9 +42,9 @@ print(
     f"rho={rho_n:.3f}, p={p_n:.3g}"
 )
 
-# ------------------------------------------------------------
+
 # 2. Poisson models
-# ------------------------------------------------------------
+
 m_studies = smf.glm(
     "n_ancestries_all ~ log_studies",
     data=d,
@@ -84,9 +84,9 @@ report(m_sample, ["log_cumulative_n"])
 print("\nModel 3: both evidence-volume measures")
 report(m_both, ["log_studies", "log_cumulative_n"])
 
-# ------------------------------------------------------------
+
 # 3. Descriptive quantile bins
-# ------------------------------------------------------------
+
 # qcut may drop duplicate boundaries if distributions are tied
 d["study_bin"] = pd.qcut(
     d["n_studies_total"],
@@ -128,9 +128,9 @@ print(study_summary.to_string(index=False))
 print("\nAncestry breadth across cumulative-N quartiles:")
 print(sample_summary.to_string(index=False))
 
-# ------------------------------------------------------------
+
 # 4. Save
-# ------------------------------------------------------------
+
 rows = []
 
 for name, model, variables in [
