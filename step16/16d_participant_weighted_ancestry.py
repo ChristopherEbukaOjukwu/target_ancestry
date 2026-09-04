@@ -56,9 +56,9 @@ raw["n_individuals"] = pd.to_numeric(
     errors="coerce"
 )
 
-# ------------------------------------------------------------
+
 # Final validated cohort
-# ------------------------------------------------------------
+
 
 used = (
     pairs[pairs["ti_uid"].isin(trails["ti_uid"])]
@@ -96,12 +96,12 @@ x["informative"] = x["resolved"].apply(
 
 x["n_informative"] = x["informative"].str.len()
 
-# ------------------------------------------------------------
+
 # Cumulative participant volume
 #
 # Each original ancestry row contributes N once.
 # This is independent of ancestry allocation.
-# ------------------------------------------------------------
+
 
 cum_n = (
     x.groupby("ti_uid", as_index=False)["n_individuals"]
@@ -109,10 +109,10 @@ cum_n = (
     .rename(columns={"n_individuals": "cumulative_n"})
 )
 
-# ============================================================
+
 # PRIMARY ANALYSIS:
 # fully assignable ancestry records only
-# ============================================================
+
 
 # A pair is clean only when EVERY usable-N raw ancestry record:
 #   - contains no NR
@@ -182,13 +182,13 @@ weighted_primary = (
     .reset_index()
 )
 
-# ============================================================
+
 # SENSITIVITY:
 # equal split of genuinely multi-ancestry records
 #
 # NR/unmapped records are still not used because their
 # ancestry allocation is fundamentally unknown.
-# ============================================================
+
 
 sens_source = x[
     ~x["has_nr"]
@@ -255,9 +255,9 @@ weighted_sens = (
     .reset_index()
 )
 
-# ============================================================
+
 # Regression helper
-# ============================================================
+
 
 def fit_logit(data, exposure, adjust_sample=False):
 
@@ -284,9 +284,9 @@ def fit_logit(data, exposure, adjust_sample=False):
     }
 
 
-# ============================================================
+
 # PRIMARY DATASET
-# ============================================================
+
 
 d = (
     trails.merge(
@@ -355,9 +355,9 @@ for exposure in [
     )
 
 
-# ============================================================
+
 # EQUAL-SPLIT SENSITIVITY
-# ============================================================
+
 
 s = (
     trails.merge(
@@ -422,9 +422,9 @@ for exposure in [
         f"p={r2['p']:.4g}"
     )
 
-# ------------------------------------------------------------
+
 # Save
-# ------------------------------------------------------------
+
 
 pd.DataFrame(results).to_csv(
     OUT / "16d_weighted_ancestry_models.csv",
