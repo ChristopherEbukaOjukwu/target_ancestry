@@ -8,12 +8,12 @@ OUT = Path("step16/output")
 
 x = pd.read_parquet(IN)
 
-# ------------------------------------------------------------
+
 # One row per actual EUR-vs-other-ancestry comparison.
 #
 # sign_concordance, n_variants, lead_sign_concordant etc. are
 # comparison-level quantities repeated across the estimators.
-# ------------------------------------------------------------
+
 keep = [
     "comparison_uid",
     "gene_trait_uid",
@@ -62,12 +62,12 @@ d = d[
     & d["sign_concordance"].notna()
 ].copy()
 
-# ------------------------------------------------------------
+
 # Recover approximate concordant/discordant variant counts.
 #
 # sign_concordance was calculated as concordant / n_variants,
 # so multiplication should be essentially integral.
-# ------------------------------------------------------------
+
 d["n_concordant"] = np.rint(
     d["sign_concordance"] * d["n_variants"]
 ).astype(int)
@@ -192,9 +192,9 @@ by_n["pooled_sign_concordance"] = (
 
 print(by_n.to_string(index=False))
 
-# ------------------------------------------------------------
+
 # Save
-# ------------------------------------------------------------
+
 d.to_csv(
     OUT / "16e_sign_concordance_comparisons.csv",
     index=False
