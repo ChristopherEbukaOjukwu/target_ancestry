@@ -1,0 +1,2 @@
+n_comparisons,n_variants,n_concordant,pooled_sign_concordance,pooled_binomial_p,mean_comparison_sign_concordance,median_comparison_sign_concordance,n_lead_comparisons,n_lead_concordant,lead_sign_concordance,lead_binomial_p
+104,714,532,0.7450980392156863,6.342346821455931e-41,0.7416864246058987,0.7817460317460317,104,86,0.8269230769230769,4.109959024468529e-12
