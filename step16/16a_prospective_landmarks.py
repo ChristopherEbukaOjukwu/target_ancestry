@@ -96,9 +96,9 @@ for cutoff in CUTOFFS:
 
     landmark_tables.append(d)
 
-    # -------------------------------
+    
     # Model 1: ancestry breadth only
-    # -------------------------------
+    
     X1 = sm.add_constant(d[["n_ancestries"]])
     m1 = sm.Logit(d["launched"], X1).fit(disp=False)
 
@@ -116,10 +116,9 @@ for cutoff in CUTOFFS:
         "ci_high": np.exp(b + 1.96*se),
         "p": m1.pvalues["n_ancestries"],
     })
-
-    # -----------------------------------------
+    
     # Model 2: ancestry + pre-cutoff study volume
-    # -----------------------------------------
+    
     X2 = sm.add_constant(d[["n_ancestries", "log_studies"]])
     m2 = sm.Logit(d["launched"], X2).fit(disp=False)
 
